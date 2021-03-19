@@ -70,7 +70,14 @@ var y = document.getElementById("Audio1"); function Audio1() { y.play();}</scrip
 
 <div id="popup2" class="popup2" ><div class="loader"></div><br/>LOADING</div>
 
+<script>
+  onhashchange = function (){ if(location.hash){ } else{$("#popup").fadeOut('fast');}}
+  function rhash() { if(location.hash){ history.back();$("#popup").fadeOut('fast');}   
+    else {  location.hash = "go";$("#popup").fadeIn('fast'); }    }
 
+
+</script>
+	
 <nbox hidden></nbox>
 <language1 hidden>eng</language1>
 <ben hidden>বাংলা</ben>
@@ -1647,9 +1654,8 @@ var y = document.getElementById("Audio1"); function Audio1() { y.play();}</scrip
 <script src="storage-1.js"></script>
 <script src="animal-language.js"></script>
 <script>
-$(document).ready(function() {cont();$('.loading').click(function(){$('body').css({'pointer-events':'none'});$('#popup2').show(); }); });
-window.onload = function() {$('body').css({'pointer-events':'auto'}); $("#popup2").fadeOut('slow'); };
- 
-</script>
+ $(document).ready(function() {setTimeout(function() {if(sessionStorage.getItem('f1') === 't'){
+$("#popup2").fadeOut('slow'); $('body').css({'pointer-events':'auto'});}sessionStorage.setItem('f1','t'); 
+                                                     }, 300);   }); </script>
 
 </html>
