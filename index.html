@@ -1,1 +1,117 @@
-Hello World
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <link rel="stylesheet" type="text/css" href="theme2.css">
+	 <script src='jquery.min.js'/></script>
+</head>
+
+<script>
+var x = navigator.onLine;
+  if (x == false){location.reload();}
+</script>
+
+<audio id="Audio2" preload="auto">
+  <source src="https://dl.dropboxusercontent.com/s/yd60mwimrxadano/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://dl.dropboxusercontent.com/s/ez5o5uevdadoh66/correct.ogg?dl=1" type="audio/ogg">
+</source></audio>
+
+<script>
+var x = document.getElementById("Audio2"); function Audio2() { x.play();}
+var y = document.getElementById("Audio1"); function Audio1() { y.play();}</script>
+
+
+<body>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {elmnt = z[i];file = elmnt.getAttribute("w3-in");
+    if (file) {xhttp = new XMLHttpRequest();xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          elmnt.removeAttribute("w3-in");includeHTML();}}      
+      xhttp.open("GET", file, true);xhttp.send();return;}}};
+</script>
+
+
+<script src="main.min.js"></script>
+
+<div style="height:54px;">
+</div>
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" onclick="window.history.back()"><i class="material-icons" style="font-size:25px;"><toolicon>arrow_back</toolicon></i></button>
+
+<tooltitle></tooltitle>
+
+<a href="gkcube://"><button id="closebtnr"><i class="material-icons" style="font-size:25px;">&#xe80d</i></button></a>
+<quizbtn>
+<button id="score1">Score : </button><button class="sbox1"><input type="number" id="sbox" value="" readonly/></button>
+
+<button class="reset resetb"><i class="material-icons">cached</i><change2>Reset Quiz</change2></button>
+</quizbtn>
+
+</div></div>
+
+<next-previous-buttons>
+  
+<button class="next-previous next-left"><i class="material-icons">arrow_back_ios</i></button>
+  
+  <button class="goshowleft change" onclick="mylanguage();"><i class="material-icons" style="color:#2d456b;font-size:30px;position:absolute;left:30%;">language</i><cl>GO TO<br/>-</cl></button>
+
+<button class="next-previous next-right"><i class="material-icons">arrow_forward_ios</i></button>
+ 
+  
+</next-previous-buttons>
+
+
+<div style="display:none;" id="popup" class="dbox">Reset Quiz and Score !<hr/><div align="center">
+<button class="reset resetb2">Cancel</button>
+<button class="resetbutton resetb2" onclick="location.reload();">Reset</button>
+
+</div></div>
+
+<div id="popup2" class="popup2" ><div class="loader"></div><br/>LOADING</div>
+
+
+<nbox hidden></nbox>
+<language1 hidden>eng</language1>
+<ben hidden>বাংলা</ben>
+
+
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+  <div w3-in="https://cdn.jsdelivr.net/gh/gkcube/html@v1.0.6/test.html"></div> 
+
+
+
+<script>
+includeHTML(); swiper();
+</script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+<script defer src="swiper-settings.js"></script>
+
+
+<script src="storage-1.js"></script>
+<script src="animal-language.js"></script>
+<script>
+$(document).ready(function() {cont();$('.loading').click(function(){$('body').css({'pointer-events':'none'});$('#popup2').show(); }); });
+window.onload = function() {$('body').css({'pointer-events':'auto'}); $("#popup2").fadeOut('slow'); };
+ 
+</script>
+
+</html>
