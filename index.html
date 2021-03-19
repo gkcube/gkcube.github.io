@@ -1658,4 +1658,10 @@ var y = document.getElementById("Audio1"); function Audio1() { y.play();}</scrip
 $("#popup2").fadeOut('slow'); $('body').css({'pointer-events':'auto'});}sessionStorage.setItem('f1','t'); 
                                                      }, 300);   }); </script>
 
+<script>
+window.onload = function() {$("#popup2").fadeOut('slow'); $('body').css({'pointer-events':'auto'});};
+$(document).ready(function() {cont();$('.loading').click(function(){$('body').css({'pointer-events':'none'});$('#popup2').show(); }); });
+ 
+</script>
+
 </html>
