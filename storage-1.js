@@ -1,5 +1,3 @@
-<!-- Correct Button and Wrong Button Local Storage -->
-
 function ccc() {document.getElementById('sbox').stepUp(4);
 localStorage.setItem('q1', $('#sbox').val());$(".next-right").addClass("mynext");}
 
@@ -67,7 +65,7 @@ function cbs57(){localStorage.setItem('57c1','t');localStorage.removeItem('57w1'
 function cbs58(){localStorage.setItem('58c1','t');localStorage.removeItem('58w1');ccc();}
 function cbs59(){localStorage.setItem('59c1','t');localStorage.removeItem('59w1');ccc();}
 function cbs60(){localStorage.setItem('60c1','t');localStorage.removeItem('60w1');ccc();}
-<!-- WBS = Wrong Button Storage -->
+
 function wbs1(){localStorage.setItem('1w1','t');www();}
 function wbs2(){localStorage.setItem('2w1','t');www();}
 function wbs3(){localStorage.setItem('3w1','t');www();}
