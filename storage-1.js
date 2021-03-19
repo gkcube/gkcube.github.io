@@ -6,6 +6,7 @@ localStorage.setItem('q1', $('#sbox').val());$(".next-right").addClass("mynext")
 function www() {document.getElementById('sbox').stepDown(1);
 localStorage.setItem('q1', $('#sbox').val());}
 
+  <!-- CBS = Correct Button Storage -->
 function cbs1(){localStorage.setItem('1c1','t');localStorage.removeItem('1w1');ccc();}
 function cbs2(){localStorage.setItem('2c1','t');localStorage.removeItem('2w1');ccc();}
 function cbs3(){localStorage.setItem('3c1','t');localStorage.removeItem('3w1');ccc();}
@@ -66,7 +67,7 @@ function cbs57(){localStorage.setItem('57c1','t');localStorage.removeItem('57w1'
 function cbs58(){localStorage.setItem('58c1','t');localStorage.removeItem('58w1');ccc();}
 function cbs59(){localStorage.setItem('59c1','t');localStorage.removeItem('59w1');ccc();}
 function cbs60(){localStorage.setItem('60c1','t');localStorage.removeItem('60w1');ccc();}
-
+<!-- WBS = Wrong Button Storage -->
 function wbs1(){localStorage.setItem('1w1','t');www();}
 function wbs2(){localStorage.setItem('2w1','t');www();}
 function wbs3(){localStorage.setItem('3w1','t');www();}
@@ -128,7 +129,8 @@ function wbs58(){localStorage.setItem('58w1','t');www();}
 function wbs59(){localStorage.setItem('59w1','t');www();}
 function wbs60(){localStorage.setItem('60w1','t');www();}
 
-function cont(){var q1 = localStorage.getItem('q1'); $('#sbox').val(q1);
+function cont(){var q1 = localStorage.getItem('q1');
+ $('#sbox').val(q1);
 
 if(localStorage.getItem('1w1') === 't'){$('wm1').show();}
 if(localStorage.getItem('2w1') === 't'){$('wm2').show();}
@@ -259,7 +261,7 @@ else {
 $('cl').html('GO TO<br/>BENGALI');}
                 
                 
-$(document).ready(function() {
+$(document).ready(function() {if(location.hash){window.history.back();}
 
 $('.resetbutton').click(function(){$('body').css({'pointer-events':'none'});$('#popup2').show();
 let remove = ['q1','1w1','2w1','3w1','4w1','5w1','6w1','7w1','8w1','9w1','10w1','11w1','12w1','13w1','14w1','15w1','16w1','17w1','18w1','19w1','20w1','21w1','22w1','23w1','24w1','25w1','26w1','27w1','28w1','29w1','30w1','31w1','32w1','33w1','34w1','35w1','36w1','37w1','38w1','39w1','40w1','41w1','42w1','43w1','44w1','45w1','46w1','47w1','48w1','49w1','50w1','51w1','52w1','53w1','54w1','55w1','56w1','57w1','58w1','59w1','60w1','1c1','2c1','3c1','4c1','5c1','6c1','7c1','8c1','9c1','10c1','11c1','12c1','13c1','14c1','15c1','16c1','17c1','18c1','19c1','20c1','21c1','22c1','23c1','24c1','25c1','26c1','27c1','28c1','29c1','30c1','31c1','32c1','33c1','34c1','35c1','36c1','37c1','38c1','39c1','40c1','41c1','42c1','43c1','44c1','45c1','46c1','47c1','48c1','49c1','50c1','51c1','52c1','53c1','54c1','55c1','56c1','57c1','58c1','59c1','60c1','n1'];
