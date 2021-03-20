@@ -74,11 +74,9 @@ var y = document.getElementById("Audio1"); function Audio1() { y.play();}</scrip
   onhashchange = function (){ if(location.hash){ } else{$("#popup").fadeOut('fast');}}
   function rhash() { if(location.hash){ history.back();$("#popup").fadeOut('fast');}   
     else {  location.hash = "go";$("#popup").fadeIn('fast'); }    }
-
-
 </script>
-	
-<nbox hidden></nbox>
+	<script src="storage-1.js"></script>
+
 <language1 hidden>eng</language1>
 <ben hidden>বাংলা</ben>
 
@@ -1650,13 +1648,8 @@ var y = document.getElementById("Audio1"); function Audio1() { y.play();}</scrip
 
 <script defer src="swiper-settings.js"></script>
 
-
-<script src="storage-1.js"></script>
 <script src="animal-language.js"></script>
-<script>
- $(document).ready(function() {setTimeout(function() {if(sessionStorage.getItem('f1') === 't'){
-$("#popup2").fadeOut('slow'); $('body').css({'pointer-events':'auto'});}sessionStorage.setItem('f1','t'); 
-                                                     }, 300);   }); </script>
+
 
 <script>
 window.onload = function() {$("#popup2").fadeOut('slow'); $('body').css({'pointer-events':'auto'});};
