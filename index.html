@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2.0.0</title>
+    <title>2.0.1</title>
     <link rel="stylesheet" type="text/css" href="theme2.css">
 	 <script src='jquery.min.js'/></script>
 </head>
@@ -1652,8 +1652,9 @@ var y = document.getElementById("Audio1"); function Audio1() { y.play();}</scrip
 
 
 <script>
-window.onload = function() {$("#popup2").fadeOut('slow'); $('body').css({'pointer-events':'auto'});};
-$(document).ready(function() {cont();$('.loading').click(function(){$('body').css({'pointer-events':'none'});$('#popup2').show(); }); });
+	$(document).ready(function() {cont();$('.loading').click(function(){$('body').css({'pointer-events':'none'});$('#popup2').show(); }); });
+window.onload = function() {setTimeout(function() {$("#popup2").fadeOut('slow'); $('body').css({'pointer-events':'auto'});  }, 300);  };
+
  
 </script>
 
