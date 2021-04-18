@@ -6,16 +6,16 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2.0.0.2</title>
-	<style> #name {font-siz:100px;}</style>
+	<style> #name {font-size:100px;}</style>
 	<div id="name"></div>
 	
 	
 	<script>
 	var url = location.href;;
 var p = url.split("/");
-var l = p[p.length-2];
-		str.replace(/%20, " ");
-document.getElementById('name').innerHTML = l;
+var l = p[p.length-1];
+var m = l.split('%20').join(' ');
+document.getElementById('name').innerHTML = m;
 		
 	</script>
 	
