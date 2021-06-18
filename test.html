@@ -1,10 +1,65 @@
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
 001
 
+<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
+<div style="height:54px;"></div>
+
+<script>
+var x = navigator.onLine;
+if (x == false){location.reload();}
+
+function delayloading() {
+
+setTimeout(function() {if($('#popup2').is(':visible')) { $('loading').html('NETWORK SLOW');
+setTimeout(function() { $('loading').html('RETRYING');}, 1000);} }, 7000);
+setTimeout(function() {if($('#popup2').is(':visible')) { location.reload();} }, 10000); }
+delayloading(); 
+
+function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
+function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
+
+</script>
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
 
 
 
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="material-icons" style="font-size:25px;"><toolicon></toolicon></i></button>
 
+<toolimg></toolimg>
+<button class="tooltitle"></button>
+	
+	
+	<quizbtn>
+
+<div class="scorebg">
+<button id="score1"><score>Score</score> : </button><div class="sbox1"><input type="text" id="sbox" value="0" readonly/></div>
+<button class="togglereset sreset"><reset>Reset</reset></button>
+
+</div>
+
+
+<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
+</quizbtn> 
+<next-previous-buttons>
+
+
+<button class="next-previous next-left"><i class="material-icons">&#xe5cb</i></button>
+  
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+
+<button class="next-previous next-right"><i class="material-icons">&#xe5cc</i></button>
+ 
+  
+</next-previous-buttons>
 <style>
 	body {max-width:700px;user-select: none;
 
@@ -224,11 +279,6 @@ wm1,wm2,wm3,wm4,wm5,wm6,wm7,wm8,wm9,wm10,wm11,wm12,wm13,wm14,wm15,wm16,wm17,wm18
 #belowpopup {display:none; position:fixed; width:100%;top:0;left:0; height:100vh; background-color:rgba(0, 0, 0, 0.5);z-index:10;}
 	
 </style>
-
-
-
-
-
 
 <audio id="Audio2" preload="auto">
   <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
