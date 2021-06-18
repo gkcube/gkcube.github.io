@@ -227,65 +227,7 @@ wm1,wm2,wm3,wm4,wm5,wm6,wm7,wm8,wm9,wm10,wm11,wm12,wm13,wm14,wm15,wm16,wm17,wm18
 
 
 
-<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
-<div style="height:54px;"></div>
 
-<script>
-var x = navigator.onLine;
-if (x == false){location.reload();}
-
-function delayloading() {
-
-setTimeout(function() {if($('#popup2').is(':visible')) { $('loading').html('NETWORK SLOW');
-setTimeout(function() { $('loading').html('RETRYING');}, 1000);} }, 7000);
-setTimeout(function() {if($('#popup2').is(':visible')) { location.reload();} }, 10000); }
-delayloading(); 
-
-function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
-function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
-
-</script>
-<div id="popup2" class="popup2">
-<div class="loadshadow">
-<div class="loader">
-</div>
-<br/>
-<loading>LOADING</loading>
-</div>
-</div>
-
-
-
-<div id="sticky">
-<div class="subhead">
-<button id="closebtn" class="lockb" onclick="toolicon()"><i class="material-icons" style="font-size:25px;"><toolicon></toolicon></i></button>
-
-<toolimg></toolimg>
-<button class="tooltitle"></button>
-	
-	
-	<quizbtn>
-
-<div class="scorebg">
-<button id="score1"><score>Score</score> : </button><div class="sbox1"><input type="text" id="sbox" value="0" readonly/></div>
-<button class="togglereset sreset"><reset>Reset</reset></button>
-
-</div>
-
-
-<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
-</quizbtn> 
-<next-previous-buttons>
-
-
-<button class="next-previous next-left"><i class="material-icons">&#xe5cb</i></button>
-  
-<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
-
-<button class="next-previous next-right"><i class="material-icons">&#xe5cc</i></button>
- 
-  
-</next-previous-buttons>
 
 
 <audio id="Audio2" preload="auto">
