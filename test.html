@@ -1,0 +1,3247 @@
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+001
+
+<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
+<div style="height:54px;"></div>
+
+<script>
+var x = navigator.onLine;
+if (x == false){location.reload();}
+
+function delayloading() {
+
+setTimeout(function() {if($('#popup2').is(':visible')) { $('loading').html('NETWORK SLOW');
+setTimeout(function() { $('loading').html('RETRYING');}, 1000);} }, 7000);
+setTimeout(function() {if($('#popup2').is(':visible')) { location.reload();} }, 10000); }
+delayloading(); 
+
+function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
+function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
+
+</script>
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
+
+
+
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="material-icons" style="font-size:25px;"><toolicon></toolicon></i></button>
+
+<toolimg></toolimg>
+<button class="tooltitle"></button>
+	
+	
+	<quizbtn>
+
+<div class="scorebg">
+<button id="score1"><score>Score</score> : </button><div class="sbox1"><input type="text" id="sbox" value="0" readonly/></div>
+<button class="togglereset sreset"><reset>Reset</reset></button>
+
+</div>
+
+
+<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
+</quizbtn> 
+<next-previous-buttons>
+
+
+<button class="next-previous next-left"><i class="material-icons">&#xe5cb</i></button>
+  
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+
+<button class="next-previous next-right"><i class="material-icons">&#xe5cc</i></button>
+ 
+  
+</next-previous-buttons>
+<style>
+	body {max-width:700px;user-select: none;
+
+
+background-image: url("https://cdn.jsdelivr.net/gh/gkcube/images/css-3.png");
+background-color: #94d4ff;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: 180px 180px;
+
+}
+
+html.v2 {padding:0px;}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img, .BlogList .item-thumbnail img {
+  padding: 0px !important;
+  background: none;
+  box-shadow: 0px 0px 0px transparent;}
+
+.lockb {pointer-events:none}
+
+
+
+.swiper-wrapper {margin-bottom:100px;}
+
+
+
+@font-face {font-display:swap;font-family: Zen Dots; src: url(https://cdn.jsdelivr.net/gh/gkcube/fonts/ZenDots.woff2) format('woff2');}
+@font-face {font-family: SolaimanLipi; src: url(https://cdn.jsdelivr.net/gh/gkcube/fonts/SolaimanLipi.woff) format('woff');}
+@font-face {font-family: Quicksand; src: url(https://cdn.jsdelivr.net/gh/gkcube/fonts/Quicksand.woff2) format('woff2');}
+
+@font-face {font-display:block;font-family: 'Material Icons';font-style: normal; font-weight: 400; src: url(https://cdn.jsdelivr.net/gh/gkcube/fonts/MaterialIcons.woff2) format('woff2');}
+#bengali {font-weight:500;}
+ben {font-family:SolaimanLipi;line-height:1;}
+eng {font-family: Quicksand;}
+bengali {font-family:SolaimanLipi;}
+
+
+.popup2 {
+background-image: url("https://cdn.jsdelivr.net/gh/gkcube/images/css-3.png");
+background-color: #94d4ff;
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: 180px 180px;
+
+
+width:100%;height:100vh;top:0;left:0;position:fixed; z-index:4;text-align:center;color:black;font-family:Quicksand; 
+
+}
+
+.loadshadow {box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);padding-top:25px;width:120px;height:95px;margin: 0px auto 0px auto;border-radius:10px;margin-top:40vh;}
+
+.loader {margin-left:auto;margin-right:auto; border: 2px solid transparent;border-radius: 100%;border-left: 2px solid #3498db;border-right: 2px solid #a8044b;width: 30px;height: 30px; animation: spin 0.8s linear infinite;z-index:4;}
+  @keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+
+
+
+
+.post-title {display:none;}
+
+.mobile-desktop-link {display:none;}
+brtag {margin-top:15px; display:inline-block;width:100%;}
+
+.material-icons {font-family: 'Material Icons';font-weight: normal;font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none;
+  display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; font-feature-settings: 'liga'; text-rendering: optimizeLegibility;
+vertical-align:middle;}
+
+button {outline: none;user-select: none;hover:none;border:none;padding:none;box-shadow:none;background:none;color:white;font-family:quicksand;}
+
+#blog-pager {display:none;}
+
+.pagebar {background: linear-gradient(to right, #32334F 0%, #141527 100%);text-align:center; padding-top: 2px;
+padding-bottom: 2px;margin-left:-2px;margin-right:-2px;font-size:15px;}
+
+.post-footer {display:none !important;}
+
+#sticky { position: fixed; margin-bottom:300px; top: 0px; left: 0px; z-index: 10; width:100%;}
+
+.subhead {background-image: linear-gradient(to right, #3280e7, #2c77db, #256dcf, #1d64c3, #155bb7); color: white; text-align:left; solid; width:100%;height:54px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);padding-top:2px;}
+.subhead img {float:left;margin:6px 0px 0px 6px;}
+
+.subhead abc {background-color:transparent; font-size:17px; color:white; border:0px solid #C8C8C8; margin-top:10px; font-weight: normal;display:inline-block;padding:3px 7px 1px 7px;border-top-left-radius:20px;border-bottom-right-radius:20px;}
+
+
+toolimg {float:left;}
+.tooltitle {height:51.5px; line-height:1.1;display:none;}
+tool1{font-size:15px;background-color:#c85f5a; border-radius:20px;padding: 2px 6px 2px 5px; float:left;border-bottom-left-radius:0px;border-top-left-radius:15px;}
+
+tool2 {font-size:15px;background-color:#2E4053;border-radius:20px;padding: 2px 6px 2px 5px; float:left; border-top-left-radius:0px;border-bottom-left-radius:15px;}
+
+
+tool1h {
+    
+    font-family:Zen Dots; 
+    font-size:22px;}
+  
+  tool2h {
+    font-size:14px;
+    line-height:0;
+    background-color:#1E569D;
+    border-radius:50px;
+    padding: 0px 4px 0px 4px;}
+
+#closebtn {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px; float:left; margin:3px 0px 0px 8px;text-align:center;color:#fff;transition-duration: 0.2s;}
+#closebtn:active {color:black;}
+#closebtnr {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px;float:right; margin:3px 8px 0px 0px; color:#fff;transition-duration: 0.2s;}
+
+#closebtnr:active {color:black;}
+
+.mmb {background-image: linear-gradient(to left, #406599, #3f5b94, #3f518d, #414786, #443c7e); color: white;font-size: 15px; margin-bottom:0px;margin-top:-20px; height:60px;  width: 100%; text-align: center;border-width:0px; font-family: Quicksand; font-weight:500;border-radius:100px; border-top-left-radius:100px;border-top-right-radius:100px;max-width:100%;float:left;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);}
+
+.mmb ben {font-size:16px;}
+
+.indextable {color: black; font-weight: normal; font-size: 15px; text-decoration: none; text-align: center; width:calc(100% - 6px); font-family:quicksand; border-radius: 20px; user-select:none; margin-bottom:60px;margin-right:auto;margin-left:auto;padding: 3px 3px 3px 3px; padding-bottom:10px;z-index:1200;}
+
+
+.indextable hr {border:0;border-top: 1px solid #333333;}
+
+.indextable img {margin:auto;display:block;text-align:center;user-select:none;}
+
+.indextable td {padding:6px;}
+
+.intable {padding:0px;border:0px solid white;background-color:transparent;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0);border-radius:10px;}
+
+.intable .image-wrapper2 img {border-radius:1000px;width:75%;border: 7px solid #5e6fa3;background-color: #9d3c2f;}
+
+.image-wrapper2 {height:0;padding-bottom:78%;padding-top:3%;border-radius:0px;border-top-right-radius:1000px;border-top-left-radius:1000px;margin:auto;}
+
+.heading {padding:10px 0px 10px 0px;background-color:#138D75;border-radius:100px;color:white;margin-top:8px;}
+
+.mytable ben {font-size:16px;}
+div#ContactForm1 { display: none !important;}
+
+.mytable { color: black; font-size: 15px; text-align: center; width:calc(100% - 12px); font-family:quicksand; margin-top:10px;margin-bottom:0px;margin-right:auto;margin-left:auto;padding: 8px 6px 3px 6px; }
+.mytable hr {border:0;border-top: 1px solid #333333;}
+
+.mytable img {margin:auto;display:block;text-align:center;}
+
+
+quizbtn {background-image: linear-gradient(to left, #406599, #3f5b94, #3f518d, #414786, #443c7e);position:fixed; bottom:55px;width:84%;left:8%;z-index:3; border-top-right-radius:25px;border-top-left-radius:25px;}
+
+.scorebg {background-color:#2f2956;border-radius: 5px;border-top-left-radius: 22.5px;  width:calc(73% - 7.25px);float:left;height:45px;margin: 5px 0px 5px 5px;}
+
+#score1 {background-color:transparent;width:32%;min-width:58px;float:left;color:white;font-family:quicksand;font-size: 15px;padding-bottom:3px;height:45px;}
+
+.sbox1 {width:calc(34% - 3.5px);background-color:transparent;margin: 3.5px 0px 0px 0px;float:left;height:36px;}
+
+#sbox {width:calc(100% - 3.5px);height:100%;background-color:#443c7e;border:none;border-radius:5px;color: white;font-family:quicksand;text-align:center;font-size: 16px;pointer-events:none;}
+
+.sreset {height:38px;margin: 3.5px 0px 0px 3.5px;width:calc(34% - 3.5px);float:left;background-color:#443c7e;border-radius:5px;color: white;font-family:quicksand;font-size: 15px;transition-duration: 0.2s;}
+.sreset:active {background-color:#000000;}
+
+.resetb {background-color:#2f2956;text-align:center; border-width:0px; color: #fff; font-size: 15px; width:calc(27% - 7.25px);border-radius:5px;border-top-right-radius:22.5px;font-family:quicksand;float:right;height:45px;margin:5px 5px 5px 0px;padding-bottom:3px;transition-duration: 0.2s;}
+.resetb:active {background-color:black;}
+
+.dbox {background-color:white;width:80%;height:100px;position:fixed;bottom:120px;left:10%;z-index:2;border-radius:5px;color:black;text-align:center;padding:20px 0px 0px 0px;font-family:quicksand;}
+
+.resetbutton {background-image: linear-gradient(to right, #406599, #3f5b94, #3f518d, #414786, #443c7e);text-align:center; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);border-width:0px; color: #fff; font-size: 15px; width:35%;border-radius:5px;font-family:quicksand;float:left;height:45px;margin:3px 0px 0px 10%;padding-bottom:3px;}
+div#ContactForm1 { display: none !important;}
+
+.touch-option {z-index: 1;min-height:30px;height:30px;background: linear-gradient(to left, #c85f5a, #A74F4B);color:white;border-radius:20px;margin:-15px 0px 0px 0px;width:80%;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);font-family:quicksand;font-size: 15px;float:left;position:absolute;left:10%;}
+
+next-previous-buttons {background-image: linear-gradient(to right, #406599, #3f5b94, #3f518d, #414786, #443c7e);position:fixed; bottom:0;width:100%;left:0;z-index:3;border-top-right-radius:25px;border-top-left-radius:25px;}
+ 
+.next-previous {background-color:#2f2956;width:calc(28% - 5px); border: 0px solid #7A1313;border-left-width:0px; color: white;font-weight: 300; font-size: 10px; margin: 5px 0px 5px 5px; max-height:45px;height:45px; text-align: center; border-radius:5px;border-top-left-radius:22.5px; font-family:quicksand;float:left;transition-duration: 0.2s;}
+
+.next-previous:active{background-color:#000000;}
+.next-right {margin: 5px 5px 5px 0px;float:right;border-radius:5px;border-top-right-radius:22.5px;}
+
+.next-previous .material-icons {font-size:40px;margin-top:0px;}
+
+.goshowleft {background-color:#423a78;text-align:center; border: 0px solid #7A1313;border-radius:5px; color: white; font-weight: normal; font-size: 12px; padding-top:7px;padding-bottom:7px; width: calc(44% - 10px);font-family:quicksand;z-index: 1000;float:left;height:45px;margin:5px 0px 5px 5px;transition-duration: 0.2s;}
+
+#lc1 {background-color:#138D75; width:50%;height:100%;border-radius:4px;font-size: 12px;} 
+  #lc2 {width:50%;height:100%;font-size: 12px;}
+
+.mynext .material-icons {animation-name: mymove;animation-duration: 2s;animation-iteration-count: infinite;}
+@keyframes mymove {0%   {margin-left: 0px;} 50%  {margin-left: 30px;} 100% {margin-left: 0px;}}
+
+.goto-1 {border-radius: 0px;bottom:0px;position:fixed;left:0;z-index:1000;width:100%;height:54px;background-color:transparent;display:none;}
+
+
+.page-number-input {width: 50%;padding-left:16px;height:44px;border: 2px solid #2d456b; outline:none;margin: -20px -3px 3px 5.5%;box-shadow: inset 0px 0px 0px 0px;vertical-align:middle;box-sizing:border-box;border-top-left-radius: 100px; border-bottom-left-radius: 100px; }
+
+
+.image-wrapper{height:0;padding-bottom:68.0%;border-radius:18px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45); background:url(https://cdn.jsdelivr.net/gh/gkcube/images/loading-1-0-1.svg);
+    background-size: 102px;
+    background-repeat: no-repeat;
+    background-position: center center; }
+.image-wrapper img {width:100%;border-radius:18px;background-color:white;}
+
+.corner-page-number {position: absolute;z-index: 1;background-color:#a8044b;color:white;width:55px;height:30px;border-top-left-radius:18px;border-bottom-right-radius:18px;left:6px;font-family:quicksand;font-size: 16px;}
+
+.optionsection {margin-top:20px;float:left;width:100%}
+.optionbutton {z-index: 1;width: calc(50% - 5px); margin:0px 1px 7px 1px;border:none;background-color:#2f2956;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.50);min-height:65px;font-family:quicksand;color:white;border-radius:5px;font-size:15px; display:inline-block; position:relative;vertical-align:top;}
+
+.wbtr {pointer-events:none; background-color:#C0392B;transition:0.3s;}
+
+.cbutton1 {background-color:green;;border-radius:50px;width: calc(100% - 5px);}
+.cbutton2 {background-color:green;;border-radius:50px;width: 50%;}
+
+.mood1 {background-color:rgba(31, 163, 31, 0.7);border: 0px solid #141414; color: #141414 ; font-weight:bold; font-style: normal; 
+font-size: 20px; padding: 8px 0px 4px 0px; text-align: center;border-radius:15px;border-bottom:0px;height:80px;width:80px;margin-bottom:11px;}
+
+.mood2 {background-color:rgba(227, 2, 2, 0.7); border: 0px solid #141414; color: #141414 ; font-weight: bold; font-style: normal; 
+font-size: 20px; padding: 8px 0px 4px 0px; text-align: center;border-radius:15px;border-bottom:0px;height:80px;width:80px;margin-bottom:11px;}
+
+.mood2 .material-icons, .mood1 .material-icons {font-size: 40px;}
+wm1,wm2,wm3,wm4,wm5,wm6,wm7,wm8,wm9,wm10,wm11,wm12,wm13,wm14,wm15,wm16,wm17,wm18,wm19,wm20,wm21,wm22,wm23,wm24,wm25,wm26,wm27,wm28,wm29,wm30,wm31,wm32,wm33,wm34,wm35,wm36,wm37,wm38,wm39,wm40,wm41,wm42,wm43,wm44,wm45,wm46,wm47,wm48,wm49,wm50,wm51,wm52,wm53,wm54,wm55,wm56,wm57,wm58,wm59,wm60,cm1,cm2,cm3,cm4,cm5,cm6,cm7,cm8,cm9,cm10,cm11,cm12,cm13,cm14,cm15,cm16,cm17,cm18,cm19,cm20,cm21,cm22,cm23,cm24,cm25,cm26,cm27,cm28,cm29,cm30,cm31,cm32,cm33,cm34,cm35,cm36,cm37,cm38,cm39,cm40,cm41,cm42,cm43,cm44,cm45,cm46,cm47,cm48,cm49,cm50,cm51,cm52,cm53,cm54,cm55,cm56,cm57,cm58,cm59,cm60 {display:none;margin-top:-99px;margin-bottom:8px;}
+
+.dropdown-content {
+  display: none;
+  position:fixed;top:60px;right:0;
+}
+.dropdown:hover .dropdown-content {display: block;}
+
+#resetpopup {display:none;z-index:11;}
+#belowpopup {display:none; position:fixed; width:100%;top:0;left:0; height:100vh; background-color:rgba(0, 0, 0, 0.5);z-index:10;}
+	
+</style>
+
+<audio id="Audio2" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/correct.ogg" type="audio/ogg">
+</source></audio>
+
+<script>
+var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}</script>
+
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1.0.0.2/jquery.min.js'></script>
+
+
+
+
+<script>
+  
+  document.getElementsByTagName("toolicon")[0].innerHTML = '&#xe5c4';
+  function toolicon() {window.history.back(); }
+</script>
+
+<div id="belowpopup" onclick="historyback()";></div>
+
+
+<div id="resetpopup" class="dbox">Reset Score (Vegetables)<hr/><div align="center">
+<button class="resetbutton" onclick="historyback()">Cancel</button>
+<button class="doreset resetbutton" onclick="storagereset();">Reset</button>
+
+</div></div>
+
+<script>
+function wb1() {wbs1();$('wm1').finish();$('wm1').hide();$('wm1').slideDown('fast');
+                $(".wbt1").addClass("wbtr");$(".wbt2,.wbt3").removeClass("wbtr");}
+function wb2() {wbs2();$('wm1').finish();$('wm1').hide();$('wm1').slideDown('fast');
+                $(".wbt2").addClass("wbtr");$(".wbt1,.wbt3").removeClass("wbtr");}
+function wb3()  {wbs3();$('wm1').finish();$('wm1').hide();$('wm1').slideDown('fast');
+                 $(".wbt3").addClass("wbtr");$(".wbt2,.wbt1").removeClass("wbtr");}
+
+function wb4()  {wbs4();$('wm2').finish();$('wm2').hide();$('wm2').slideDown('fast');
+                 $(".wbt4").addClass("wbtr");$(".wbt5,.wbt6").removeClass("wbtr");}
+function wb5()  {wbs5();$('wm2').finish();$('wm2').hide();$('wm2').slideDown('fast');
+                 $(".wbt5").addClass("wbtr");$(".wbt4,.wbt6").removeClass("wbtr");}
+function wb6()  {wbs6();$('wm2').finish();$('wm2').hide();$('wm2').slideDown('fast');
+                 $(".wbt6").addClass("wbtr");$(".wbt4,.wbt5").removeClass("wbtr");}
+
+function wb7()  {wbs7();$('wm3').finish();$('wm3').hide();$('wm3').slideDown('fast');
+                $(".wbt7").addClass("wbtr");$(".wbt8,.wbt9").removeClass("wbtr");}
+function wb8()  {wbs8();$('wm3').finish();$('wm3').hide();$('wm3').slideDown('fast');
+                $(".wbt8").addClass("wbtr");$(".wbt7,.wbt9").removeClass("wbtr");}
+function wb9()  {wbs9();$('wm3').finish();$('wm3').hide();$('wm3').slideDown('fast');
+                $(".wbt9").addClass("wbtr");$(".wbt7,.wbt8").removeClass("wbtr");}
+
+function wb10() {wbs10();$('wm4').finish();$('wm4').hide();$('wm4').slideDown('fast');
+                $(".wbt10").addClass("wbtr");$(".wbt11,.wbt12").removeClass("wbtr");}
+function wb11() {wbs11();$('wm4').finish();$('wm4').hide();$('wm4').slideDown('fast');
+                $(".wbt11").addClass("wbtr");$(".wbt10,.wbt12").removeClass("wbtr");}
+function wb12() {wbs12();$('wm4').finish();$('wm4').hide();$('wm4').slideDown('fast');
+                $(".wbt12").addClass("wbtr");$(".wbt10,.wbt11").removeClass("wbtr");}
+
+function wb13() {wbs13();$('wm5').finish();$('wm5').hide();$('wm5').slideDown('fast');
+                $(".wbt13").addClass("wbtr");$(".wbt14,.wbt15").removeClass("wbtr");}
+function wb14() {wbs14();$('wm5').finish();$('wm5').hide();$('wm5').slideDown('fast');
+                $(".wbt14").addClass("wbtr");$(".wbt13,.wbt15").removeClass("wbtr");}
+function wb15() {wbs15();$('wm5').finish();$('wm5').hide();$('wm5').slideDown('fast');
+                $(".wbt15").addClass("wbtr");$(".wbt13,.wbt14").removeClass("wbtr");}
+
+function wb16() {wbs16();$('wm6').finish();$('wm6').hide();$('wm6').slideDown('fast');
+                $(".wbt16").addClass("wbtr");$(".wbt17,.wbt18").removeClass("wbtr");}
+function wb17() {wbs17();$('wm6').finish();$('wm6').hide();$('wm6').slideDown('fast');
+                $(".wbt17").addClass("wbtr");$(".wbt16,.wbt18").removeClass("wbtr");}
+function wb18() {wbs18();$('wm6').finish();$('wm6').hide();$('wm6').slideDown('fast');
+                $(".wbt18").addClass("wbtr");$(".wbt16,.wbt17").removeClass("wbtr");}
+
+function wb19() {wbs19();$('wm7').finish();$('wm7').hide();$('wm7').slideDown('fast');
+                $(".wbt19").addClass("wbtr");$(".wbt20,.wbt21").removeClass("wbtr");}
+function wb20() {wbs20();$('wm7').finish();$('wm7').hide();$('wm7').slideDown('fast');
+                $(".wbt20").addClass("wbtr");$(".wbt19,.wbt21").removeClass("wbtr");}
+function wb21() {wbs21();$('wm7').finish();$('wm7').hide();$('wm7').slideDown('fast');
+                $(".wbt21").addClass("wbtr");$(".wbt19,.wbt20").removeClass("wbtr");}
+
+function wb22() {wbs22();$('wm8').finish();$('wm8').hide();$('wm8').slideDown('fast');
+                $(".wbt22").addClass("wbtr");$(".wbt23,.wbt24").removeClass("wbtr");}
+function wb23() {wbs23();$('wm8').finish();$('wm8').hide();$('wm8').slideDown('fast');
+                $(".wbt23").addClass("wbtr");$(".wbt22,.wbt24").removeClass("wbtr");}
+function wb24() {wbs24();$('wm8').finish();$('wm8').hide();$('wm8').slideDown('fast');
+                $(".wbt24").addClass("wbtr");$(".wbt22,.wbt23").removeClass("wbtr");}
+
+function wb25() {wbs25();$('wm9').finish();$('wm9').hide();$('wm9').slideDown('fast');
+                $(".wbt25").addClass("wbtr");$(".wbt26,.wbt27").removeClass("wbtr");}
+function wb26() {wbs26();$('wm9').finish();$('wm9').hide();$('wm9').slideDown('fast');
+                $(".wbt26").addClass("wbtr");$(".wbt25,.wbt27").removeClass("wbtr");}
+function wb27() {wbs27();$('wm9').finish();$('wm9').hide();$('wm9').slideDown('fast');
+                $(".wbt27").addClass("wbtr");$(".wbt25,.wbt26").removeClass("wbtr");}
+
+function wb28() {wbs28();$('wm10').finish();$('wm10').hide();$('wm10').slideDown('fast');
+                $(".wbt28").addClass("wbtr");$(".wbt29,.wbt30").removeClass("wbtr");}
+function wb29() {wbs29();$('wm10').finish();$('wm10').hide();$('wm10').slideDown('fast');
+                $(".wbt29").addClass("wbtr");$(".wbt28,.wbt30").removeClass("wbtr");}
+function wb30() {wbs30();$('wm10').finish();$('wm10').hide();$('wm10').slideDown('fast');
+                $(".wbt30").addClass("wbtr");$(".wbt28,.wbt29").removeClass("wbtr");}
+
+function wb31() {wbs31();$('wm11').finish();$('wm11').hide();$('wm11').slideDown('fast');
+                $(".wbt31").addClass("wbtr");$(".wbt32,.wbt33").removeClass("wbtr");}
+function wb32() {wbs32();$('wm11').finish();$('wm11').hide();$('wm11').slideDown('fast');
+                $(".wbt32").addClass("wbtr");$(".wbt31,.wbt33").removeClass("wbtr");}
+function wb33() {wbs33();$('wm11').finish();$('wm11').hide();$('wm11').slideDown('fast');
+                $(".wbt33").addClass("wbtr");$(".wbt31,.wbt32").removeClass("wbtr");}
+  
+function wb34() {wbs34();$('wm12').finish();$('wm12').hide();$('wm12').slideDown('fast');
+                $(".wbt34").addClass("wbtr");$(".wbt35,.wbt36").removeClass("wbtr");}
+function wb35() {wbs35();$('wm12').finish();$('wm12').hide();$('wm12').slideDown('fast');
+                $(".wbt35").addClass("wbtr");$(".wbt34,.wbt36").removeClass("wbtr");}
+function wb36() {wbs36();$('wm12').finish();$('wm12').hide();$('wm12').slideDown('fast');
+                $(".wbt36").addClass("wbtr");$(".wbt34,.wbt35").removeClass("wbtr");}
+  
+function wb37() {wbs37();$('wm13').finish();$('wm13').hide();$('wm13').slideDown('fast');
+                $(".wbt37").addClass("wbtr");$(".wbt38,.wbt39").removeClass("wbtr");}
+function wb38() {wbs38();$('wm13').finish();$('wm13').hide();$('wm13').slideDown('fast');
+                $(".wbt38").addClass("wbtr");$(".wbt37,.wbt39").removeClass("wbtr");}
+function wb39() {wbs39();$('wm13').finish();$('wm13').hide();$('wm13').slideDown('fast');
+                $(".wbt39").addClass("wbtr");$(".wbt37,.wbt38").removeClass("wbtr");}
+  
+function wb40() {wbs40();$('wm14').finish();$('wm14').hide();$('wm14').slideDown('fast');
+                $(".wbt40").addClass("wbtr");$(".wbt41,.wbt42").removeClass("wbtr");}
+function wb41() {wbs41();$('wm14').finish();$('wm14').hide();$('wm14').slideDown('fast');
+                $(".wbt41").addClass("wbtr");$(".wbt40,.wbt42").removeClass("wbtr");}
+function wb42() {wbs42();$('wm14').finish();$('wm14').hide();$('wm14').slideDown('fast');
+                $(".wbt42").addClass("wbtr");$(".wbt40,.wbt41").removeClass("wbtr");}
+  
+function wb43() {wbs43();$('wm15').finish();$('wm15').hide();$('wm15').slideDown('fast');
+                $(".wbt43").addClass("wbtr");$(".wbt44,.wbt45").removeClass("wbtr");}
+function wb44() {wbs44();$('wm15').finish();$('wm15').hide();$('wm15').slideDown('fast');
+                $(".wbt44").addClass("wbtr");$(".wbt43,.wbt45").removeClass("wbtr");}
+function wb45() {wbs45();$('wm15').finish();$('wm15').hide();$('wm15').slideDown('fast');
+                $(".wbt45").addClass("wbtr");$(".wbt43,.wbt44").removeClass("wbtr");}
+  
+function wb46() {wbs46();$('wm16').finish();$('wm16').hide();$('wm16').slideDown('fast');
+                $(".wbt46").addClass("wbtr");$(".wbt47,.wbt48").removeClass("wbtr");}
+function wb47() {wbs47();$('wm16').finish();$('wm16').hide();$('wm16').slideDown('fast');
+                $(".wbt47").addClass("wbtr");$(".wbt46,.wbt48").removeClass("wbtr");}
+function wb48() {wbs48();$('wm16').finish();$('wm16').hide();$('wm16').slideDown('fast');
+                $(".wbt48").addClass("wbtr");$(".wbt46,.wbt47").removeClass("wbtr");}
+  
+function wb49() {wbs49();$('wm17').finish();$('wm17').hide();$('wm17').slideDown('fast');
+                $(".wbt49").addClass("wbtr");$(".wbt50,.wbt51").removeClass("wbtr");}
+function wb50() {wbs50();$('wm17').finish();$('wm17').hide();$('wm17').slideDown('fast');
+                $(".wbt50").addClass("wbtr");$(".wbt49,.wbt51").removeClass("wbtr");}
+function wb51() {wbs51();$('wm17').finish();$('wm17').hide();$('wm17').slideDown('fast');
+                $(".wbt51").addClass("wbtr");$(".wbt49,.wbt50").removeClass("wbtr");}
+  
+function wb52() {wbs52();$('wm18').finish();$('wm18').hide();$('wm18').slideDown('fast');
+                $(".wbt52").addClass("wbtr");$(".wbt53,.wbt54").removeClass("wbtr");}
+function wb53() {wbs53();$('wm18').finish();$('wm18').hide();$('wm18').slideDown('fast');
+                $(".wbt53").addClass("wbtr");$(".wbt52,.wbt54").removeClass("wbtr");}
+function wb54() {wbs54();$('wm18').finish();$('wm18').hide();$('wm18').slideDown('fast');
+                $(".wbt54").addClass("wbtr");$(".wbt52,.wbt53").removeClass("wbtr");}
+  
+function wb55() {wbs55();$('wm19').finish();$('wm19').hide();$('wm19').slideDown('fast');
+                $(".wbt55").addClass("wbtr");$(".wbt56,.wbt57").removeClass("wbtr");}
+function wb56() {wbs56();$('wm19').finish();$('wm19').hide();$('wm19').slideDown('fast');
+                $(".wbt56").addClass("wbtr");$(".wbt55,.wbt57").removeClass("wbtr");}
+function wb57() {wbs57();$('wm19').finish();$('wm19').hide();$('wm19').slideDown('fast');
+                $(".wbt57").addClass("wbtr");$(".wbt55,.wbt56").removeClass("wbtr");}
+  
+function wb58() {wbs58();$('wm20').finish();$('wm20').hide();$('wm20').slideDown('fast');
+                $(".wbt58").addClass("wbtr");$(".wbt59,.wbt60").removeClass("wbtr");}
+function wb59() {wbs59();$('wm20').finish();$('wm20').hide();$('wm20').slideDown('fast');
+                $(".wbt59").addClass("wbtr");$(".wbt58,.wbt60").removeClass("wbtr");}
+function wb60() {wbs60();$('wm20').finish();$('wm20').hide();$('wm20').slideDown('fast');
+                $(".wbt60").addClass("wbtr");$(".wbt58,.wbt59").removeClass("wbtr");}
+				
+function wb61() {wbs61();$('wm21').finish();$('wm21').hide();$('wm21').slideDown('fast');
+                $(".wbt61").addClass("wbtr");$(".wbt62,.wbt63").removeClass("wbtr");}
+function wb62() {wbs62();$('wm21').finish();$('wm21').hide();$('wm21').slideDown('fast');
+                $(".wbt2").addClass("wbtr");$(".wbt61,.wbt63").removeClass("wbtr");}
+function wb63()  {wbs63();$('wm21').finish();$('wm21').hide();$('wm21').slideDown('fast');
+                 $(".wbt63").addClass("wbtr");$(".wbt62,.wbt61").removeClass("wbtr");}
+  
+function wb64()  {wbs64();$('wm22').finish();$('wm22').hide();$('wm22').slideDown('fast');
+                 $(".wbt64").addClass("wbtr");$(".wbt65,.wbt66").removeClass("wbtr");}
+function wb65()  {wbs65();$('wm22').finish();$('wm22').hide();$('wm22').slideDown('fast');
+                 $(".wbt65").addClass("wbtr");$(".wbt64,.wbt66").removeClass("wbtr");}
+function wb66()  {wbs66();$('wm22').finish();$('wm22').hide();$('wm22').slideDown('fast');
+                 $(".wbt66").addClass("wbtr");$(".wbt64,.wbt65").removeClass("wbtr");}
+  
+function wb67()  {wbs67();$('wm23').finish();$('wm23').hide();$('wm23').slideDown('fast');
+                $(".wbt67").addClass("wbtr");$(".wbt68,.wbt69").removeClass("wbtr");}
+function wb68()  {wbs68();$('wm23').finish();$('wm23').hide();$('wm23').slideDown('fast');
+                $(".wbt68").addClass("wbtr");$(".wbt67,.wbt69").removeClass("wbtr");}
+function wb69()  {wbs69();$('wm23').finish();$('wm23').hide();$('wm23').slideDown('fast');
+                $(".wbt69").addClass("wbtr");$(".wbt67,.wbt68").removeClass("wbtr");}
+  
+function wb70() {wbs70();$('wm24').finish();$('wm24').hide();$('wm24').slideDown('fast');
+                $(".wbt70").addClass("wbtr");$(".wbt71,.wbt72").removeClass("wbtr");}
+function wb71() {wbs71();$('wm24').finish();$('wm24').hide();$('wm24').slideDown('fast');
+                $(".wbt71").addClass("wbtr");$(".wbt70,.wbt72").removeClass("wbtr");}
+function wb72() {wbs72();$('wm24').finish();$('wm24').hide();$('wm24').slideDown('fast');
+                $(".wbt72").addClass("wbtr");$(".wbt70,.wbt71").removeClass("wbtr");}
+  
+function wb73() {wbs73();$('wm25').finish();$('wm25').hide();$('wm25').slideDown('fast');
+                $(".wbt73").addClass("wbtr");$(".wbt74,.wbt75").removeClass("wbtr");}
+function wb74() {wbs74();$('wm25').finish();$('wm25').hide();$('wm25').slideDown('fast');
+                $(".wbt74").addClass("wbtr");$(".wbt73,.wbt75").removeClass("wbtr");}
+function wb75() {wbs75();$('wm25').finish();$('wm25').hide();$('wm25').slideDown('fast');
+                $(".wbt75").addClass("wbtr");$(".wbt73,.wbt74").removeClass("wbtr");}
+ 
+function wb76() {wbs76();$('wm26').finish();$('wm26').hide();$('wm26').slideDown('fast');
+                $(".wbt76").addClass("wbtr");$(".wbt77,.wbt78").removeClass("wbtr");}
+function wb77() {wbs77();$('wm26').finish();$('wm26').hide();$('wm26').slideDown('fast');
+                $(".wbt77").addClass("wbtr");$(".wbt76,.wbt78").removeClass("wbtr");}
+function wb78() {wbs78();$('wm26').finish();$('wm26').hide();$('wm26').slideDown('fast');
+                $(".wbt78").addClass("wbtr");$(".wbt76,.wbt77").removeClass("wbtr");}
+  
+function wb79() {wbs79();$('wm27').finish();$('wm27').hide();$('wm27').slideDown('fast');
+                $(".wbt79").addClass("wbtr");$(".wbt80,.wbt81").removeClass("wbtr");}
+function wb80() {wbs80();$('wm27').finish();$('wm27').hide();$('wm27').slideDown('fast');
+                $(".wbt80").addClass("wbtr");$(".wbt79,.wbt81").removeClass("wbtr");}
+function wb81() {wbs81();$('wm27').finish();$('wm27').hide();$('wm27').slideDown('fast');
+                $(".wbt81").addClass("wbtr");$(".wbt79,.wbt80").removeClass("wbtr");}
+  
+function wb82() {wbs82();$('wm28').finish();$('wm28').hide();$('wm28').slideDown('fast');
+                $(".wbt82").addClass("wbtr");$(".wbt83,.wbt84").removeClass("wbtr");}
+function wb83() {wbs83();$('wm28').finish();$('wm28').hide();$('wm28').slideDown('fast');
+                $(".wbt83").addClass("wbtr");$(".wbt82,.wbt84").removeClass("wbtr");}
+function wb84() {wbs84();$('wm28').finish();$('wm28').hide();$('wm28').slideDown('fast');
+                $(".wbt84").addClass("wbtr");$(".wbt82,.wbt83").removeClass("wbtr");}
+  
+function wb85() {wbs85();$('wm29').finish();$('wm29').hide();$('wm29').slideDown('fast');
+                $(".wbt85").addClass("wbtr");$(".wbt86,.wbt87").removeClass("wbtr");}
+function wb86() {wbs86();$('wm29').finish();$('wm29').hide();$('wm29').slideDown('fast');
+                $(".wbt86").addClass("wbtr");$(".wbt85,.wbt87").removeClass("wbtr");}
+function wb87() {wbs87();$('wm29').finish();$('wm29').hide();$('wm29').slideDown('fast');
+                $(".wbt87").addClass("wbtr");$(".wbt85,.wbt86").removeClass("wbtr");}
+  
+function wb88() {wbs88();$('wm30').finish();$('wm30').hide();$('wm30').slideDown('fast');
+                $(".wbt88").addClass("wbtr");$(".wbt89,.wbt90").removeClass("wbtr");}
+function wb89() {wbs89();$('wm30').finish();$('wm30').hide();$('wm30').slideDown('fast');
+                $(".wbt89").addClass("wbtr");$(".wbt88,.wbt90").removeClass("wbtr");}
+function wb90() {wbs90();$('wm30').finish();$('wm30').hide();$('wm30').slideDown('fast');
+                $(".wbt90").addClass("wbtr");$(".wbt88,.wbt89").removeClass("wbtr");}
+  
+function wb91() {wbs91();$('wm31').finish();$('wm31').hide();$('wm31').slideDown('fast');
+                $(".wbt91").addClass("wbtr");$(".wbt92,.wbt93").removeClass("wbtr");}
+function wb92() {wbs92();$('wm31').finish();$('wm31').hide();$('wm31').slideDown('fast');
+                $(".wbt92").addClass("wbtr");$(".wbt91,.wbt93").removeClass("wbtr");}
+function wb93() {wbs93();$('wm31').finish();$('wm31').hide();$('wm31').slideDown('fast');
+                $(".wbt93").addClass("wbtr");$(".wbt91,.wbt92").removeClass("wbtr");}
+  
+function wb94() {wbs94();$('wm32').finish();$('wm32').hide();$('wm32').slideDown('fast');
+                $(".wbt94").addClass("wbtr");$(".wbt95,.wbt96").removeClass("wbtr");}
+function wb95() {wbs95();$('wm32').finish();$('wm32').hide();$('wm32').slideDown('fast');
+                $(".wbt95").addClass("wbtr");$(".wbt94,.wbt96").removeClass("wbtr");}
+function wb96() {wbs96();$('wm32').finish();$('wm32').hide();$('wm32').slideDown('fast');
+                $(".wbt96").addClass("wbtr");$(".wbt94,.wbt95").removeClass("wbtr");}
+  
+function wb97() {wbs97();$('wm33').finish();$('wm33').hide();$('wm33').slideDown('fast');
+                $(".wbt97").addClass("wbtr");$(".wbt98,.wbt99").removeClass("wbtr");}
+function wb98() {wbs98();$('wm33').finish();$('wm33').hide();$('wm33').slideDown('fast');
+                $(".wbt98").addClass("wbtr");$(".wbt97,.wbt99").removeClass("wbtr");}
+function wb99() {wbs99();$('wm33').finish();$('wm33').hide();$('wm33').slideDown('fast');
+                $(".wbt99").addClass("wbtr");$(".wbt97,.wbt98").removeClass("wbtr");}
+  
+function wb100() {wbs100();$('wm34').finish();$('wm34').hide();$('wm34').slideDown('fast');
+                $(".wbt100").addClass("wbtr");$(".wbt101,.wbt102").removeClass("wbtr");}
+function wb101() {wbs101();$('wm34').finish();$('wm34').hide();$('wm34').slideDown('fast');
+                $(".wbt101").addClass("wbtr");$(".wbt100,.wbt102").removeClass("wbtr");}
+function wb102() {wbs102();$('wm34').finish();$('wm34').hide();$('wm34').slideDown('fast');
+                $(".wbt102").addClass("wbtr");$(".wbt100,.wbt101").removeClass("wbtr");}
+  
+function wb103() {wbs103();$('wm35').finish();$('wm35').hide();$('wm35').slideDown('fast');
+                $(".wbt103").addClass("wbtr");$(".wbt104,.wbt105").removeClass("wbtr");}
+function wb104() {wbs104();$('wm35').finish();$('wm35').hide();$('wm35').slideDown('fast');
+                $(".wbt104").addClass("wbtr");$(".wbt103,.wbt105").removeClass("wbtr");}
+function wb105() {wbs105();$('wm35').finish();$('wm35').hide();$('wm35').slideDown('fast');
+                $(".wbt105").addClass("wbtr");$(".wbt103,.wbt104").removeClass("wbtr");}
+  
+function wb106() {wbs106();$('wm36').finish();$('wm36').hide();$('wm36').slideDown('fast');
+                $(".wbt106").addClass("wbtr");$(".wbt107,.wbt108").removeClass("wbtr");}
+function wb107() {wbs107();$('wm36').finish();$('wm36').hide();$('wm36').slideDown('fast');
+                $(".wbt107").addClass("wbtr");$(".wbt106,.wbt108").removeClass("wbtr");}
+function wb108() {wbs108();$('wm36').finish();$('wm36').hide();$('wm36').slideDown('fast');
+                $(".wbt108").addClass("wbtr");$(".wbt106,.wbt107").removeClass("wbtr");}
+  
+function wb109() {wbs109();$('wm37').finish();$('wm37').hide();$('wm37').slideDown('fast');
+                $(".wbt109").addClass("wbtr");$(".wbt110,.wbt111").removeClass("wbtr");}
+function wb110() {wbs110();$('wm37').finish();$('wm37').hide();$('wm37').slideDown('fast');
+                $(".wbt110").addClass("wbtr");$(".wbt109,.wbt111").removeClass("wbtr");}
+function wb111() {wbs111();$('wm37').finish();$('wm37').hide();$('wm37').slideDown('fast');
+                $(".wbt111").addClass("wbtr");$(".wbt109,.wbt110").removeClass("wbtr");}
+  
+function wb112() {wbs112();$('wm38').finish();$('wm38').hide();$('wm38').slideDown('fast');
+                $(".wbt112").addClass("wbtr");$(".wbt113,.wbt114").removeClass("wbtr");}
+function wb113() {wbs113();$('wm38').finish();$('wm38').hide();$('wm38').slideDown('fast');
+                $(".wbt113").addClass("wbtr");$(".wbt112,.wbt114").removeClass("wbtr");}
+function wb114() {wbs114();$('wm38').finish();$('wm38').hide();$('wm38').slideDown('fast');
+                $(".wbt114").addClass("wbtr");$(".wbt112,.wbt113").removeClass("wbtr");}
+  
+function wb115() {wbs115();$('wm39').finish();$('wm39').hide();$('wm39').slideDown('fast');
+                $(".wbt115").addClass("wbtr");$(".wbt116,.wbt117").removeClass("wbtr");}
+function wb116() {wbs116();$('wm39').finish();$('wm39').hide();$('wm39').slideDown('fast');
+                $(".wbt116").addClass("wbtr");$(".wbt115,.wbt117").removeClass("wbtr");}
+function wb117() {wbs117();$('wm39').finish();$('wm39').hide();$('wm39').slideDown('fast');
+                $(".wbt117").addClass("wbtr");$(".wbt115,.wbt116").removeClass("wbtr");}
+  
+function wb118() {wbs118();$('wm40').finish();$('wm40').hide();$('wm40').slideDown('fast');
+                $(".wbt118").addClass("wbtr");$(".wbt119,.wbt120").removeClass("wbtr");}
+function wb119() {wbs119();$('wm40').finish();$('wm40').hide();$('wm40').slideDown('fast');
+                $(".wbt119").addClass("wbtr");$(".wbt118,.wbt120").removeClass("wbtr");}
+function wb120() {wbs120();$('wm40').finish();$('wm40').hide();$('wm40').slideDown('fast');
+                $(".wbt120").addClass("wbtr");$(".wbt118,.wbt119").removeClass("wbtr");}
+				
+function wb121() {wbs121();$('wm41').finish();$('wm41').hide();$('wm41').slideDown('fast');
+                $(".wbt121").addClass("wbtr");$(".wbt122,.wbt123").removeClass("wbtr");}
+function wb122() {wbs122();$('wm41').finish();$('wm41').hide();$('wm41').slideDown('fast');
+                $(".wbt122").addClass("wbtr");$(".wbt121,.wbt123").removeClass("wbtr");}
+function wb123()  {wbs123();$('wm41').finish();$('wm41').hide();$('wm41').slideDown('fast');
+                 $(".wbt123").addClass("wbtr");$(".wbt122,.wbt121").removeClass("wbtr");}
+  
+function wb124()  {wbs124();$('wm42').finish();$('wm42').hide();$('wm42').slideDown('fast');
+                 $(".wbt124").addClass("wbtr");$(".wbt125,.wbt126").removeClass("wbtr");}
+function wb125()  {wbs125();$('wm42').finish();$('wm42').hide();$('wm42').slideDown('fast');
+                 $(".wbt125").addClass("wbtr");$(".wbt124,.wbt126").removeClass("wbtr");}
+function wb126()  {wbs126();$('wm42').finish();$('wm42').hide();$('wm42').slideDown('fast');
+                 $(".wbt126").addClass("wbtr");$(".wbt124,.wbt125").removeClass("wbtr");}
+  
+function wb127()  {wbs127();$('wm43').finish();$('wm43').hide();$('wm43').slideDown('fast');
+                $(".wbt127").addClass("wbtr");$(".wbt128,.wbt129").removeClass("wbtr");}
+function wb128()  {wbs128();$('wm43').finish();$('wm43').hide();$('wm43').slideDown('fast');
+                $(".wbt128").addClass("wbtr");$(".wbt127,.wbt129").removeClass("wbtr");}
+function wb129()  {wbs129();$('wm43').finish();$('wm43').hide();$('wm43').slideDown('fast');
+                $(".wbt129").addClass("wbtr");$(".wbt127,.wbt128").removeClass("wbtr");}
+
+function wb130() {wbs130();$('wm44').finish();$('wm44').hide();$('wm44').slideDown('fast');
+                $(".wbt130").addClass("wbtr");$(".wbt131,.wbt132").removeClass("wbtr");}
+function wb131() {wbs131();$('wm44').finish();$('wm44').hide();$('wm44').slideDown('fast');
+                $(".wbt131").addClass("wbtr");$(".wbt130,.wbt132").removeClass("wbtr");}
+function wb132() {wbs132();$('wm44').finish();$('wm44').hide();$('wm44').slideDown('fast');
+                $(".wbt132").addClass("wbtr");$(".wbt130,.wbt131").removeClass("wbtr");}
+
+function wb133() {wbs133();$('wm45').finish();$('wm45').hide();$('wm45').slideDown('fast');
+                $(".wbt133").addClass("wbtr");$(".wbt134,.wbt135").removeClass("wbtr");}
+function wb134() {wbs134();$('wm45').finish();$('wm45').hide();$('wm45').slideDown('fast');
+                $(".wbt134").addClass("wbtr");$(".wbt133,.wbt135").removeClass("wbtr");}
+function wb135() {wbs135();$('wm45').finish();$('wm45').hide();$('wm45').slideDown('fast');
+                $(".wbt135").addClass("wbtr");$(".wbt133,.wbt134").removeClass("wbtr");}
+
+function wb136() {wbs136();$('wm46').finish();$('wm46').hide();$('wm46').slideDown('fast');
+                $(".wbt136").addClass("wbtr");$(".wbt137,.wbt138").removeClass("wbtr");}
+function wb137() {wbs137();$('wm46').finish();$('wm46').hide();$('wm46').slideDown('fast');
+                $(".wbt137").addClass("wbtr");$(".wbt136,.wbt138").removeClass("wbtr");}
+function wb138() {wbs138();$('wm46').finish();$('wm46').hide();$('wm46').slideDown('fast');
+                $(".wbt138").addClass("wbtr");$(".wbt136,.wbt137").removeClass("wbtr");}
+
+function wb139() {wbs139();$('wm47').finish();$('wm47').hide();$('wm47').slideDown('fast');
+                $(".wbt139").addClass("wbtr");$(".wbt140,.wbt141").removeClass("wbtr");}
+function wb140() {wbs140();$('wm47').finish();$('wm47').hide();$('wm47').slideDown('fast');
+                $(".wbt140").addClass("wbtr");$(".wbt139,.wbt141").removeClass("wbtr");}
+function wb141() {wbs141();$('wm47').finish();$('wm47').hide();$('wm47').slideDown('fast');
+                $(".wbt141").addClass("wbtr");$(".wbt139,.wbt140").removeClass("wbtr");}
+
+function wb142() {wbs142();$('wm48').finish();$('wm48').hide();$('wm48').slideDown('fast');
+                $(".wbt142").addClass("wbtr");$(".wbt143,.wbt144").removeClass("wbtr");}
+function wb143() {wbs143();$('wm48').finish();$('wm48').hide();$('wm48').slideDown('fast');
+                $(".wbt143").addClass("wbtr");$(".wbt142,.wbt144").removeClass("wbtr");}
+function wb144() {wbs144();$('wm48').finish();$('wm48').hide();$('wm48').slideDown('fast');
+                $(".wbt144").addClass("wbtr");$(".wbt142,.wbt143").removeClass("wbtr");}
+  
+
+function wb145() {wbs145();$('wm49').finish();$('wm49').hide();$('wm49').slideDown('fast');
+                $(".wbt145").addClass("wbtr");$(".wbt146,.wbt147").removeClass("wbtr");}
+function wb146() {wbs146();$('wm49').finish();$('wm49').hide();$('wm49').slideDown('fast');
+                $(".wbt146").addClass("wbtr");$(".wbt145,.wbt147").removeClass("wbtr");}
+function wb147() {wbs147();$('wm49').finish();$('wm49').hide();$('wm49').slideDown('fast');
+                $(".wbt147").addClass("wbtr");$(".wbt145,.wbt146").removeClass("wbtr");}
+
+function wb148() {wbs148();$('wm50').finish();$('wm50').hide();$('wm50').slideDown('fast');
+                $(".wbt148").addClass("wbtr");$(".wbt149,.wbt150").removeClass("wbtr");}
+function wb149() {wbs149();$('wm50').finish();$('wm50').hide();$('wm50').slideDown('fast');
+                $(".wbt149").addClass("wbtr");$(".wbt148,.wbt150").removeClass("wbtr");}
+function wb150() {wbs150();$('wm50').finish();$('wm50').hide();$('wm50').slideDown('fast');
+                $(".wbt150").addClass("wbtr");$(".wbt148,.wbt149").removeClass("wbtr");}
+
+function wb151() {wbs151();$('wm51').finish();$('wm51').hide();$('wm51').slideDown('fast');
+                $(".wbt151").addClass("wbtr");$(".wbt152,.wbt153").removeClass("wbtr");}
+function wb152() {wbs152();$('wm51').finish();$('wm51').hide();$('wm51').slideDown('fast');
+                $(".wbt152").addClass("wbtr");$(".wbt151,.wbt153").removeClass("wbtr");}
+function wb153() {wbs153();$('wm51').finish();$('wm51').hide();$('wm51').slideDown('fast');
+                $(".wbt153").addClass("wbtr");$(".wbt151,.wbt152").removeClass("wbtr");}
+
+function wb154() {wbs154();$('wm52').finish();$('wm52').hide();$('wm52').slideDown('fast');
+                $(".wbt154").addClass("wbtr");$(".wbt155,.wbt156").removeClass("wbtr");}
+function wb155() {wbs1555();$('wm52').finish();$('wm52').hide();$('wm52').slideDown('fast');
+                $(".wbt155").addClass("wbtr");$(".wbt154,.wbt156").removeClass("wbtr");}
+function wb156() {wbs156();$('wm52').finish();$('wm52').hide();$('wm52').slideDown('fast');
+                $(".wbt156").addClass("wbtr");$(".wbt154,.wbt155").removeClass("wbtr");}
+
+function wb157() {wbs157();$('wm53').finish();$('wm53').hide();$('wm53').slideDown('fast');
+                $(".wbt157").addClass("wbtr");$(".wbt158,.wbt159").removeClass("wbtr");}
+function wb158() {wbs158();$('wm53').finish();$('wm53').hide();$('wm53').slideDown('fast');
+                $(".wbt158").addClass("wbtr");$(".wbt157,.wbt159").removeClass("wbtr");}
+function wb159() {wbs159();$('wm53').finish();$('wm53').hide();$('wm53').slideDown('fast');
+                $(".wbt159").addClass("wbtr");$(".wbt157,.wbt158").removeClass("wbtr");}
+
+function wb160() {wbs160();$('wm54').finish();$('wm54').hide();$('wm54').slideDown('fast');
+                $(".wbt160").addClass("wbtr");$(".wbt161,.wbt162").removeClass("wbtr");}
+function wb161() {wbs161();$('wm54').finish();$('wm54').hide();$('wm54').slideDown('fast');
+                $(".wbt161").addClass("wbtr");$(".wbt160,.wbt162").removeClass("wbtr");}
+function wb162() {wbs162();$('wm54').finish();$('wm54').hide();$('wm54').slideDown('fast');
+                $(".wbt162").addClass("wbtr");$(".wbt160,.wbt161").removeClass("wbtr");}
+
+function wb163() {wbs163();$('wm55').finish();$('wm55').hide();$('wm55').slideDown('fast');
+                $(".wbt163").addClass("wbtr");$(".wbt164,.wbt165").removeClass("wbtr");}
+function wb164() {wbs164();$('wm55').finish();$('wm55').hide();$('wm55').slideDown('fast');
+                $(".wbt164").addClass("wbtr");$(".wbt163,.wbt165").removeClass("wbtr");}
+function wb165() {wbs165();$('wm55').finish();$('wm55').hide();$('wm55').slideDown('fast');
+                $(".wbt165").addClass("wbtr");$(".wbt163,.wbt164").removeClass("wbtr");}
+
+function wb166() {wbs166();$('wm56').finish();$('wm56').hide();$('wm56').slideDown('fast');
+                $(".wbt166").addClass("wbtr");$(".wbt167,.wbt168").removeClass("wbtr");}
+function wb167() {wbs167();$('wm56').finish();$('wm56').hide();$('wm56').slideDown('fast');
+                $(".wbt167").addClass("wbtr");$(".wbt166,.wbt168").removeClass("wbtr");}
+function wb168() {wbs168();$('wm56').finish();$('wm56').hide();$('wm56').slideDown('fast');
+                $(".wbt168").addClass("wbtr");$(".wbt166,.wbt167").removeClass("wbtr");}
+
+function wb169() {wbs169();$('wm57').finish();$('wm57').hide();$('wm57').slideDown('fast');
+                $(".wbt169").addClass("wbtr");$(".wbt170,.wbt171").removeClass("wbtr");}
+function wb170() {wbs170();$('wm57').finish();$('wm57').hide();$('wm57').slideDown('fast');
+                $(".wbt170").addClass("wbtr");$(".wbt169,.wbt171").removeClass("wbtr");}
+function wb171() {wbs171();$('wm57').finish();$('wm57').hide();$('wm57').slideDown('fast');
+                $(".wbt171").addClass("wbtr");$(".wbt169,.wbt170").removeClass("wbtr");}
+
+function wb172() {wbs172();$('wm58').finish();$('wm58').hide();$('wm58').slideDown('fast');
+                $(".wbt172").addClass("wbtr");$(".wbt173,.wbt174").removeClass("wbtr");}
+function wb173() {wbs173();$('wm58').finish();$('wm58').hide();$('wm58').slideDown('fast');
+                $(".wbt173").addClass("wbtr");$(".wbt172,.wbt174").removeClass("wbtr");}
+function wb174() {wbs174();$('wm58').finish();$('wm58').hide();$('wm58').slideDown('fast');
+                $(".wbt174").addClass("wbtr");$(".wbt172,.wbt173").removeClass("wbtr");}
+
+function wb175() {wbs175();$('wm59').finish();$('wm59').hide();$('wm59').slideDown('fast');
+                $(".wbt175").addClass("wbtr");$(".wbt176,.wbt177").removeClass("wbtr");}
+function wb176() {wbs176();$('wm59').finish();$('wm59').hide();$('wm59').slideDown('fast');
+                $(".wbt176").addClass("wbtr");$(".wbt175,.wbt177").removeClass("wbtr");}
+function wb177() {wbs177();$('wm59').finish();$('wm59').hide();$('wm59').slideDown('fast');
+                $(".wbt177").addClass("wbtr");$(".wbt175,.wbt176").removeClass("wbtr");}
+
+function wb178() {wbs178();$('wm60').finish();$('wm60').hide();$('wm60').slideDown('fast');
+                $(".wbt178").addClass("wbtr");$(".wbt179,.wbt180").removeClass("wbtr");}
+function wb179() {wbs179();$('wm60').finish();$('wm60').hide();$('wm60').slideDown('fast');
+                $(".wbt179").addClass("wbtr");$(".wbt178,.wbt180").removeClass("wbtr");}
+function wb180() {wbs180();$('wm60').finish();$('wm60').hide();$('wm60').slideDown('fast');
+                $(".wbt180").addClass("wbtr");$(".wbt178,.wbt179").removeClass("wbtr");}
+
+function cb1() {cbs1(); $('cb1,wh1,wm1').hide();$('ch1').fadeIn();$('cm1').slideDown('fast');}
+
+function cb2() {cbs2(); $('cb2,wh2,wm2').hide();$('ch2').fadeIn();$('cm2').slideDown('fast');}
+
+function cb3() {cbs3(); $('cb3,wh3,wm3').hide();$('ch3').fadeIn();$('cm3').slideDown('fast');}
+
+function cb4() {cbs4(); $('cb4,wh4,wm4').hide();$('ch4').fadeIn();$('cm4').slideDown('fast');}
+
+function cb5() {cbs5(); $('cb5,wh5,wm5').hide();$('ch5').fadeIn();$('cm5').slideDown('fast');}
+
+function cb6() {cbs6(); $('cb6,wh6,wm6').hide();$('ch6').fadeIn();$('cm6').slideDown('fast');}
+
+function cb7() {cbs7(); $('cb7,wh7,wm7').hide();$('ch7').fadeIn();$('cm7').slideDown('fast');}
+
+function cb8() {cbs8(); $('cb8,wh8,wm8').hide();$('ch8').fadeIn();$('cm8').slideDown('fast');}
+
+function cb9() {cbs9(); $('cb9,wh9,wm9').hide();$('ch9').fadeIn();$('cm9').slideDown('fast');}
+
+function cb10() {cbs10(); $('cb10,wh10,wm10').hide();$('ch10').fadeIn();$('cm10').slideDown('fast');}
+
+function cb11() {cbs11(); $('cb11,wh11,wm11').hide();$('ch11').fadeIn();$('cm11').slideDown('fast');}
+
+function cb12() {cbs12(); $('cb12,wh12,wm12').hide();$('ch12').fadeIn();$('cm12').slideDown('fast');}
+
+function cb13() {cbs13(); $('cb13,wh13,wm13').hide();$('ch13').fadeIn();$('cm13').slideDown('fast');}
+
+function cb14() {cbs14(); $('cb14,wh14,wm14').hide();$('ch14').fadeIn();$('cm14').slideDown('fast');}
+
+function cb15() {cbs15(); $('cb15,wh15,wm15').hide();$('ch15').fadeIn();$('cm15').slideDown('fast');}
+
+function cb16() {cbs16(); $('cb16,wh16,wm16').hide();$('ch16').fadeIn();$('cm16').slideDown('fast');}
+
+function cb17() {cbs17(); $('cb17,wh17,wm17').hide();$('ch17').fadeIn();$('cm17').slideDown('fast');}
+
+function cb18() {cbs18(); $('cb18,wh18,wm18').hide();$('ch18').fadeIn();$('cm18').slideDown('fast');}
+
+function cb19() {cbs19(); $('cb19,wh19,wm19').hide();$('ch19').fadeIn();$('cm19').slideDown('fast');}
+
+function cb20() {cbs20(); $('cb20,wh20,wm20').hide();$('ch20').fadeIn();$('cm20').slideDown('fast');}
+
+function cb21() {cbs21(); $('cb21,wh21,wm21').hide();$('ch21').fadeIn();$('cm21').slideDown('fast');}
+
+function cb22() {;cbs22(); $('cb22,wh22,wm22').hide();$('ch22').fadeIn();$('cm22').slideDown('fast');}
+
+function cb23() {cbs23(); $('cb23,wh23,wm23').hide();$('ch23').fadeIn();$('cm23').slideDown('fast');}
+
+function cb24() {cbs24(); $('cb24,wh24,wm23').hide();$('ch24').fadeIn();$('cm24').slideDown('fast');}
+
+function cb25() {cbs25(); $('cb25,wh25,wm25').hide();$('ch25').fadeIn();$('cm25').slideDown('fast');}
+
+function cb26() {cbs26(); $('cb26,wh26,wm26').hide();$('ch26').fadeIn();$('cm26').slideDown('fast');}
+
+function cb27() {cbs27(); $('cb27,wh27,wm27').hide();$('ch27').fadeIn();$('cm27').slideDown('fast');}
+
+function cb28() {cbs28(); $('cb28,wh28,wm28').hide();$('ch28').fadeIn();$('cm28').slideDown('fast');}
+
+function cb29() {cbs29(); $('cb29,wh29,wm29').hide();$('ch29').fadeIn();$('cm29').slideDown('fast');}
+
+function cb30() {cbs30(); $('cb30,wh30,wm30').hide();$('ch30').fadeIn();$('cm30').slideDown('fast');}
+
+function cb31() {cbs31(); $('cb31,wh31,wm31').hide();$('ch31').fadeIn();$('cm31').slideDown('fast');}
+
+function cb32() {cbs32(); $('cb32,wh32,wm32').hide();$('ch32').fadeIn();$('cm32').slideDown('fast');}
+
+function cb33() {cbs33(); $('cb33,wh33,wm33').hide();$('ch33').fadeIn();$('cm33').slideDown('fast');}
+
+function cb34() {cbs34(); $('cb34,wh34,wm34').hide();$('ch34').fadeIn();$('cm34').slideDown('fast');}
+
+function cb35() {cbs35(); $('cb35,wh35,wm35').hide();$('ch35').fadeIn();$('cm35').slideDown('fast');}
+
+function cb36() {cbs36(); $('cb36,wh36,wm36').hide();$('ch36').fadeIn();$('cm36').slideDown('fast');}
+
+function cb37() {cbs37(); $('cb37,wh37,wm37').hide();$('ch37').fadeIn();$('cm37').slideDown('fast');}
+
+function cb38() {cbs38(); $('cb38,wh38,wm38').hide();$('ch38').fadeIn();$('cm38').slideDown('fast');}
+
+function cb39() {cbs39(); $('cb39,wh39,wm39').hide();$('ch39').fadeIn();$('cm39').slideDown('fast');}
+
+function cb40() {cbs40(); $('cb40,wh40,wm40').hide();$('ch40').fadeIn();$('cm40').slideDown('fast');}
+
+function cb41() {cbs41(); $('cb41,wh41,wm41').hide();$('ch41').fadeIn();$('cm41').slideDown('fast');}
+
+function cb42() {cbs42(); $('cb42,wh42,wm42').hide();$('ch42').fadeIn();$('cm42').slideDown('fast');}
+
+function cb43() {cbs43(); $('cb43,wh43,wm43').hide();$('ch43').fadeIn();$('cm43').slideDown('fast');}
+
+function cb44() {cbs44(); $('cb44,wh44,wm44').hide();$('ch44').fadeIn();$('cm44').slideDown('fast');}
+
+function cb45() {cbs45(); $('cb45,wh45,wm45').hide();$('ch45').fadeIn();$('cm45').slideDown('fast');}
+
+function cb46() {cbs46(); $('cb46,wh46,wm46').hide();$('ch46').fadeIn();$('cm46').slideDown('fast');}
+
+function cb47() {cbs47(); $('cb47,wh47,wm47').hide();$('ch47').fadeIn();$('cm47').slideDown('fast');}
+
+function cb48() {cbs48(); $('cb48,wh48,wm48').hide();$('ch48').fadeIn();$('cm48').slideDown('fast');}
+
+function cb49() {cbs49(); $('cb49,wh49,wm49').hide();$('ch49').fadeIn();$('cm49').slideDown('fast');}
+
+function cb50() {cbs50(); $('cb50,wh50,wm50').hide();$('ch50').fadeIn();$('cm50').slideDown('fast');}
+
+function cb51() {cbs51(); $('cb51,wh51,wm51').hide();$('ch51').fadeIn();$('cm51').slideDown('fast');}
+
+function cb52() {cbs52(); $('cb52,wh52,wm52').hide();$('ch52').fadeIn();$('cm52').slideDown('fast');}
+
+function cb53() {cbs53(); $('cb53,wh53,wm53').hide();$('ch53').fadeIn();$('cm53').slideDown('fast');}
+
+function cb54() {cbs54(); $('cb54,wh54,wm54').hide();$('ch54').fadeIn();$('cm54').slideDown('fast');}
+
+function cb55() {cbs55(); $('cb55,wh55,wm55').hide();$('ch55').fadeIn();$('cm55').slideDown('fast');}
+
+function cb56() {cbs56(); $('cb56,wh56,wm56').hide();$('ch56').fadeIn();$('cm56').slideDown('fast');}
+
+function cb57() {cbs57(); $('cb57,wh57,wm57').hide();$('ch57').fadeIn();$('cm57').slideDown('fast');}
+
+function cb58() {cbs58(); $('cb58,wh58,wm58').hide();$('ch58').fadeIn();$('cm58').slideDown('fast');}
+
+function cb59() {cbs59(); $('cb59,wh59,wm59').hide();$('ch59').fadeIn();$('cm59').slideDown('fast');}
+
+function cb60() {cbs60(); $('cb60,wh60,wm60').hide();$('ch60').fadeIn();$('cm60').slideDown('fast');}
+
+
+
+function cbq1() { $('cb1,wh1').hide();$('ch1,cm1').show();}
+function cbq2() { $('cb2,wh2').hide();$('ch2,cm2').show();}
+function cbq3() { $('cb3,wh3').hide();$('ch3,cm3').show();}
+function cbq4() { $('cb4,wh4').hide();$('ch4,cm4').show();}
+function cbq5() { $('cb5,wh5').hide();$('ch5,cm5').show();}
+function cbq6() { $('cb6,wh6').hide();$('ch6,cm6').show();}
+function cbq7() { $('cb7,wh7').hide();$('ch7,cm7').show();}
+function cbq8() { $('cb8,wh8').hide();$('ch8,cm8').show();}
+function cbq9() { $('cb9,wh9').hide();$('ch9,cm9').show();}
+function cbq10() { $('cb10,wh10').hide();$('ch10,cm10').show();}
+function cbq11() { $('cb11,wh11').hide();$('ch11,cm11').show();}
+function cbq12() { $('cb12,wh12').hide();$('ch12,cm12').show();}
+function cbq13() { $('cb13,wh13').hide();$('ch13,cm13').show();}
+function cbq14() { $('cb14,wh14').hide();$('ch14,cm14').show();}
+function cbq15() { $('cb15,wh15').hide();$('ch15,cm15').show();}
+function cbq16() { $('cb16,wh16').hide();$('ch16,cm16').show();}
+function cbq17() { $('cb17,wh17').hide();$('ch17,cm17').show();}
+function cbq18() { $('cb18,wh18').hide();$('ch18,cm18').show();}
+function cbq19() { $('cb19,wh19').hide();$('ch19,cm19').show();}
+function cbq20() { $('cb20,wh20').hide();$('ch20,cm20').show();}
+function cbq21() { $('cb21,wh21').hide();$('ch21,cm21').show();}
+function cbq22() { $('cb22,wh22').hide();$('ch22,cm22').show();}
+function cbq23() { $('cb23,wh23').hide();$('ch23,cm23').show();}
+function cbq24() { $('cb24,wh24').hide();$('ch24,cm24').show();}
+function cbq25() { $('cb25,wh25').hide();$('ch25,cm25').show();}
+function cbq26() { $('cb26,wh26').hide();$('ch26,cm26').show();}
+function cbq27() { $('cb27,wh27').hide();$('ch27,cm27').show();}
+function cbq28() { $('cb28,wh28').hide();$('ch28,cm28').show();}
+function cbq29() { $('cb29,wh29').hide();$('ch29,cm29').show();}
+function cbq30() { $('cb30,wh30').hide();$('ch30,cm30').show();}
+function cbq31() { $('cb31,wh31').hide();$('ch31,cm31').show();}
+function cbq32() { $('cb32,wh32').hide();$('ch32,cm32').show();}
+function cbq33() { $('cb33,wh33').hide();$('ch33,cm33').show();}
+function cbq34() { $('cb34,wh34').hide();$('ch34,cm34').show();}
+function cbq35() { $('cb35,wh35').hide();$('ch35,cm35').show();}
+function cbq36() { $('cb36,wh36').hide();$('ch36,cm36').show();}
+function cbq37() { $('cb37,wh37').hide();$('ch37,cm37').show();}
+function cbq38() { $('cb38,wh38').hide();$('ch38,cm38').show();}
+function cbq39() { $('cb39,wh39').hide();$('ch39,cm39').show();}
+function cbq40() { $('cb40,wh40').hide();$('ch40,cm40').show();}
+function cbq41() { $('cb41,wh41').hide();$('ch41,cm41').show();}
+function cbq42() { $('cb42,wh42').hide();$('ch42,cm42').show();}
+function cbq43() { $('cb43,wh43').hide();$('ch43,cm43').show();}
+function cbq44() { $('cb44,wh44').hide();$('ch44,cm44').show();}
+function cbq45() { $('cb45,wh45').hide();$('ch45,cm45').show();}
+function cbq46() { $('cb46,wh46').hide();$('ch46,cm46').show();}
+function cbq47() { $('cb47,wh47').hide();$('ch47,cm47').show();}
+function cbq48() { $('cb48,wh48').hide();$('ch48,cm48').show();}
+function cbq49() { $('cb49,wh49').hide();$('ch49,cm49').show();}
+function cbq50() { $('cb50,wh50').hide();$('ch50,cm50').show();}
+function cbq51() { $('cb51,wh51').hide();$('ch51,cm51').show();}
+function cbq52() { $('cb52,wh52').hide();$('ch52,cm52').show();}
+function cbq53() { $('cb53,wh53').hide();$('ch53,cm53').show();}
+function cbq54() { $('cb54,wh54').hide();$('ch54,cm54').show();}
+function cbq55() { $('cb55,wh55').hide();$('ch55,cm55').show();}
+function cbq56() { $('cb56,wh56').hide();$('ch56,cm56').show();}
+function cbq57() { $('cb57,wh57').hide();$('ch57,cm57').show();}
+function cbq58() { $('cb58,wh58').hide();$('ch58,cm58').show();}
+function cbq59() { $('cb59,wh59').hide();$('ch59,cm59').show();}
+function cbq60() { $('cb60,wh60').hide();$('ch60,cm60').show();}
+</script>
+<script>
+<!-- Correct Button and Wrong Button Local Storage -->
+var l = localStorage;
+  
+function ccc() {var c = $('#sbox');
+c.val(Number(c.val())+4); l.setItem('q5', c.val());$(".next-right").addClass("mynext");}
+
+function www() {var w = $('#sbox');
+w.val(Number(w.val())-1); l.setItem('q5', w.val());}
+
+  <!-- CBS = Correct Button Storage -->
+function cbs1(){l.setItem('1s5','0');ccc();}
+function cbs2(){l.setItem('2s5','0');ccc();}
+function cbs3(){l.setItem('3s5','0');ccc();}
+function cbs4(){l.setItem('4s5','0');ccc();}
+function cbs5(){l.setItem('5s5','0');ccc();}
+function cbs6(){l.setItem('6s5','0');ccc();}
+function cbs7(){l.setItem('7s5','0');ccc();}
+function cbs8(){l.setItem('8s5','0');ccc();}
+function cbs9(){l.setItem('9s5','0');ccc();}
+function cbs10(){l.setItem('10s5','0');ccc();}
+function cbs11(){l.setItem('11s5','0');ccc();}
+function cbs12(){l.setItem('12s5','0');ccc();}
+function cbs13(){l.setItem('13s5','0');ccc();}
+function cbs14(){l.setItem('14s5','0');ccc();}
+function cbs15(){l.setItem('15s5','0');ccc();}
+function cbs16(){l.setItem('16s5','0');ccc();}
+function cbs17(){l.setItem('17s5','0');ccc();}
+function cbs18(){l.setItem('18s5','0');ccc();}
+function cbs19(){l.setItem('19s5','0');ccc();}
+function cbs20(){l.setItem('20s5','0');ccc();}
+function cbs21(){l.setItem('21s5','0');ccc();}
+function cbs22(){l.setItem('22s5','0');ccc();}
+function cbs23(){l.setItem('23s5','0');ccc();}
+function cbs24(){l.setItem('24s5','0');ccc();}
+function cbs25(){l.setItem('25s5','0');ccc();}
+function cbs26(){l.setItem('26s5','0');ccc();}
+function cbs27(){l.setItem('27s5','0');ccc();}
+function cbs28(){l.setItem('28s5','0');ccc();}
+function cbs29(){l.setItem('29s5','0');ccc();}
+function cbs30(){l.setItem('30s5','0');ccc();}
+function cbs31(){l.setItem('31s5','0');ccc();}
+function cbs32(){l.setItem('32s5','0');ccc();}
+function cbs33(){l.setItem('33s5','0');ccc();}
+function cbs34(){l.setItem('34s5','0');ccc();}
+function cbs35(){l.setItem('35s5','0');ccc();}
+function cbs36(){l.setItem('36s5','0');ccc();}
+function cbs37(){l.setItem('37s5','0');ccc();}
+function cbs38(){l.setItem('38s5','0');ccc();}
+function cbs39(){l.setItem('39s5','0');ccc();}
+function cbs40(){l.setItem('40s5','0');ccc();}
+function cbs41(){l.setItem('41s5','0');ccc();}
+function cbs42(){l.setItem('42s5','0');ccc();}
+function cbs43(){l.setItem('43s5','0');ccc();}
+function cbs44(){l.setItem('44s5','0');ccc();}
+function cbs45(){l.setItem('45s5','0');ccc();}
+function cbs46(){l.setItem('46s5','0');ccc();}
+function cbs47(){l.setItem('47s5','0');ccc();}
+function cbs48(){l.setItem('48s5','0');ccc();}
+function cbs49(){l.setItem('49s5','0');ccc();}
+function cbs50(){l.setItem('50s5','0');ccc();}
+function cbs51(){l.setItem('51s5','0');ccc();}
+function cbs52(){l.setItem('52s5','0');ccc();}
+function cbs53(){l.setItem('53s5','0');ccc();}
+function cbs54(){l.setItem('54s5','0');ccc();}
+function cbs55(){l.setItem('55s5','0');ccc();}
+function cbs56(){l.setItem('56s5','0');ccc();}
+function cbs57(){l.setItem('57s5','0');ccc();}
+function cbs58(){l.setItem('58s5','0');ccc();}
+function cbs59(){l.setItem('59s5','0');ccc();}
+function cbs60(){l.setItem('60s5','0');ccc();}
+
+
+<!-- WBS = Wrong Button Storage -->
+function wbs1(){l.setItem('1s5','1');www();}
+function wbs2(){l.setItem('1s5','2');www();}
+function wbs3(){l.setItem('1s5','3');www();}
+  
+function wbs4(){l.setItem('2s5','1');www();}
+function wbs5(){l.setItem('2s5','2');www();}
+function wbs6(){l.setItem('2s5','3');www();}
+  
+function wbs7(){l.setItem('3s5','1');www();}
+function wbs8(){l.setItem('3s5','2');www();}
+function wbs9(){l.setItem('3s5','3');www();}
+  
+function wbs10(){l.setItem('4s5','1');www();}
+function wbs11(){l.setItem('4s5','2');www();}
+function wbs12(){l.setItem('4s5','3');www();}
+
+function wbs13(){l.setItem('5s5','1');www();}
+function wbs14(){l.setItem('5s5','2');www();}
+function wbs15(){l.setItem('5s5','3');www();}
+  
+function wbs16(){l.setItem('6s5','1');www();}
+function wbs17(){l.setItem('6s5','2');www();}
+function wbs18(){l.setItem('6s5','3');www();}
+  
+function wbs19(){l.setItem('7s5','1');www();}
+function wbs20(){l.setItem('7s5','2');www();}
+function wbs21(){l.setItem('7s5','3');www();}
+  
+function wbs22(){l.setItem('8s5','1');www();}
+function wbs23(){l.setItem('8s5','2');www();}
+function wbs24(){l.setItem('8s5','3');www();}
+  
+function wbs25(){l.setItem('9s5','1');www();}
+function wbs26(){l.setItem('9s5','2');www();}
+function wbs27(){l.setItem('9s5','3');www();}
+  
+function wbs28(){l.setItem('10s5','1');www();}
+function wbs29(){l.setItem('10s5','2');www();}
+function wbs30(){l.setItem('10s5','3');www();}
+  
+function wbs31(){l.setItem('11s5','1');www();}
+function wbs32(){l.setItem('11s5','2');www();}
+function wbs33(){l.setItem('11s5','3');www();}
+  
+function wbs34(){l.setItem('12s5','1');www();}
+function wbs35(){l.setItem('12s5','2');www();}
+function wbs36(){l.setItem('12s5','3');www();}
+  
+function wbs37(){l.setItem('13s5','1');www();}
+function wbs38(){l.setItem('13s5','2');www();}
+function wbs39(){l.setItem('13s5','3');www();}
+  
+function wbs40(){l.setItem('14s5','1');www();}
+function wbs41(){l.setItem('14s5','2');www();}
+function wbs42(){l.setItem('14s5','3');www();}
+  
+function wbs43(){l.setItem('15s5','1');www();}
+function wbs44(){l.setItem('15s5','2');www();}
+function wbs45(){l.setItem('15s5','3');www();}
+  
+function wbs46(){l.setItem('16s5','1');www();}
+function wbs47(){l.setItem('16s5','2');www();}
+function wbs48(){l.setItem('16s5','3');www();}
+  
+function wbs49(){l.setItem('17s5','1');www();}
+function wbs50(){l.setItem('17s5','2');www();}
+function wbs51(){l.setItem('17s5','3');www();}
+  
+function wbs52(){l.setItem('18s5','1');www();}
+function wbs53(){l.setItem('18s5','2');www();}
+function wbs54(){l.setItem('18s5','3');www();}
+  
+function wbs55(){l.setItem('19s5','1');www();}
+function wbs56(){l.setItem('19s5','2');www();}
+function wbs57(){l.setItem('19s5','3');www();}
+  
+function wbs58(){l.setItem('20s5','1');www();}
+function wbs59(){l.setItem('20s5','2');www();}
+function wbs60(){l.setItem('20s5','3');www();}
+
+function wbs61(){l.setItem('21s5','1');www();}
+function wbs62(){l.setItem('21s5','2');www();}
+function wbs63(){l.setItem('21s5','3');www();}
+  
+function wbs64(){l.setItem('22s5','1');www();}
+function wbs65(){l.setItem('22s5','2');www();}
+function wbs66(){l.setItem('22s5','3');www();}
+  
+function wbs67(){l.setItem('23s5','1');www();}
+function wbs68(){l.setItem('23s5','2');www();}
+function wbs69(){l.setItem('23s5','3');www();}
+  
+function wbs70(){l.setItem('24s5','1');www();}
+function wbs71(){l.setItem('24s5','2');www();}
+function wbs72(){l.setItem('24s5','3');www();}
+
+function wbs73(){l.setItem('25s5','1');www();}
+function wbs74(){l.setItem('25s5','2');www();}
+function wbs75(){l.setItem('25s5','3');www();}
+  
+function wbs76(){l.setItem('26s5','1');www();}
+function wbs77(){l.setItem('26s5','2');www();}
+function wbs78(){l.setItem('26s5','3');www();}
+  
+function wbs79(){l.setItem('27s5','1');www();}
+function wbs80(){l.setItem('27s5','2');www();}
+function wbs81(){l.setItem('27s5','3');www();}
+  
+function wbs82(){l.setItem('28s5','1');www();}
+function wbs83(){l.setItem('28s5','2');www();}
+function wbs84(){l.setItem('28s5','3');www();}
+  
+function wbs85(){l.setItem('29s5','1');www();}
+function wbs86(){l.setItem('29s5','2');www();}
+function wbs87(){l.setItem('29s5','3');www();}
+  
+function wbs88(){l.setItem('30s5','1');www();}
+function wbs89(){l.setItem('30s5','2');www();}
+function wbs90(){l.setItem('30s5','3');www();}
+  
+function wbs91(){l.setItem('31s5','1');www();}
+function wbs92(){l.setItem('31s5','2');www();}
+function wbs93(){l.setItem('31s5','3');www();}
+  
+function wbs94(){l.setItem('32s5','1');www();}
+function wbs95(){l.setItem('32s5','2');www();}
+function wbs96(){l.setItem('32s5','3');www();}
+  
+function wbs97(){l.setItem('33s5','1');www();}
+function wbs98(){l.setItem('33s5','2');www();}
+function wbs99(){l.setItem('33s5','3');www();}
+  
+function wbs100(){l.setItem('34s5','1');www();}
+function wbs101(){l.setItem('34s5','2');www();}
+function wbs102(){l.setItem('34s5','3');www();}
+  
+function wbs103(){l.setItem('35s5','1');www();}
+function wbs104(){l.setItem('35s5','2');www();}
+function wbs105(){l.setItem('35s5','3');www();}
+  
+function wbs106(){l.setItem('36s5','1');www();}
+function wbs107(){l.setItem('36s5','2');www();}
+function wbs108(){l.setItem('36s5','3');www();}
+  
+function wbs109(){l.setItem('37s5','1');www();}
+function wbs110(){l.setItem('37s5','2');www();}
+function wbs111(){l.setItem('37s5','3');www();}
+  
+function wbs112(){l.setItem('38s5','1');www();}
+function wbs113(){l.setItem('38s5','2');www();}
+function wbs114(){l.setItem('38s5','3');www();}
+  
+function wbs115(){l.setItem('39s5','1');www();}
+function wbs116(){l.setItem('39s5','2');www();}
+function wbs117(){l.setItem('39s5','3');www();}
+  
+function wbs118(){l.setItem('40s5','1');www();}
+function wbs119(){l.setItem('40s5','2');www();}
+function wbs120(){l.setItem('40s5','3');www();}
+
+function wbs121(){l.setItem('41s5','1');www();}
+function wbs122(){l.setItem('41s5','2');www();}
+function wbs123(){l.setItem('41s5','3');www();}
+  
+function wbs124(){l.setItem('42s5','1');www();}
+function wbs125(){l.setItem('42s5','2');www();}
+function wbs126(){l.setItem('42s5','3');www();}
+  
+function wbs127(){l.setItem('43s5','1');www();}
+function wbs128(){l.setItem('43s5','2');www();}
+function wbs129(){l.setItem('43s5','3');www();}
+  
+function wbs130(){l.setItem('44s5','1');www();}
+function wbs131(){l.setItem('44s5','2');www();}
+function wbs132(){l.setItem('44s5','3');www();}
+
+function wbs133(){l.setItem('45s5','1');www();}
+function wbs134(){l.setItem('45s5','2');www();}
+function wbs135(){l.setItem('45s5','3');www();}
+  
+function wbs136(){l.setItem('46s5','1');www();}
+function wbs137(){l.setItem('46s5','2');www();}
+function wbs138(){l.setItem('46s5','3');www();}
+  
+function wbs139(){l.setItem('47s5','1');www();}
+function wbs140(){l.setItem('47s5','2');www();}
+function wbs141(){l.setItem('47s5','3');www();}
+  
+function wbs142(){l.setItem('48s5','1');www();}
+function wbs143(){l.setItem('48s5','2');www();}
+function wbs144(){l.setItem('48s5','3');www();}
+  
+function wbs145(){l.setItem('49s5','1');www();}
+function wbs146(){l.setItem('49s5','2');www();}
+function wbs147(){l.setItem('49s5','3');www();}
+  
+function wbs148(){l.setItem('50s5','1');www();}
+function wbs149(){l.setItem('50s5','2');www();}
+function wbs150(){l.setItem('50s5','3');www();}
+  
+function wbs151(){l.setItem('51s5','1');www();}
+function wbs152(){l.setItem('51s5','2');www();}
+function wbs153(){l.setItem('51s5','3');www();}
+  
+function wbs154(){l.setItem('52s5','1');www();}
+function wbs155(){l.setItem('52s5','2');www();}
+function wbs156(){l.setItem('52s5','3');www();}
+  
+function wbs157(){l.setItem('53s5','1');www();}
+function wbs158(){l.setItem('53s5','2');www();}
+function wbs159(){l.setItem('53s5','3');www();}
+  
+function wbs160(){l.setItem('54s5','1');www();}
+function wbs161(){l.setItem('54s5','2');www();}
+function wbs162(){l.setItem('54s5','3');www();}
+  
+function wbs163(){l.setItem('55s5','1');www();}
+function wbs164(){l.setItem('55s5','2');www();}
+function wbs165(){l.setItem('55s5','3');www();}
+  
+function wbs166(){l.setItem('56s5','1');www();}
+function wbs167(){l.setItem('56s5','2');www();}
+function wbs168(){l.setItem('56s5','3');www();}
+  
+function wbs169(){l.setItem('57s5','1');www();}
+function wbs170(){l.setItem('57s5','2');www();}
+function wbs171(){l.setItem('57s5','3');www();}
+  
+function wbs172(){l.setItem('58s5','1');www();}
+function wbs173(){l.setItem('58s5','2');www();}
+function wbs174(){l.setItem('58s5','3');www();}
+  
+function wbs175(){l.setItem('59s5','1');www();}
+function wbs176(){l.setItem('59s5','2');www();}
+function wbs177(){l.setItem('59s5','3');www();}
+  
+function wbs178(){l.setItem('60s5','1');www();}
+function wbs179(){l.setItem('60s5','2');www();}
+function wbs180(){l.setItem('60s5','3');www();}
+
+function cont(){
+  
+var q5 = l.getItem('q5');
+
+if(q5){$('#sbox').val(q5);}
+  
+if(l.getItem('1s5') === '1'){$('wm1').show();$(".wbt1").addClass("wbtr");}
+if(l.getItem('1s5') === '2'){$('wm1').show();$(".wbt2").addClass("wbtr");}
+if(l.getItem('1s5') === '3'){$('wm1').show();$(".wbt3").addClass("wbtr");}
+                
+if(l.getItem('2s5') === '1'){$('wm2').show();$(".wbt4").addClass("wbtr");}
+if(l.getItem('2s5') === '2'){$('wm2').show();$(".wbt5").addClass("wbtr");}
+if(l.getItem('2s5') === '3'){$('wm2').show();$(".wbt6").addClass("wbtr");}
+                
+if(l.getItem('3s5') === '1'){$('wm3').show();$(".wbt7").addClass("wbtr");}
+if(l.getItem('3s5') === '2'){$('wm3').show();$(".wbt8").addClass("wbtr");}
+if(l.getItem('3s5') === '3'){$('wm3').show();$(".wbt9").addClass("wbtr");}
+                
+if(l.getItem('4s5') === '1'){$('wm4').show();$(".wbt10").addClass("wbtr");}
+if(l.getItem('4s5') === '2'){$('wm4').show();$(".wbt11").addClass("wbtr");}
+if(l.getItem('4s5') === '3'){$('wm4').show();$(".wbt12").addClass("wbtr");}
+                
+if(l.getItem('5s5') === '1'){$('wm5').show();$(".wbt13").addClass("wbtr");}
+if(l.getItem('5s5') === '2'){$('wm5').show();$(".wbt14").addClass("wbtr");}
+if(l.getItem('5s5') === '3'){$('wm5').show();$(".wbt15").addClass("wbtr");}
+                
+if(l.getItem('6s5') === '1'){$('wm6').show();$(".wbt16").addClass("wbtr");}
+if(l.getItem('6s5') === '2'){$('wm6').show();$(".wbt17").addClass("wbtr");}
+if(l.getItem('6s5') === '3'){$('wm6').show();$(".wbt18").addClass("wbtr");}
+                
+if(l.getItem('7s5') === '1'){$('wm7').show();$(".wbt19").addClass("wbtr");}
+if(l.getItem('7s5') === '2'){$('wm7').show();$(".wbt20").addClass("wbtr");}
+if(l.getItem('7s5') === '3'){$('wm7').show();$(".wbt21").addClass("wbtr");}
+                
+if(l.getItem('8s5') === '1'){$('wm8').show();$(".wbt22").addClass("wbtr");}
+if(l.getItem('8s5') === '2'){$('wm8').show();$(".wbt23").addClass("wbtr");}
+if(l.getItem('8s5') === '3'){$('wm8').show();$(".wbt24").addClass("wbtr");}
+                
+if(l.getItem('9s5') === '1'){$('wm9').show();$(".wbt25").addClass("wbtr");}
+if(l.getItem('9s5') === '2'){$('wm9').show();$(".wbt26").addClass("wbtr");}
+if(l.getItem('9s5') === '3'){$('wm9').show();$(".wbt27").addClass("wbtr");}
+                
+if(l.getItem('10s5') === '1'){$('wm10').show();$(".wbt28").addClass("wbtr");}
+if(l.getItem('10s5') === '2'){$('wm10').show();$(".wbt29").addClass("wbtr");}
+if(l.getItem('10s5') === '3'){$('wm10').show();$(".wbt30").addClass("wbtr");}
+                
+if(l.getItem('11s5') === '1'){$('wm11').show();$(".wbt31").addClass("wbtr");}
+if(l.getItem('11s5') === '2'){$('wm11').show();$(".wbt32").addClass("wbtr");}
+if(l.getItem('11s5') === '3'){$('wm11').show();$(".wbt33").addClass("wbtr");}
+                
+if(l.getItem('12s5') === '1'){$('wm12').show();$(".wbt34").addClass("wbtr");}
+if(l.getItem('12s5') === '2'){$('wm12').show();$(".wbt35").addClass("wbtr");}
+if(l.getItem('12s5') === '3'){$('wm12').show();$(".wbt36").addClass("wbtr");}
+                
+if(l.getItem('13s5') === '1'){$('wm13').show();$(".wbt37").addClass("wbtr");}
+if(l.getItem('13s5') === '2'){$('wm13').show();$(".wbt38").addClass("wbtr");}
+if(l.getItem('13s5') === '3'){$('wm13').show();$(".wbt39").addClass("wbtr");}
+                
+if(l.getItem('14s5') === '1'){$('wm14').show();$(".wbt40").addClass("wbtr");}
+if(l.getItem('14s5') === '2'){$('wm14').show();$(".wbt41").addClass("wbtr");}
+if(l.getItem('14s5') === '3'){$('wm14').show();$(".wbt42").addClass("wbtr");}
+                
+if(l.getItem('15s5') === '1'){$('wm15').show();$(".wbt43").addClass("wbtr");}
+if(l.getItem('15s5') === '2'){$('wm15').show();$(".wbt44").addClass("wbtr");}
+if(l.getItem('15s5') === '3'){$('wm15').show();$(".wbt45").addClass("wbtr");}
+                
+if(l.getItem('16s5') === '1'){$('wm16').show();$(".wbt46").addClass("wbtr");}
+if(l.getItem('16s5') === '2'){$('wm16').show();$(".wbt47").addClass("wbtr");}
+if(l.getItem('16s5') === '3'){$('wm16').show();$(".wbt48").addClass("wbtr");}
+                
+if(l.getItem('17s5') === '1'){$('wm17').show();$(".wbt49").addClass("wbtr");}
+if(l.getItem('17s5') === '2'){$('wm17').show();$(".wbt50").addClass("wbtr");}
+if(l.getItem('17s5') === '3'){$('wm17').show();$(".wbt51").addClass("wbtr");}
+                
+if(l.getItem('18s5') === '1'){$('wm18').show();$(".wbt52").addClass("wbtr");}
+if(l.getItem('18s5') === '2'){$('wm18').show();$(".wbt53").addClass("wbtr");}
+if(l.getItem('18s5') === '3'){$('wm18').show();$(".wbt54").addClass("wbtr");}
+                
+if(l.getItem('19s5') === '1'){$('wm19').show();$(".wbt55").addClass("wbtr");}
+if(l.getItem('19s5') === '2'){$('wm19').show();$(".wbt56").addClass("wbtr");}
+if(l.getItem('19s5') === '3'){$('wm19').show();$(".wbt57").addClass("wbtr");}
+                
+if(l.getItem('20s5') === '1'){$('wm20').show();$(".wbt58").addClass("wbtr");}
+if(l.getItem('20s5') === '2'){$('wm20').show();$(".wbt59").addClass("wbtr");}
+if(l.getItem('20s5') === '3'){$('wm20').show();$(".wbt60").addClass("wbtr");}
+
+if(l.getItem('21s5') === '1'){$('wm21').show();$(".wbt61").addClass("wbtr");}
+if(l.getItem('21s5') === '2'){$('wm21').show();$(".wbt62").addClass("wbtr");}
+if(l.getItem('21s5') === '3'){$('wm21').show();$(".wbt63").addClass("wbtr");}
+                
+if(l.getItem('22s5') === '1'){$('wm22').show();$(".wbt64").addClass("wbtr");}
+if(l.getItem('22s5') === '2'){$('wm22').show();$(".wbt65").addClass("wbtr");}
+if(l.getItem('22s5') === '3'){$('wm22').show();$(".wbt66").addClass("wbtr");}
+                
+if(l.getItem('23s5') === '1'){$('wm23').show();$(".wbt67").addClass("wbtr");}
+if(l.getItem('23s5') === '2'){$('wm23').show();$(".wbt68").addClass("wbtr");}
+if(l.getItem('23s5') === '3'){$('wm23').show();$(".wbt69").addClass("wbtr");}
+                
+if(l.getItem('24s5') === '1'){$('wm24').show();$(".wbt70").addClass("wbtr");}
+if(l.getItem('24s5') === '2'){$('wm24').show();$(".wbt71").addClass("wbtr");}
+if(l.getItem('24s5') === '3'){$('wm24').show();$(".wbt72").addClass("wbtr");}
+                
+if(l.getItem('25s5') === '1'){$('wm25').show();$(".wbt73").addClass("wbtr");}
+if(l.getItem('25s5') === '2'){$('wm25').show();$(".wbt74").addClass("wbtr");}
+if(l.getItem('25s5') === '3'){$('wm25').show();$(".wbt75").addClass("wbtr");}
+                
+if(l.getItem('26s5') === '1'){$('wm26').show();$(".wbt76").addClass("wbtr");}
+if(l.getItem('26s5') === '2'){$('wm26').show();$(".wbt77").addClass("wbtr");}
+if(l.getItem('26s5') === '3'){$('wm26').show();$(".wbt78").addClass("wbtr");}
+                
+if(l.getItem('27s5') === '1'){$('wm27').show();$(".wbt79").addClass("wbtr");}
+if(l.getItem('27s5') === '2'){$('wm27').show();$(".wbt80").addClass("wbtr");}
+if(l.getItem('27s5') === '3'){$('wm27').show();$(".wbt81").addClass("wbtr");}
+                
+if(l.getItem('28s5') === '1'){$('wm28').show();$(".wbt82").addClass("wbtr");}
+if(l.getItem('28s5') === '2'){$('wm28').show();$(".wbt83").addClass("wbtr");}
+if(l.getItem('28s5') === '3'){$('wm28').show();$(".wbt84").addClass("wbtr");}
+                
+if(l.getItem('29s5') === '1'){$('wm29').show();$(".wbt85").addClass("wbtr");}
+if(l.getItem('29s5') === '2'){$('wm29').show();$(".wbt86").addClass("wbtr");}
+if(l.getItem('29s5') === '3'){$('wm29').show();$(".wbt87").addClass("wbtr");}
+                
+if(l.getItem('30s5') === '1'){$('wm30').show();$(".wbt88").addClass("wbtr");}
+if(l.getItem('30s5') === '2'){$('wm30').show();$(".wbt89").addClass("wbtr");}
+if(l.getItem('30s5') === '3'){$('wm30').show();$(".wbt90").addClass("wbtr");}
+                
+if(l.getItem('31s5') === '1'){$('wm31').show();$(".wbt91").addClass("wbtr");}
+if(l.getItem('31s5') === '2'){$('wm31').show();$(".wbt92").addClass("wbtr");}
+if(l.getItem('31s5') === '3'){$('wm31').show();$(".wbt93").addClass("wbtr");}
+                
+if(l.getItem('32s5') === '1'){$('wm32').show();$(".wbt94").addClass("wbtr");}
+if(l.getItem('32s5') === '2'){$('wm32').show();$(".wbt95").addClass("wbtr");}
+if(l.getItem('32s5') === '3'){$('wm32').show();$(".wbt96").addClass("wbtr");}
+                
+if(l.getItem('33s5') === '1'){$('wm33').show();$(".wbt97").addClass("wbtr");}
+if(l.getItem('33s5') === '2'){$('wm33').show();$(".wbt98").addClass("wbtr");}
+if(l.getItem('33s5') === '3'){$('wm33').show();$(".wbt99").addClass("wbtr");}
+                
+if(l.getItem('34s5') === '1'){$('wm34').show();$(".wbt100").addClass("wbtr");}
+if(l.getItem('34s5') === '2'){$('wm34').show();$(".wbt101").addClass("wbtr");}
+if(l.getItem('34s5') === '3'){$('wm34').show();$(".wbt102").addClass("wbtr");}
+                
+if(l.getItem('35s5') === '1'){$('wm35').show();$(".wbt103").addClass("wbtr");}
+if(l.getItem('35s5') === '2'){$('wm35').show();$(".wbt104").addClass("wbtr");}
+if(l.getItem('35s5') === '3'){$('wm35').show();$(".wbt105").addClass("wbtr");}
+                
+if(l.getItem('36s5') === '1'){$('wm36').show();$(".wbt106").addClass("wbtr");}
+if(l.getItem('36s5') === '2'){$('wm36').show();$(".wbt107").addClass("wbtr");}
+if(l.getItem('36s5') === '3'){$('wm36').show();$(".wbt108").addClass("wbtr");}
+                
+if(l.getItem('37s5') === '1'){$('wm37').show();$(".wbt109").addClass("wbtr");}
+if(l.getItem('37s5') === '2'){$('wm37').show();$(".wbt110").addClass("wbtr");}
+if(l.getItem('37s5') === '3'){$('wm37').show();$(".wbt111").addClass("wbtr");}
+                
+if(l.getItem('38s5') === '1'){$('wm38').show();$(".wbt112").addClass("wbtr");}
+if(l.getItem('38s5') === '2'){$('wm38').show();$(".wbt113").addClass("wbtr");}
+if(l.getItem('38s5') === '3'){$('wm38').show();$(".wbt114").addClass("wbtr");}
+                
+if(l.getItem('39s5') === '1'){$('wm39').show();$(".wbt115").addClass("wbtr");}
+if(l.getItem('39s5') === '2'){$('wm39').show();$(".wbt116").addClass("wbtr");}
+if(l.getItem('39s5') === '3'){$('wm39').show();$(".wbt117").addClass("wbtr");}
+                
+if(l.getItem('40s5') === '1'){$('wm40').show();$(".wbt118").addClass("wbtr");}
+if(l.getItem('40s5') === '2'){$('wm40').show();$(".wbt119").addClass("wbtr");}
+if(l.getItem('40s5') === '3'){$('wm40').show();$(".wbt120").addClass("wbtr");}
+
+if(l.getItem('41s5') === '1'){$('wm41').show();$(".wbt121").addClass("wbtr");}
+if(l.getItem('41s5') === '2'){$('wm41').show();$(".wbt122").addClass("wbtr");}
+if(l.getItem('41s5') === '3'){$('wm41').show();$(".wbt123").addClass("wbtr");}
+                
+if(l.getItem('42s5') === '1'){$('wm42').show();$(".wbt124").addClass("wbtr");}
+if(l.getItem('42s5') === '2'){$('wm42').show();$(".wbt125").addClass("wbtr");}
+if(l.getItem('42s5') === '3'){$('wm42').show();$(".wbt126").addClass("wbtr");}
+                
+if(l.getItem('43s5') === '1'){$('wm43').show();$(".wbt127").addClass("wbtr");}
+if(l.getItem('43s5') === '2'){$('wm43').show();$(".wbt128").addClass("wbtr");}
+if(l.getItem('43s5') === '3'){$('wm43').show();$(".wbt129").addClass("wbtr");}
+                
+if(l.getItem('44s5') === '1'){$('wm44').show();$(".wbt130").addClass("wbtr");}
+if(l.getItem('44s5') === '2'){$('wm44').show();$(".wbt131").addClass("wbtr");}
+if(l.getItem('44s5') === '3'){$('wm44').show();$(".wbt132").addClass("wbtr");}
+                
+if(l.getItem('45s5') === '1'){$('wm45').show();$(".wbt133").addClass("wbtr");}
+if(l.getItem('45s5') === '2'){$('wm45').show();$(".wbt134").addClass("wbtr");}
+if(l.getItem('45s5') === '3'){$('wm45').show();$(".wbt135").addClass("wbtr");}
+                
+if(l.getItem('46s5') === '1'){$('wm46').show();$(".wbt136").addClass("wbtr");}
+if(l.getItem('46s5') === '2'){$('wm46').show();$(".wbt137").addClass("wbtr");}
+if(l.getItem('46s5') === '3'){$('wm46').show();$(".wbt138").addClass("wbtr");}
+                
+if(l.getItem('47s5') === '1'){$('wm47').show();$(".wbt139").addClass("wbtr");}
+if(l.getItem('47s5') === '2'){$('wm47').show();$(".wbt140").addClass("wbtr");}
+if(l.getItem('47s5') === '3'){$('wm47').show();$(".wbt141").addClass("wbtr");}
+                
+if(l.getItem('48s5') === '1'){$('wm48').show();$(".wbt142").addClass("wbtr");}
+if(l.getItem('48s5') === '2'){$('wm48').show();$(".wbt143").addClass("wbtr");}
+if(l.getItem('48s5') === '3'){$('wm48').show();$(".wbt144").addClass("wbtr");}
+                
+if(l.getItem('49s5') === '1'){$('wm49').show();$(".wbt145").addClass("wbtr");}
+if(l.getItem('49s5') === '2'){$('wm49').show();$(".wbt146").addClass("wbtr");}
+if(l.getItem('49s5') === '3'){$('wm49').show();$(".wbt147").addClass("wbtr");}
+                
+if(l.getItem('50s5') === '1'){$('wm50').show();$(".wbt148").addClass("wbtr");}
+if(l.getItem('50s5') === '2'){$('wm50').show();$(".wbt149").addClass("wbtr");}
+if(l.getItem('50s5') === '3'){$('wm50').show();$(".wbt150").addClass("wbtr");}
+                
+if(l.getItem('51s5') === '1'){$('wm51').show();$(".wbt151").addClass("wbtr");}
+if(l.getItem('51s5') === '2'){$('wm51').show();$(".wbt152").addClass("wbtr");}
+if(l.getItem('51s5') === '3'){$('wm51').show();$(".wbt153").addClass("wbtr");}
+                
+if(l.getItem('52s5') === '1'){$('wm52').show();$(".wbt154").addClass("wbtr");}
+if(l.getItem('52s5') === '2'){$('wm52').show();$(".wbt155").addClass("wbtr");}
+if(l.getItem('52s5') === '3'){$('wm52').show();$(".wbt156").addClass("wbtr");}
+                
+if(l.getItem('53s5') === '1'){$('wm53').show();$(".wbt157").addClass("wbtr");}
+if(l.getItem('53s5') === '2'){$('wm53').show();$(".wbt158").addClass("wbtr");}
+if(l.getItem('53s5') === '3'){$('wm53').show();$(".wbt159").addClass("wbtr");}
+                
+if(l.getItem('54s5') === '1'){$('wm54').show();$(".wbt160").addClass("wbtr");}
+if(l.getItem('54s5') === '2'){$('wm54').show();$(".wbt161").addClass("wbtr");}
+if(l.getItem('54s5') === '3'){$('wm54').show();$(".wbt162").addClass("wbtr");}
+
+if(l.getItem('55s5') === '1'){$('wm55').show();$(".wbt163").addClass("wbtr");}
+if(l.getItem('55s5') === '2'){$('wm55').show();$(".wbt164").addClass("wbtr");}
+if(l.getItem('55s5') === '3'){$('wm55').show();$(".wbt165").addClass("wbtr");}
+
+if(l.getItem('56s5') === '1'){$('wm56').show();$(".wbt166").addClass("wbtr");}
+if(l.getItem('56s5') === '2'){$('wm56').show();$(".wbt167").addClass("wbtr");}
+if(l.getItem('56s5') === '3'){$('wm56').show();$(".wbt168").addClass("wbtr");}
+
+if(l.getItem('57s5') === '1'){$('wm57').show();$(".wbt169").addClass("wbtr");}
+if(l.getItem('57s5') === '2'){$('wm57').show();$(".wbt170").addClass("wbtr");}
+if(l.getItem('57s5') === '3'){$('wm57').show();$(".wbt171").addClass("wbtr");}
+
+if(l.getItem('58s5') === '1'){$('wm58').show();$(".wbt172").addClass("wbtr");}
+if(l.getItem('58s5') === '2'){$('wm58').show();$(".wbt173").addClass("wbtr");}
+if(l.getItem('58s5') === '3'){$('wm58').show();$(".wbt174").addClass("wbtr");}
+
+if(l.getItem('59s5') === '1'){$('wm59').show();$(".wbt175").addClass("wbtr");}
+if(l.getItem('59s5') === '2'){$('wm59').show();$(".wbt176").addClass("wbtr");}
+if(l.getItem('59s5') === '3'){$('wm59').show();$(".wbt177").addClass("wbtr");}
+
+if(l.getItem('60s5') === '1'){$('wm60').show();$(".wbt178").addClass("wbtr");}
+if(l.getItem('60s5') === '2'){$('wm60').show();$(".wbt179").addClass("wbtr");}
+if(l.getItem('60s5') === '3'){$('wm60').show();$(".wbt180").addClass("wbtr");}
+
+if(l.getItem('1s5') === '0'){cbq1();}
+if(l.getItem('2s5') === '0'){cbq2();}
+if(l.getItem('3s5') === '0'){cbq3();}
+if(l.getItem('4s5') === '0'){cbq4();}
+if(l.getItem('5s5') === '0'){cbq5();}
+if(l.getItem('6s5') === '0'){cbq6();}
+if(l.getItem('7s5') === '0'){cbq7();}
+if(l.getItem('8s5') === '0'){cbq8();}
+if(l.getItem('9s5') === '0'){cbq9();}
+if(l.getItem('10s5') === '0'){cbq10();}
+if(l.getItem('11s5') === '0'){cbq11();}
+if(l.getItem('12s5') === '0'){cbq12();}
+if(l.getItem('13s5') === '0'){cbq13();}
+if(l.getItem('14s5') === '0'){cbq14();}
+if(l.getItem('15s5') === '0'){cbq15();}
+if(l.getItem('16s5') === '0'){cbq16();}
+if(l.getItem('17s5') === '0'){cbq17();}
+if(l.getItem('18s5') === '0'){cbq18();}
+if(l.getItem('19s5') === '0'){cbq19();}
+if(l.getItem('20s5') === '0'){cbq20();}
+if(l.getItem('21s5') === '0'){cbq21();}
+if(l.getItem('22s5') === '0'){cbq22();}
+if(l.getItem('23s5') === '0'){cbq23();}
+if(l.getItem('24s5') === '0'){cbq24();}
+if(l.getItem('25s5') === '0'){cbq25();}
+if(l.getItem('26s5') === '0'){cbq26();}
+if(l.getItem('27s5') === '0'){cbq27();}
+if(l.getItem('28s5') === '0'){cbq28();}
+if(l.getItem('29s5') === '0'){cbq29();}
+if(l.getItem('30s5') === '0'){cbq30();}
+if(l.getItem('31s5') === '0'){cbq31();}
+if(l.getItem('32s5') === '0'){cbq32();}
+if(l.getItem('33s5') === '0'){cbq33();}
+if(l.getItem('34s5') === '0'){cbq34();}
+if(l.getItem('35s5') === '0'){cbq35();}
+if(l.getItem('36s5') === '0'){cbq36();}
+if(l.getItem('37s5') === '0'){cbq37();}
+if(l.getItem('38s5') === '0'){cbq38();}
+if(l.getItem('39s5') === '0'){cbq39();}
+if(l.getItem('40s5') === '0'){cbq40();}
+if(l.getItem('41s5') === '0'){cbq41();}
+if(l.getItem('42s5') === '0'){cbq42();}
+if(l.getItem('43s5') === '0'){cbq43();}
+if(l.getItem('44s5') === '0'){cbq44();}
+if(l.getItem('45s5') === '0'){cbq45();}
+if(l.getItem('46s5') === '0'){cbq46();}
+if(l.getItem('47s5') === '0'){cbq47();}
+if(l.getItem('48s5') === '0'){cbq48();}
+if(l.getItem('49s5') === '0'){cbq49();}
+if(l.getItem('50s5') === '0'){cbq50();}
+if(l.getItem('51s5') === '0'){cbq51();}
+if(l.getItem('52s5') === '0'){cbq52();}
+if(l.getItem('53s5') === '0'){cbq53();}
+if(l.getItem('54s5') === '0'){cbq54();}
+if(l.getItem('55s5') === '0'){cbq55();}
+if(l.getItem('56s5') === '0'){cbq56();}
+if(l.getItem('57s5') === '0'){cbq57();}
+if(l.getItem('58s5') === '0'){cbq58();}
+if(l.getItem('59s5') === '0'){cbq59();}
+if(l.getItem('60s5') === '0'){cbq60();}
+
+if(sessionStorage.getItem('cl') === 't'){
+$('.change').click();
+$('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');} 
+else {
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');}
+}
+
+  function storagereset(){
+  $("#resetpopup,#belowpopup").hide();$('#popup2').show();
+var remove = ['q5','1s5','2s5','3s5','4s5','5s5','6s5','7s5','8s5','9s5','10s5','11s5','12s5','13s5','14s5','15s5','16s5','17s5','18s5','19s5','20s5','21s5','22s5','23s5','24s5','25s5','26s5','27s5','28s5','29s5','30s5','31s5','32s5','33s5','34s5','35s5','36s5','37s5','38s5','39s5','40s5','41s5','42s5','43s5','44s5','45s5','46s5','47s5','48s5','49s5','50s5','51s5','52s5','53s5','54s5','55s5','56s5','57s5','58s5','59s5','60s5','n5']; for (key of remove) {l.removeItem(key);}location.reload(); }
+</script>
+
+
+
+<script>
+  onhashchange = function (){ if(location.hash){ } else{
+    
+    $("#resetpopup,#belowpopup").fadeOut('fast');
+                                                       
+      }}
+  function historyback() { if(location.hash){ history.back(); }  }
+    
+    
+    function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }    
+
+
+</script>
+
+  
+
+
+<language1 hidden>eng</language1>
+<ben hidden>বাংলা</ben>
+
+
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.5.8/swiper-bundle.min.css">
+
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+  <div class="swiper-wrapper">
+
+<!--VEGETABLE-1-Carrot-->
+ 
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">1</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/veg/Carrot-1.jpg"/></div>
+
+<wm1><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm1>
+<cm1><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm1>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh1>
+<button class="optionbutton wbt1" onclick="wb1();Audio2();"><Beetroot>Beetroot</Beetroot></button>
+</wh1>
+
+<wh1>
+<button class="optionbutton wbt2" onclick="wb2();Audio2();"><Turnip>Turnip</Turnip></button>
+</wh1>
+
+<cb1>
+<button class="optionbutton cbt1" onclick="cb1();Audio1();"><Carrot>Carrot</Carrot></button>
+</cb1>
+
+<wh1>
+<button class="optionbutton wbt3" onclick="wb3();Audio2();"><Radish>Radish</Radish></button>
+</wh1>
+
+<ch1 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Carrot>Carrot</Carrot></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch1>
+ 
+</div></div></div>
+<!--VEGETABLE-1-->
+
+<!--VEGETABLE-2-Spinach-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">2</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Spinach-1.jpg"/></div>
+
+<wm2><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm2>
+<cm2><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm2>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh2>
+<button class="optionbutton wbt4" onclick="wb4();Audio2();"><Celery>Celery</Celery></button>
+</wh2>
+
+<cb2>
+<button class="optionbutton cbt2" onclick="cb2();Audio1();"><Spinach>Spinach</Spinach></button>
+</cb2>
+  
+<wh2>
+<button class="optionbutton wbt5" onclick="wb5();Audio2();"><Kale>Kale</Kale></button>
+</wh2>
+
+<wh2>
+<button class="optionbutton wbt6" onclick="wb6();Audio2();"><Mint>Mint</Mint></button>
+</wh2>
+
+<ch2 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Spinach>Spinach</Spinach></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch2>
+  
+</div></div></div>
+<!--VEGETABLE-2-->
+
+<!--VEGETABLE-3-Mushroom-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">3</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Mushroom-1.jpg"/></div>
+
+<wm3><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm3>
+<cm3><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm3>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb3>
+<button class="optionbutton cbt3" onclick="cb3();Audio1();"><Mushroom>Mushroom</Mushroom></button>
+</cb3>
+
+<wh3>
+<button class="optionbutton wbt7" onclick="wb7();Audio2();"><Onion>Onion</Onion></button>
+</wh3>
+
+<wh3>
+<button class="optionbutton wbt8" onclick="wb8();Audio2();"><Garlic>Garlic</Garlic></button>
+</wh3>
+
+<wh3>
+<button class="optionbutton wbt9" onclick="wb9();Audio2();"><Fig>Fig</Fig></button>
+</wh3>
+
+<ch3 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Mushroom>Mushroom</Mushroom></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch3>
+
+</div></div></div>
+<!--VEGETABLE-3-->
+
+<!--VEGETABLE-4-Cucumber-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">4</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Cucumber-1.jpg"/></div>
+
+<wm4><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm4>
+<cm4><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm4>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh4>
+<button class="optionbutton wbt10" onclick="wb10();Audio2();"><Carrot>Carrot</Carrot></button>
+</wh4>
+
+<wh4>
+<button class="optionbutton wbt11" onclick="wb11();Audio2();"><Radish>Radish</Radish></button>
+</wh4>
+
+<wh4>
+<button class="optionbutton wbt12" onclick="wb12();Audio2();"><Calabash>Calabash</Calabash></button>
+</wh4>
+
+<cb4>
+<button class="optionbutton cbt4" onclick="cb4();Audio1();"><Cucumber>Cucumber</Cucumber></button>
+</cb4>
+
+<ch4 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Cucumber>Cucumber</Cucumber></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch4>
+
+</div></div></div>
+<!--VEGETABLE-4-->
+
+<!--VEGETABLE-5-Artichoke-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">5</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Artichoke-1.jpg"/></div>
+
+<wm5><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm5>
+<cm5><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm5>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh5>
+<button class="optionbutton wbt13" onclick="wb13();Audio2();"><Turnip>Turnip</Turnip></button>
+</wh5>
+
+<cb5>
+<button class="optionbutton cbt5" onclick="cb5();Audio1();"><Artichoke>Artichoke</Artichoke></button>
+</cb5>
+ 
+<wh5>
+<button class="optionbutton wbt14" onclick="wb14();Audio2();"><Mushroom>Mushroom</Mushroom></button>
+</wh5>
+
+<wh5>
+<button class="optionbutton wbt15" onclick="wb15();Audio2();"><Arugula>Arugula</Arugula></button>
+</wh5>
+
+<ch5 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Artichoke>Artichoke</Artichoke></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch5>
+  
+</div></div></div>
+<!--VEGETABLE-5-->
+
+<!--VEGETABLE-6-Calabash-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">6</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Calabash-1.jpg"/></div>
+
+<wm6><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm6>
+<cm6><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm6>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh6>
+<button class="optionbutton wbt16" onclick="wb16();Audio2();"><Radish>Radish</Radish></button>
+</wh6>
+
+<wh6>
+<button class="optionbutton wbt17" onclick="wb17();Audio2();"><Capsicum>Capsicum</Capsicum></button>
+</wh6>
+
+<cb6>
+<button class="optionbutton cbt6" onclick="cb6();Audio1();"><Calabash>Calabash</Calabash></button>
+</cb6>
+
+<wh6>
+<button class="optionbutton wbt18" onclick="wb18();Audio2();"><Pumpkin>Pumpkin</Pumpkin></button>
+</wh6>
+
+<ch6 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Calabash>Calabash</Calabash></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch6>
+  
+</div></div></div>
+<!--VEGETABLE-6-->
+
+<!--VEGETABLE-7-Turnip-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">7</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Turnip-1.jpg"/></div>
+
+<wm7><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm7>
+<cm7><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm7>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb7>
+<button class="optionbutton cbt7" onclick="cb7();Audio1();"><Turnip>Turnip</Turnip></button>
+</cb7>
+
+<wh7>
+<button class="optionbutton wbt19" onclick="wb19();Audio2();"><Artichoke>Artichoke</Artichoke></button>
+</wh7>
+
+<wh7>
+<button class="optionbutton wbt20" onclick="wb20();Audio2();"><Broccoli>Broccoli</Broccoli></button>
+</wh7>
+
+<wh7>
+<button class="optionbutton wbt21" onclick="wb21();Audio2();"><Corn>Corn</Corn></button>
+</wh7>
+
+<ch7 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Turnip>Turnip</Turnip></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch7>
+
+</div></div></div>
+<!--VEGETABLE-7-->
+
+<!--VEGETABLE-8-Arugula-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">8</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Arugula-1.jpg"/></div>
+
+<wm8><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm8>
+<cm8><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm8>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh8>
+<button class="optionbutton wbt22" onclick="wb22();Audio2();"><Asparagus>Asparagus</Asparagus></button>
+</wh8>
+
+<wh8>
+<button class="optionbutton wbt23" onclick="wb23();Audio2();"><Spinach>Spinach</Spinach></button>
+</wh8>
+
+<wh8>
+<button class="optionbutton wbt24" onclick="wb24();Audio2();"><Lettuce>Lettuce</Lettuce></button>
+</wh8>
+
+<cb8>
+<button class="optionbutton cbt8" onclick="cb8();Audio1();"><Arugula>Arugula</Arugula></button>
+</cb8>
+
+<ch8 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Arugula>Arugula</Arugula></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch8>
+
+</div></div></div>
+<!--VEGETABLE-8-->
+
+<!--VEGETABLE-9-Corn-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">9</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Corn-1.jpg"/></div>
+
+<wm9><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm9>
+<cm9><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm9>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh9>
+<button class="optionbutton wbt25" onclick="wb25();Audio2();"><BitterGourd>Bitter Gourd</BitterGourd></button>
+</wh9>
+
+<cb9>
+<button class="optionbutton cbt9" onclick="cb9();Audio1();"><Corn>Corn</Corn></button>
+</cb9>
+  
+<wh9>
+<button class="optionbutton wbt26" onclick="wb26();Audio2();"><Cucumber>Cucumber</Cucumber></button>
+</wh9>
+
+<wh9>
+<button class="optionbutton wbt27" onclick="wb27();Audio2();"><GreenBanana>Green Banana</GreenBanana></button>
+</wh9>
+
+<ch9 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Corn>Corn</Corn></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch9>
+  
+</div></div></div>
+<!--VEGETABLE-9-->
+
+<!--VEGETABLE-10-Onion-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">10</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Onion-1.jpg"/></div>
+
+<wm10><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm10>
+<cm10><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm10>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh10>
+<button class="optionbutton wbt28" onclick="wb28();Audio2();"><Garlic>Garlic</Garlic></button>
+</wh10>
+
+<wh10>
+<button class="optionbutton wbt29" onclick="wb29();Audio2();"><Potato>Potato</Potato></button>
+</wh10>
+
+<cb10>
+<button class="optionbutton cbt10" onclick="cb10();Audio1();"><Onion>Onion</Onion></button>
+</cb10>
+
+<wh10>
+<button class="optionbutton wbt30" onclick="wb30();Audio2();"><SpinyGourd>Spiny Gourd</SpinyGourd></button>
+</wh10>
+
+<ch10 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Onion>Onion</Onion></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch10>
+  
+</div></div></div>
+<!--VEGETABLE-10-->
+
+<!--VEGETABLE-11-Celery-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">11</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Celery-1.jpg"/></div>
+
+<wm11><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm11>
+<cm11><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm11>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb11>
+<button class="optionbutton cbt11" onclick="cb11();Audio1();"><Celery>Celery</Celery></button>
+</cb11>
+
+<wh11>
+<button class="optionbutton wbt31" onclick="wb31();Audio2();"><Beetroot>Beetroot</Beetroot></button>
+</wh11>
+
+<wh11>
+<button class="optionbutton wbt32" onclick="wb32();Audio2();"><Drumstick>Drumstick</Drumstick></button>
+</wh11>
+
+<wh11>
+<button class="optionbutton wbt33" onclick="wb33();Audio2();"><GreenBean>Green Bean</GreenBean></button>
+</wh11>
+
+<ch11 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Celery>Celery</Celery></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch11>
+
+</div></div></div>
+<!--VEGETABLE-11-->
+
+<!--VEGETABLE-12-Cauliflower-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">12</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Cauliflower-1.jpg"/></div>
+
+<wm12><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm12>
+<cm12><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm12>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh12>
+<button class="optionbutton wbt34" onclick="wb34();Audio2();"><Cabbage>Cabbage</Cabbage></button>
+</wh12>
+
+<wh12>
+<button class="optionbutton wbt35" onclick="wb35();Audio2();"><Broccoli>Broccoli</Broccoli></button>
+</wh12>
+
+<wh12>
+<button class="optionbutton wbt36" onclick="wb36();Audio2();"><Kale>Kale</Kale></button>
+</wh12>
+
+<cb12>
+<button class="optionbutton cbt12" onclick="cb12();Audio1();"><Cauliflower>Cauliflower</Cauliflower></button>
+</cb12>
+
+<ch12 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Cauliflower>Cauliflower</Cauliflower></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch12>
+
+</div></div></div>
+<!--VEGETABLE-12-->
+
+<!--VEGETABLE-13-Potato-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">13</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/SpinyGourd-1.jpg"/></div>
+
+<wm13><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm13>
+<cm13><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm13>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh13>
+<button class="optionbutton wbt37" onclick="wb37();Audio2();"><BitterGourd>Bitter Gourd</BitterGourd></button>
+</wh13>
+
+<cb13>
+<button class="optionbutton cbt13" onclick="cb13();Audio1();"><SpinyGourd>Spiny Gourd</SpinyGourd></button>
+</cb13>
+  
+<wh13>
+<button class="optionbutton wbt38" onclick="wb38();Audio2();"><Potato>Potato</Potato></button>
+</wh13>
+
+<wh13>
+<button class="optionbutton wbt39" onclick="wb39();Audio2();"><Tomato>Tomato</Tomato></button>
+</wh13>
+
+<ch13 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><SpinyGourd>Spiny Gourd</SpinyGourd></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch13>
+  
+</div></div></div>
+<!--VEGETABLE-13-->
+
+<!--VEGETABLE-14-Crookneck-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">14</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Crookneck-1.jpg"/></div>
+
+<wm14><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm14>
+<cm14><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm14>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb14>
+<button class="optionbutton cbt14" onclick="cb14();Audio1();"><Crookneck>Crookneck</Crookneck></button>
+</cb14>
+
+<wh14>
+<button class="optionbutton wbt40" onclick="wb40();Audio2();"><Brinjal>Brinjal</Brinjal></button>
+</wh14>
+
+<wh14>
+<button class="optionbutton wbt41" onclick="wb41();Audio2();"><Calabash>Calabash</Calabash></button>
+</wh14>
+
+<wh14>
+<button class="optionbutton wbt42" onclick="wb42();Audio2();"><PointedGourd>Pointed Gourd</PointedGourd></button>
+</wh14>
+
+<ch14 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Crookneck>Crookneck</Crookneck></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch14>
+
+</div></div></div>
+<!--VEGETABLE-14-->
+
+<!--VEGETABLE-15-Pea-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">15</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Pea-1.jpg"/></div>
+
+<wm15><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm15>
+<cm15><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm15>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh15>
+<button class="optionbutton wbt43" onclick="wb43();Audio2();"><GreenBean>Green Bean</GreenBean></button>
+</wh15>
+
+<wh15>
+<button class="optionbutton wbt44" onclick="wb44();Audio2();"><Okra>Okra</Okra></button>
+</wh15>
+
+<cb15>
+<button class="optionbutton cbt15" onclick="cb15();Audio1();"><Pea>Pea</Pea></button>
+</cb15>
+
+<wh15>
+<button class="optionbutton wbt45" onclick="wb45();Audio2();"><Corn>Corn</Corn></button>
+</wh15>
+
+<ch15 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Pea>Pea</Pea></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch15>
+  
+</div></div></div>
+<!--VEGETABLE-15-->
+
+<!--VEGETABLE-16-Tomato-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">16</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Tomato-1.jpg"/></div>
+
+<wm16><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm16>
+<cm16><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm16>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh16>
+<button class="optionbutton wbt46" onclick="wb46();Audio2();"><Potato>Potato</Potato></button>
+</wh16>
+
+<wh16>
+<button class="optionbutton wbt47" onclick="wb47();Audio2();"><Onion>Onion</Onion></button>
+</wh16>
+
+<wh16>
+<button class="optionbutton wbt48" onclick="wb48();Audio2();"><Brinjal>Brinjal</Brinjal></button>
+</wh16>
+
+<cb16>
+<button class="optionbutton cbt16" onclick="cb16();Audio1();"><Tomato>Tomato</Tomato></button>
+</cb16>
+
+<ch16 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Tomato>Tomato</Tomato></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch16>
+
+</div></div></div>
+<!--VEGETABLE-16-->
+
+<!--VEGETABLE-17-Beetroot-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">17</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Beetroot-1.jpg"/></div>
+
+<wm17><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm17>
+<cm17><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm17>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh17>
+<button class="optionbutton wbt49" onclick="wb49();Audio2();"><Carrot>Carrot</Carrot></button>
+</wh17>
+
+<cb17>
+<button class="optionbutton cbt17" onclick="cb17();Audio1();"><Beetroot>Beetroot</Beetroot></button>
+</cb17>
+  
+<wh17>
+<button class="optionbutton wbt50" onclick="wb50();Audio2();"><SweetPotato>Sweet Potato</SweetPotato></button>
+</wh17>
+
+<wh17>
+<button class="optionbutton wbt51" onclick="wb51();Audio2();"><Radish>Radish</Radish></button>
+</wh17>
+
+<ch17 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Beetroot>Beetroot</Beetroot></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch17>
+  
+</div></div></div>
+<!--VEGETABLE-17-->
+
+<!--VEGETABLE-18-Capsicum-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">18</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Capsicum-1.jpg"/></div>
+
+<wm18><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm18>
+<cm18><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm18>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb18>
+<button class="optionbutton cbt18" onclick="cb18();Audio1();"><Capsicum>Capsicum</Capsicum></button>
+</cb18>
+
+<wh18>
+<button class="optionbutton wbt52" onclick="wb52();Audio2();"><Pumpkin>Pumpkin</Pumpkin></button>
+</wh18>
+
+<wh18>
+<button class="optionbutton wbt53" onclick="wb53();Audio2();"><Calabash>Calabash</Calabash></button>
+</wh18>
+
+<wh18>
+<button class="optionbutton wbt54" onclick="wb54();Audio2();"><SpinyGourd>Spiny Gourd</SpinyGourd></button>
+</wh18>
+
+<ch18 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Capsicum>Capsicum</Capsicum></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch18>
+
+</div></div></div>
+<!--VEGETABLE-18-->
+
+<!--VEGETABLE-19-Mint-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">19</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Mint-1.jpg"/></div>
+
+<wm19><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm19>
+<cm19><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm19>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh19>
+<button class="optionbutton wbt55" onclick="wb55();Audio2();"><CorianderLeaves>Coriander Leaves</CorianderLeaves></button>
+</wh19>
+
+<wh19>
+<button class="optionbutton wbt56" onclick="wb56();Audio2();"><Spinach>Spinach</Spinach></button>
+</wh19>
+
+<wh19>
+<button class="optionbutton wbt57" onclick="wb57();Audio2();"><MalabarSpinach>Malabar Spinach</MalabarSpinach></button>
+</wh19>
+
+<cb19>
+<button class="optionbutton cbt19" onclick="cb19();Audio1();"><Mint>Mint</Mint></button>
+</cb19>
+
+<ch19 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Mint>Mint</Mint></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch19>
+
+</div></div></div>
+<!--VEGETABLE-19-->
+
+<!--VEGETABLE-20-Fig-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">20</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Fig-1.jpg"/></div>
+
+<wm20><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm20>
+<cm20><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm20>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh20>
+<button class="optionbutton wbt58" onclick="wb58();Audio2();"><Onion>Onion</Onion></button>
+</wh20>
+
+<wh20>
+<button class="optionbutton wbt59" onclick="wb59();Audio2();"><Garlic>Garlic</Garlic></button>
+</wh20>
+
+<cb20>
+<button class="optionbutton cbt20" onclick="cb20();Audio1();"><Fig>Fig</Fig></button>
+</cb20>
+
+<wh20>
+<button class="optionbutton wbt60" onclick="wb60();Audio2();"><Capsicum>Capsicum</Capsicum></button>
+</wh20>
+
+<ch20 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Fig>Fig</Fig></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch20>
+  
+</div></div></div>
+<!--VEGETABLE-20-->
+
+<!--VEGETABLE-21-SweetPotato-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">21</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/SweetPotato-1.jpg"/></div>
+
+<wm21><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm21>
+<cm21><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm21>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh21>
+<button class="optionbutton wbt61" onclick="wb61();Audio2();"><Carrot>Carrot</Carrot></button>
+</wh21>
+
+<cb21>
+<button class="optionbutton cbt21" onclick="cb21();Audio1();"><SweetPotato>Sweet Potato</SweetPotato></button>
+</cb21>
+  
+<wh21>
+<button class="optionbutton wbt62" onclick="wb62();Audio2();"><Ginger>Ginger</Ginger></button>
+</wh21>
+
+<wh21>
+<button class="optionbutton wbt63" onclick="wb63();Audio2();"><Radish>Radish</Radish></button>
+</wh21>
+
+<ch21 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><SweetPotato>SweetPotato</SweetPotato></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch21>
+  
+</div></div></div>
+<!--VEGETABLE-21-->
+
+<!--VEGETABLE-22-Drumstick-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">22</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Drumstick-1.jpg"/></div>
+
+<wm22><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm22>
+<cm22><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm22>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh22>
+<button class="optionbutton wbt64" onclick="wb64();Audio2();"><Asparagus>Asparagus</Asparagus></button>
+</wh22>
+
+<wh22>
+<button class="optionbutton wbt65" onclick="wb65();Audio2();"><GreenBean>Green Bean</GreenBean></button>
+</wh22>
+
+<wh22>
+<button class="optionbutton wbt66" onclick="wb66();Audio2();"><Spinach>Spinach</Spinach></button>
+</wh22>
+
+<cb22>
+<button class="optionbutton cbt22" onclick="cb22();Audio1();"><Drumstick>Drumstick</Drumstick></button>
+</cb22>
+
+<ch22 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Drumstick>Drumstick</Drumstick></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch22>
+
+</div></div></div>
+<!--VEGETABLE-22-->
+
+<!--VEGETABLE-23-Lettuce-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">23</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Lettuce-1.jpg"/></div>
+
+<wm23><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm23>
+<cm23><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm23>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb23>
+<button class="optionbutton cbt23" onclick="cb23();Audio1();"><Lettuce>Lettuce</Lettuce></button>
+</cb23>
+
+<wh23>
+<button class="optionbutton wbt67" onclick="wb67();Audio2();"><Cabbage>Cabbage</Cabbage></button>
+</wh23>
+
+<wh23>
+<button class="optionbutton wbt68" onclick="wb68();Audio2();"><Kale>Kale</Kale></button>
+</wh23>
+
+<wh23>
+<button class="optionbutton wbt69" onclick="wb69();Audio2();"><Turnip>Turnip</Turnip></button>
+</wh23>
+
+<ch23 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Lettuce>Lettuce</Lettuce></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch23>
+
+</div></div></div>
+<!--VEGETABLE-23-->
+
+<!--VEGETABLE-24-Garlic-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">24</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Garlic-1.jpg"/></div>
+
+<wm24><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm24>
+<cm24><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm24>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh24>
+<button class="optionbutton wbt70" onclick="wb70();Audio2();"><Onion>Onion</Onion></button>
+</wh24>
+
+<wh24>
+<button class="optionbutton wbt71" onclick="wb71();Audio2();"><Ginger>Ginger</Ginger></button>
+</wh24>
+
+<cb24>
+<button class="optionbutton cbt24" onclick="cb24();Audio1();"><Garlic>Garlic</Garlic></button>
+</cb24>
+
+<wh24>
+<button class="optionbutton wbt72" onclick="wb72();Audio2();"><Fig>Fig</Fig></button>
+</wh24>
+
+<ch24 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Garlic>Garlic</Garlic></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch24>
+  
+</div></div></div>
+<!--VEGETABLE-24-->
+
+<!--VEGETABLE-25-Broccoli-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">25</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Broccoli-1.jpg"/></div>
+
+<wm25><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm25>
+<cm25><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm25>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb25>
+<button class="optionbutton cbt25" onclick="cb25();Audio1();"><Broccoli>Broccoli</Broccoli></button>
+</cb25>
+
+<wh25>
+<button class="optionbutton wbt73" onclick="wb73();Audio2();"><Cauliflower>Cauliflower</Cauliflower></button>
+</wh25>
+
+<wh25>
+<button class="optionbutton wbt74" onclick="wb74();Audio2();"><Cabbage>Cabbage</Cabbage></button>
+</wh25>
+
+<wh25>
+<button class="optionbutton wbt75" onclick="wb75();Audio2();"><Lettuce>Lettuce</Lettuce></button>
+</wh25>
+
+<ch25 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Broccoli>Broccoli</Broccoli></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch25>
+
+</div></div></div>
+<!--VEGETABLE-25-->
+
+<!--VEGETABLE-26-CorianderLeaves-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">26</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/CorianderLeaves-1.jpg"/></div>
+
+<wm26><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm26>
+<cm26><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm26>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh26>
+<button class="optionbutton wbt76" onclick="wb76();Audio2();"><Mint>Mint</Mint></button>
+</wh26>
+
+<wh26>
+<button class="optionbutton wbt77" onclick="wb77();Audio2();"><Spinach>Spinach</Spinach></button>
+</wh26>
+
+<wh26>
+<button class="optionbutton wbt78" onclick="wb78();Audio2();"><Celery>Celery</Celery></button>
+</wh26>
+
+<cb26>
+<button class="optionbutton cbt26" onclick="cb26();Audio1();"><CorianderLeaves>Coriander Leaves</CorianderLeaves></button>
+</cb26>
+
+<ch26 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><CorianderLeaves>CorianderLeaves</CorianderLeaves></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch26>
+
+</div></div></div>
+<!--VEGETABLE-26-->
+
+<!--VEGETABLE-27-Pumpkin-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">27</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Pumpkin-1.jpg"/></div>
+
+<wm27><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm27>
+<cm27><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm27>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh27>
+<button class="optionbutton wbt79" onclick="wb79();Audio2();"><PointedGourd>Pointed Gourd</PointedGourd></button>
+</wh27>
+
+<cb27>
+<button class="optionbutton cbt27" onclick="cb27();Audio1();"><Pumpkin>Pumpkin</Pumpkin></button>
+</cb27>
+  
+<wh27>
+<button class="optionbutton wbt80" onclick="wb80();Audio2();"><Calabash>Calabash</Calabash></button>
+</wh27>
+
+<wh27>
+<button class="optionbutton wbt81" onclick="wb81();Audio2();"><Tomato>Tomato</Tomato></button>
+</wh27>
+
+<ch27 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Pumpkin>Pumpkin</Pumpkin></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch27>
+  
+</div></div></div>
+<!--VEGETABLE-27-->
+
+<!--VEGETABLE-28-GreenBanana-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">28</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/GreenBanana-1.jpg"/></div>
+
+<wm28><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm28>
+<cm28><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm28>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb28>
+<button class="optionbutton cbt28" onclick="cb28();Audio1();"><GreenBanana>Green Banana</GreenBanana></button>
+</cb28>
+
+<wh28>
+<button class="optionbutton wbt82" onclick="wb82();Audio2();"><GreenBean>Green Bean</GreenBean></button>
+</wh28>
+
+<wh28>
+<button class="optionbutton wbt83" onclick="wb83();Audio2();"><GreenChilli>Green Chilli</GreenChilli></button>
+</wh28>
+
+<wh28>
+<button class="optionbutton wbt84" onclick="wb84();Audio2();"><BitterGourd>Bitter Gourd</BitterGourd></button>
+</wh28>
+
+<ch28 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><GreenBanana>GreenBanana</GreenBanana></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch28>
+
+</div></div></div>
+<!--VEGETABLE-28-->
+
+<!--VEGETABLE-29-Potato-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">29</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Potato-1.jpg"/></div>
+
+<wm29><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm29>
+<cm29><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm29>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh29>
+<button class="optionbutton wbt85" onclick="wb85();Audio2();"><PointedGourd>Pointed Gourd</PointedGourd></button>
+</wh29>
+
+<wh29>
+<button class="optionbutton wbt86" onclick="wb86();Audio2();"><Onion>Onion</Onion></button>
+</wh29>
+
+<cb29>
+<button class="optionbutton cbt29" onclick="cb29();Audio1();"><Potato>Potato</Potato></button>
+</cb29>
+
+<wh29>
+<button class="optionbutton wbt87" onclick="wb87();Audio2();"><Brinjal>Brinjal</Brinjal></button>
+</wh29>
+
+<ch29 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Potato>Potato</Potato></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch29>
+  
+</div></div></div>
+<!--VEGETABLE-29-->
+
+<!--VEGETABLE-30-Brinjal-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">30</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Brinjal-1.jpg"/></div>
+
+<wm30><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm30>
+<cm30><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm30>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh30>
+<button class="optionbutton wbt88" onclick="wb88();Audio2();"><Capsicum>Capsicum</Capsicum></button>
+</wh30>
+
+<wh30>
+<button class="optionbutton wbt89" onclick="wb89();Audio2();"><Cucumber>Cucumber</Cucumber></button>
+</wh30>
+
+<wh30>
+<button class="optionbutton wbt90" onclick="wb90();Audio2();"><Tomato>Tomato</Tomato></button>
+</wh30>
+
+<cb30>
+<button class="optionbutton cbt30" onclick="cb30();Audio1();"><Brinjal>Brinjal</Brinjal></button>
+</cb30>
+
+<ch30 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Brinjal>Brinjal</Brinjal></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch30>
+
+</div></div></div>
+<!--VEGETABLE-30-->
+
+<!--VEGETABLE-31-PointedGourd-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">31</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/PointedGourd-1.jpg"/></div>
+
+<wm31><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm31>
+<cm31><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm31>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh31>
+<button class="optionbutton wbt91" onclick="wb91();Audio2();"><GreenBanana>Green Banana</GreenBanana></button>
+</wh31>
+
+<cb31>
+<button class="optionbutton cbt31" onclick="cb31();Audio1();"><PointedGourd>Pointed Gourd</PointedGourd></button>
+</cb31>
+  
+<wh31>
+<button class="optionbutton wbt92" onclick="wb92();Audio2();"><Calabash>Calabash</Calabash></button>
+</wh31>
+
+<wh31>
+<button class="optionbutton wbt93" onclick="wb93();Audio2();"><BitterGourd>Bitter Gourd</BitterGourd></button>
+</wh31>
+
+<ch31 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><PointedGourd>PointedGourd</PointedGourd></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch31>
+  
+</div></div></div>
+<!--VEGETABLE-31-->
+
+<!--VEGETABLE-32-BitterGourd-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">32</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/BitterGourd-1.jpg"/></div>
+
+<wm32><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm32>
+<cm32><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm32>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh32>
+<button class="optionbutton wbt94" onclick="wb94();Audio2();"><Corn>Corn</Corn></button>
+</wh32>
+
+<wh32>
+<button class="optionbutton wbt95" onclick="wb95();Audio2();"><Beetroot>Beetroot</Beetroot></button>
+</wh32>
+
+<cb32>
+<button class="optionbutton cbt32" onclick="cb32();Audio1();"><BitterGourd>Bitter Gourd</BitterGourd></button>
+</cb32>
+
+<wh32>
+<button class="optionbutton wbt96" onclick="wb96();Audio2();"><Potato>Potato</Potato></button>
+</wh32>
+
+<ch32 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><BitterGourd>BitterGourd</BitterGourd></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch32>
+  
+</div></div></div>
+<!--VEGETABLE-32-->
+
+<!--VEGETABLE-33-Cabbage-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">33</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Cabbage-1.jpg"/></div>
+
+<wm33><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm33>
+<cm33><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm33>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb33>
+<button class="optionbutton cbt33" onclick="cb33();Audio1();"><Cabbage>Cabbage</Cabbage></button>
+</cb33>
+
+<wh33>
+<button class="optionbutton wbt97" onclick="wb97();Audio2();"><Lettuce>Lettuce</Lettuce></button>
+</wh33>
+
+<wh33>
+<button class="optionbutton wbt98" onclick="wb98();Audio2();"><Broccoli>Broccoli</Broccoli></button>
+</wh33>
+
+<wh33>
+<button class="optionbutton wbt99" onclick="wb99();Audio2();"><Cauliflower>Cauliflower</Cauliflower></button>
+</wh33>
+
+<ch33 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Cabbage>Cabbage</Cabbage></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch33>
+
+</div></div></div>
+<!--VEGETABLE-33-->
+
+<!--VEGETABLE-34-GreenBean-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">34</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/GreenBean-1.jpg"/></div>
+
+<wm34><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm34>
+<cm34><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm34>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh34>
+<button class="optionbutton wbt100" onclick="wb100();Audio2();"><BitterGourd>Bitter Gourd</BitterGourd></button>
+</wh34>
+
+<wh34>
+<button class="optionbutton wbt101" onclick="wb101();Audio2();"><Radish>Radish</Radish></button>
+</wh34>
+
+<wh34>
+<button class="optionbutton wbt102" onclick="wb102();Audio2();"><Mushroom>Mushroom</Mushroom></button>
+</wh34>
+
+<cb34>
+<button class="optionbutton cbt34" onclick="cb34();Audio1();"><GreenBean>Green Bean</GreenBean></button>
+</cb34>
+
+<ch34 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><GreenBean>GreenBean</GreenBean></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch34>
+
+</div></div></div>
+<!--VEGETABLE-34-->
+
+<!--VEGETABLE-35-Ginger-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">35</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Ginger-1.jpg"/></div>
+
+<wm35><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm35>
+<cm35><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm35>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh35>
+<button class="optionbutton wbt103" onclick="wb103();Audio2();"><Garlic>Garlic</Garlic></button>
+</wh35>
+
+<wh35>
+<button class="optionbutton wbt104" onclick="wb104();Audio2();"><Onion>Onion</Onion></button>
+</wh35>
+
+<cb35>
+<button class="optionbutton cbt35" onclick="cb35();Audio1();"><Ginger>Ginger</Ginger></button>
+</cb35>
+
+<wh35>
+<button class="optionbutton wbt105" onclick="wb105();Audio2();"><Pea>Pea</Pea></button>
+</wh35>
+
+<ch35 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Ginger>Ginger</Ginger></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch35>
+  
+</div></div></div>
+<!--VEGETABLE-35-->
+
+<!--VEGETABLE-36-Celery-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">36</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/GreenChilli-1.jpg"/></div>
+
+<wm36><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm36>
+<cm36><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm36>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh36>
+<button class="optionbutton wbt106" onclick="wb106();Audio2();"><Capsicum>Capsicum</Capsicum></button>
+</wh36>
+
+<cb36>
+<button class="optionbutton cbt36" onclick="cb36();Audio1();"><GreenChilli>Green Chilli</GreenChilli></button>
+</cb36>
+  
+<wh36>
+<button class="optionbutton wbt107" onclick="wb107();Audio2();"><Okra>Okra</Okra></button>
+</wh36>
+
+<wh36>
+<button class="optionbutton wbt108" onclick="wb108();Audio2();"><GreenBean>Green Bean</GreenBean></button>
+</wh36>
+
+<ch36 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><GreenChilli>Green Chilli</GreenChilli></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch36>
+  
+</div></div></div>
+<!--VEGETABLE-36-->
+
+<!--VEGETABLE-37-Kale-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">37</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Kale-1.jpg"/></div>
+
+<wm37><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm37>
+<cm37><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm37>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb37>
+<button class="optionbutton cbt37" onclick="cb37();Audio1();"><Kale>Kale</Kale></button>
+</cb37>
+
+<wh37>
+<button class="optionbutton wbt109" onclick="wb109();Audio2();"><Cauliflower>Cauliflower</Cauliflower></button>
+</wh37>
+
+<wh37>
+<button class="optionbutton wbt110" onclick="wb110();Audio2();"><Lettuce>Lettuce</Lettuce></button>
+</wh37>
+
+<wh37>
+<button class="optionbutton wbt111" onclick="wb111();Audio2();"><Drumstick>Drumstick</Drumstick></button>
+</wh37>
+
+<ch37 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Kale>Kale</Kale></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch37>
+
+</div></div></div>
+<!--VEGETABLE-37-->
+
+<!--VEGETABLE-38-MalabarSpinach-->
+  
+<div class="swiper-slide">
+<div class="mytable"><button class="corner-page-number">38</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/MalabarSpinach-1.jpg"/></div>
+
+<wm38><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm38>
+<cm38><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm38>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh38>
+<button class="optionbutton wbt112" onclick="wb112();Audio2();"><Celery>Celery</Celery></button>
+</wh38>
+
+<wh38>
+<button class="optionbutton wbt113" onclick="wb113();Audio2();"><Spinach>Spinach</Spinach></button>
+</wh38>
+
+<wh38>
+<button class="optionbutton wbt114" onclick="wb114();Audio2();"><CorianderLeaves>Coriander Leaves</CorianderLeaves></button>
+</wh38>
+
+<cb38>
+<button class="optionbutton cbt38" onclick="cb38();Audio1();"><MalabarSpinach>Malabar Spinach</MalabarSpinach></button>
+</cb38>
+
+<ch38 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><MalabarSpinach>Malabar Spinach</MalabarSpinach></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch38>
+
+</div></div></div>
+<!--VEGETABLE-38-->
+
+<!--VEGETABLE-39-Okra-->
+  
+<div class="swiper-slide">       
+<div class="mytable"><button class="corner-page-number">39</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Okra-1.jpg"/></div>
+
+<wm39><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm39>
+<cm39><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm39>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<wh39>
+<button class="optionbutton wbt115" onclick="wb115();Audio2();"><GreenChilli>Green Chilli</GreenChilli></button>
+</wh39>
+
+<cb39>
+<button class="optionbutton cbt39" onclick="cb39();Audio1();"><Okra>Okra</Okra></button>
+</cb39>
+  
+<wh39>
+<button class="optionbutton wbt116" onclick="wb116();Audio2();"><GreenBean>Green Bean</GreenBean></button>
+</wh39>
+
+<wh39>
+<button class="optionbutton wbt117" onclick="wb117();Audio2();"><Radish>Radish</Radish></button>
+</wh39>
+
+<ch39 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Okra>Okra</Okra></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch39>
+  
+</div></div></div>
+<!--VEGETABLE-39-->
+
+<!--VEGETABLE-40-Radish-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">40</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Radish-1.jpg"/></div>
+
+<wm40><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm40>
+<cm40><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm40>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+<cb40>
+<button class="optionbutton cbt40" onclick="cb40();Audio1();"><Radish>Radish</Radish></button>
+</cb40>
+
+<wh40>
+<button class="optionbutton wbt118" onclick="wb118();Audio2();"><PointedGourd>Pointed Gourd</PointedGourd></button>
+</wh40>
+
+<wh40>
+<button class="optionbutton wbt119" onclick="wb119();Audio2();"><Carrot>Carrot</Carrot></button>
+</wh40>
+
+<wh40>
+<button class="optionbutton wbt120" onclick="wb120();Audio2();"><Beetroot>Beetroot</Beetroot></button>
+</wh40>
+
+<ch40 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Radish>Radish</Radish></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch40>
+
+</div></div></div>
+<!--VEGETABLE-40-->
+    
+<!--VEGETABLE-41-Radish-->
+  
+<div class="swiper-slide">      
+<div class="mytable"><button class="corner-page-number">41</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/veg/Asparagus-1.jpg"/></div>
+
+<wm41><button class="mood2">-1<br/><i class="material-icons">&#xe7f3</i></button></wm41>
+<cm41><button class="mood1">+4<br/><i class="material-icons">&#xe7f2</i></button></cm41>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='optionsection'>
+
+<wh41>
+<button class="optionbutton wbt121" onclick="wb121();Audio2();"><Drumstick>Drumstick</Drumstick></button>
+</wh41>
+
+<wh41>
+<button class="optionbutton wbt122" onclick="wb122();Audio2();"><Carrot>Carrot</Carrot></button>
+</wh41>
+
+<wh41>
+<button class="optionbutton wbt123" onclick="wb123();Audio2();"><GreenBean>Green Bean</GreenBean></button>
+</wh41>
+
+<cb41>
+<button class="optionbutton cbt41" onclick="cb41();Audio1();"><Asparagus>Asparagus</Asparagus></button>
+</cb41>
+
+<ch41 hidden>
+<button class="optionbutton cbutton1" onclick="Audio1();"><Asparagus>Asparagus</Asparagus></button>
+<button class="optionbutton cbutton2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch41>
+
+</div></div></div>
+<!--VEGETABLE-41-->
+
+
+      </div></div>
+
+
+<!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper@6.5.8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+<script>
+var swiper = new Swiper('.swiper-container',{loop: true, loopPreventsSlide: false,
+                              preloadImages: false, lazy: true,
+navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
+                                
+swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
+                                        var x = navigator.onLine; if (x == false){location.reload();} 
+localStorage.setItem('n5', swiper.activeIndex);  });
+var n5 = localStorage.getItem('n5');
+                                
+function nbox() {if (localStorage.getItem("n5") === null) {
+swiper.slideTo(1,0,true); }else {swiper.slideTo(n5,0,true);}  }
+
+$('.togglereset').click(function() {showreset();  });
+    
+    nbox();
+                               
+   
+ 
+</script>
+
+    
+    <script>
+<!-- Animal Quiz Language Change With Local Storage -->
+  
+function mylanguage() {  
+  if($('language1').html() == 'eng') {
+    
+
+    
+    $('tool1').html('<ben>ছবি দেখে উত্তর দাও<br/>');
+  $('tool2').html('<ben>শাক সবজি');
+    
+$('Artichoke').html('<ben>আর্টিচোক</ben>');
+$('Arugula').html('<ben>অরুগুলা</ben>');
+$('Asparagus').html('<ben>শতমূলী</ben>');
+$('Beetroot').html('<ben>বীট</ben>');
+$('BitterGourd').html('<ben>করলা</ben>');
+$('Brinjal').html('<ben>বেগুন</ben>');
+$('Broccoli').html('<ben>ব্রোকোলি</ben>');
+$('Cabbage').html('<ben>বাঁধাকপি</ben>');
+$('Calabash').html('<ben>লাউ</ben>');
+$('Capsicum').html('<ben>ক্যাপসিকাম</ben>');
+$('Carrot').html('<ben>গাজর</ben>');
+$('Cauliflower').html('<ben>ফুলকপি</ben>');
+$('Celery').html('<ben>পাথুনি শাক</ben>');
+$('CorianderLeaves').html('<ben>ধনে পাতা</ben>');
+$('Corn').html('<ben>ভূট্টা</ben>');
+$('Crookneck').html('<ben>ক্রুকনেক</ben>');
+$('Cucumber').html('<ben>শসা</ben>');
+$('Drumstick').html('<ben>সজনে ডাটা</ben>');
+$('Fig').html('<ben>ডুমুর</ben>');
+$('Garlic').html('<ben>রসুন</ben>');
+$('Ginger').html('<ben>আদা</ben>');
+$('GreenBanana').html('<ben>কাঁচকলা</ben>');
+$('GreenBean').html('<ben>সবুজ বিন</ben>');
+$('GreenChilli').html('<ben>কাঁচা লঙ্কা</ben>');
+$('Kale').html('<ben>পাতা কপি</ben>');
+$('Lettuce').html('<ben>লেটুস</ben>');
+$('MalabarSpinach').html('<ben>পুঁই শাক</ben>');
+$('Mint').html('<ben>পুদিনা</ben>');
+    
+$('Mushroom').html('<ben>মাশরুম</ben>');
+    
+    
+$('Okra').html('<ben>ঢেঁড়শ</ben>');
+$('Onion').html('<ben>পেঁয়াজ</ben>');
+$('Pea').html('<ben>মটরশুঁটি</ben>');
+$('PointedGourd').html('<ben>পটল</ben>');
+$('Potato').html('<ben>আলু</ben>');
+$('Pumpkin').html('<ben>কুমড়া</ben>');
+$('Radish').html('<ben>মুলা</ben>');
+$('Spinach').html('<ben>পালং</ben>');
+$('SpinyGourd').html('<ben>কাঁকরোল</ben>');
+$('SweetPotato').html('<ben>রাঙা আলু</ben>');
+$('Tomato').html('<ben>টমেটো</ben>');
+$('Turnip').html('<ben>শালগম</ben>');
+
+
+$('Score').html('<ben>স্কোর');
+$('Reset').html('<ben>রিসেট');
+$('Share').html('<ben>শেয়ার');
+$('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');
+$('touchoption').html('<ben>সঠিক অপশনটি টাচ করুন !');
+$('CorrectAnswer').html('<ben>সঠিক উত্তর !');
+$('language1').html('bng');sessionStorage.setItem('cl','t');
+
+} else {
+
+
+  
+  $('tool1').html('Guess The Picture<br/>');
+  $('tool2').html('Vegetables');
+  
+$('Artichoke').html('Artichoke');
+$('Arugula').html('Arugula');
+$('Asparagus').html('Asparagus');
+$('Beetroot').html('Beetroot');
+$('BitterGourd').html('Bitter Gourd');
+$('Brinjal').html('Brinjal');
+$('Broccoli').html('Broccoli');
+$('Cabbage').html('Cabbage');
+$('Calabash').html('Calabash<br/>(Bottle Gourd)');
+$('Capsicum').html('Capsicum');
+$('Carrot').html('Carrot');
+$('Cauliflower').html('Cauliflower');
+$('Celery').html('Celery');
+$('CorianderLeaves').html('Coriander Leaves');
+$('Corn').html('Corn');
+$('Crookneck').html('Crookneck');
+$('Cucumber').html('Cucumber');
+$('Drumstick').html('Drumstick');
+$('Fig').html('Fig');
+$('Garlic').html('Garlic');
+$('Ginger').html('Ginger');
+$('GreenBanana').html('Green Banana');
+$('GreenBean').html('Green Bean');
+$('GreenChilli').html('Green Chilli');
+$('Kale').html('Kale');
+$('Lettuce').html('Lettuce');
+$('MalabarSpinach').html('Malabar Spinach');
+$('Mint').html('Mint');
+$('Mushroom').html('Mushroom');
+$('Okra').html('Okra<br/>(Ladies Finger)');
+$('Onion').html('Onion');
+$('Pea').html('Peas');
+$('PointedGourd').html('Pointed Gourd');
+$('Potato').html('Potato');
+$('Pumpkin').html('Pumpkin');
+$('Radish').html('Radish');
+$('Spinach').html('Spinach');
+$('SpinyGourd').html('Spiny Gourd');
+$('SweetPotato').html('Sweet Potato');
+$('Tomato').html('Tomato');
+$('Turnip').html('Turnip');
+
+$('Score').html('Score');
+$('Reset').html('Reset');
+$('Share').html('Share');
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');
+$('touchoption').html('Touch The Correct Option !');
+$('CorrectAnswer').html('Correct Answer !');
+$('language1').html('eng');sessionStorage.removeItem('cl');
+}}
+  
+</script>
+  
+<script>
+ $(document).ready(function() {
+   document.getElementsByClassName("tooltitle")[0].innerHTML = '<tool1>Guess The Picture</tool1><br/><tool2>Vegetables</tool2>';
+   if(location.hash){window.history.back();}
+   $('.tooltitle').delay(400).slideDown('slow');
+   
+ 
+setTimeout(function() {
+     if(sessionStorage.getItem('f2') === 't'){showpage();}
+     sessionStorage.setItem('f2','t'); }, 300);
+    
+                                    
+  
+ }); 
+    
+    
+    </script>
+
+<script>
+
+window.onload = function() {showpage();};
+$(document).ready(function() {cont(); 
+
+
+});
+$('.loading').click(function(){hidepage();});
+ 
+</script>
+<link rel="prefetch" href="/2020/01/index-english.html?m=1"/>
+<link rel="prefetch" href="/2020/01/index-bengali.html?m=1"/>
+    <link rel="prefetch" href="/2020/10/t1.html?m=1"/>
+
