@@ -3093,11 +3093,11 @@ navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
                                 
 swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
                                         var x = navigator.onLine; if (x == false){location.reload();} 
-localStorage.setItem('n5', swiper.activeIndex);  });
-var n5 = localStorage.getItem('n5');
+localStorage.setItem('ns5', swiper.activeIndex);  });
+var ns5 = localStorage.getItem('ns5');
                                 
-function nbox() {if (localStorage.getItem("n5") === null) {
-swiper.slideTo(1,0,true); }else {swiper.slideTo(n5,0,true);}  }
+function nbox() {if (localStorage.getItem("ns5") === null) {
+swiper.slideTo(1,0,true); }else {swiper.slideTo(ns5,0,true);}  }
 
 $('.togglereset').click(function() {showreset();  });
     
