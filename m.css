@@ -95,7 +95,7 @@ tool1h {
   
   tool2h {
     font-size:14px;
-    line-height:0;
+    line-height:1;
     background-color:#1E569D;
     border-radius:50px;
     padding: 0px 4px 0px 4px;}
