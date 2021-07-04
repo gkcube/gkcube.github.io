@@ -13,7 +13,7 @@
   gtag('config', 'UA-124695825-3');
 </script>
 <script src='https://cdn.jsdelivr.net/gh/gkcube/js@1.0.0.2/jquery.min.js'></script>
-<link rel="stylesheet" href="../m.css">
+<link rel="stylesheet" href="../css/m.css">
 </head>
 
 <div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
@@ -23,22 +23,11 @@
 
 
 function delayloading() {
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { $('loading').html('NETWORK SLOW');}
-}, 7000);
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { 
-$('loading').html('RETRYING');}
-}, 8000);
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { 
-location.reload();}
-}, 10000); 
-}
-delayloading(); 
+var loading = document.getElementsByTagName("loading");
+setTimeout(function() {loading[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {loading[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading();
 
 function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
 function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
@@ -202,7 +191,7 @@ $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাং�
 </div>
 </a>
 
-<a href="/2020/10/t2.html?m=1">
+<a href="2-bird.html">
 <div class="box1 loading">
 <div class="image-wrapper3">
 <img src="https://cdn.jsdelivr.net/gh/gkcube/gkcube.github.io/birdsvg001.png"/>
@@ -213,7 +202,7 @@ $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাং�
 </div>
 </a>
 
-<a href="/2019/01/test-004.html?m=1" >
+<a href="3-fruit.html" >
 <div class="box1 loading">
 <div class="image-wrapper3">
 <img src="https://cdn.jsdelivr.net/gh/gkcube/gkcube.github.io/applesvg001.png"/>
@@ -224,7 +213,7 @@ $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাং�
 </div>
 </a>
 
-<a href="/2020/10/flower.html?m=1">
+<a href="4-flower.html">
 <div class="box1 loading">
 <div class="image-wrapper3">
 <img src="https://cdn.jsdelivr.net/gh/gkcube/gkcube.github.io/flowersvg002.png"/>
