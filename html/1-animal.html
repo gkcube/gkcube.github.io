@@ -1,48 +1,37 @@
 <!DOCTYPE html>
+<html>
 <head>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
-	<title>ANIMAL</title>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<title>FRUIT</title>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-124695825-3');
+function delayloading() {
+var loading = document.getElementsByTagName("loading");
+setTimeout(function() {loading[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {loading[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
 </script>
 <script src='https://cdn.jsdelivr.net/gh/gkcube/js@1.0.0.2/jquery.min.js'></script>
-<link rel="stylesheet" href="../m.css">
-</head>
+<script src="../js/m1.js"></script>
+<script src="../js/s1.js"></script>
+<link rel="stylesheet" href="../css/m.css">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-124695825-3');
+</script>
+</head>
+<body>
+<header>
 <div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
 <div style="height:54px;"></div>
-
 <script>
-
-
-function delayloading() {
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { $('loading').html('NETWORK SLOW');}
-}, 7000);
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { 
-$('loading').html('RETRYING');}
-}, 8000);
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { 
-location.reload();}
-}, 10000); 
-}
-delayloading(); 
-
 function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
 function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
-
 </script>
 <div id="popup2" class="popup2">
 <div class="loadshadow">
@@ -53,36 +42,29 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 </div>
 </div>
 
-
 <div id="sticky">
 <div class="subhead">
-<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon></toolicon></i></button>
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
 
 <toolimg></toolimg>
 <button class="tooltitle"></button>
 
-
 <button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
-
 
 <button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
 
 </div></div>
-
 
 <quizbtn>
 
 <div class="scorebg">
 <button id="score1"><score>Score</score> : </button><div class="sbox1"><input type="text" id="sbox" value="0" readonly/></div>
 <button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
-
 </div>
-
-
 <button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
 </quizbtn> 
-<next-previous-buttons>
 
+<next-previous-buttons>
 
 <button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
   
@@ -90,7 +72,6 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 
 <button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
  
-  
 </next-previous-buttons>
 
 <audio id="Audio2" preload="auto">
@@ -103,45 +84,31 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 <script>
 var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
 var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}</script>
-
-
-
 <script>
   
-  document.getElementsByTagName("toolicon")[0].innerHTML = '&#xe5c4';
-  
-  
-  function toolicon() {
-    if(sessionStorage.getItem('1i')){window.history.back();}
-    else {location.replace('/2020/01/index-english.html');
-    }}
+ function toolicon() {
+ if(sessionStorage.getItem('1i'))
+ {window.history.back();}
+ else {location.replace('index-english.html'); }}
 	
-	onhashchange = function (){ if(location.hash){ } else{
-    
-    $("#resetpopup,#belowpopup").fadeOut('fast');
-
-      }}
-  function historyback() { if(location.hash){ history.back(); }  }
-    
-    
-    function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }    
+onhashchange = function (){ if(location.hash){ } else{
+ 
+ $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+ function historyback() { if(location.hash){ history.back(); }  }
+  
+ function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }    
 </script>
 
 <div id="belowpopup" onclick="historyback()";></div>
-
-
 <div id="resetpopup" class="dbox">Reset Score (Animals)<hr/><div align="center">
 <button class="resetbutton" onclick="historyback()">Cancel</button>
 <button class="doreset resetbutton" onclick="storagereset();">Reset</button>
-
 </div></div>
 
-<script src="../m1.js"></script>
-<script src="../s1.js"></script>
-
-  
 <language1 hidden>eng</language1>
 <ben hidden>বাংলা</ben>
+
+</header>
 
 
 <!-- Link Swiper's CSS -->
