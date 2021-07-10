@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
-<title>FRUIT</title>
+<title>ANIMAL</title>
 <script>
 function delayloading() {
 var loading = document.getElementsByTagName("loading");
@@ -44,7 +44,7 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 
 <div id="sticky">
 <div class="subhead">
-<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon></toolicon></i></button>
 
 <toolimg></toolimg>
 <button class="tooltitle"></button>
@@ -58,7 +58,7 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 <quizbtn>
 
 <div class="scorebg">
-<button id="score1"><score>Score</score> : </button><div class="sbox1"><input type="text" id="sbox" value="0" readonly/></div>
+<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
 <button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
 </div>
 <button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
@@ -86,6 +86,8 @@ var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0
 var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}</script>
 <script>
   
+document.getElementsByTagName("toolicon")[0].innerHTML = '&#xe5c4';
+  
  function toolicon() {
  if(sessionStorage.getItem('1i'))
  {window.history.back();}
@@ -110,10 +112,8 @@ onhashchange = function (){ if(location.hash){ } else{
 
 </header>
 
-
 <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper.min.css">
-
 
   <!-- Swiper -->
   <div class="swiper-container">
@@ -126,7 +126,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="slide q1"><button class="corner-page-number">1</button>
 <div class="image-wrapper">
   
-<img src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/tiger-1.jpg"/></div>
+<img src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/tiger-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -152,7 +152,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="swiper-slide">
 <div class="slide q2"><button class="corner-page-number">2</button>
   <div class="image-wrapper">  
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/lion-1.jpeg"/>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/lion-1.jpeg"/>
     </div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
@@ -178,7 +178,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q3"><button class="corner-page-number">3</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/elephant-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/elephant-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -202,7 +202,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q4"><button class="corner-page-number">4</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/bear-1.jpeg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/bear-1.jpeg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -226,7 +226,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q5"><button class="corner-page-number">5</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/squirrel-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/squirrel-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -250,7 +250,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q6"><button class="corner-page-number">6</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/snake-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/snake-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -274,7 +274,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q7"><button class="corner-page-number">7</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/polecat-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/polecat-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -298,7 +298,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q8"><button class="corner-page-number">8</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/badger-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/badger-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -323,7 +323,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q9"><button class="corner-page-number">9</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/porcupine-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/porcupine-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -348,7 +348,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q10"><button class="corner-page-number">10</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/zebra-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/zebra-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -373,7 +373,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q11"><button class="corner-page-number">11</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/sheep-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/sheep-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -398,7 +398,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q12"><button class="corner-page-number">12</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/dog-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/dog-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -423,7 +423,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q13"><button class="corner-page-number">13</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/cat-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/cat-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -447,7 +447,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <!--ANIMAL-14-Cheetah-->
   
 <div class="swiper-slide"><div class="slide q14"><button class="corner-page-number">14</button>
-<div class="image-wrapper"><img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/cheetah-1.jpg"/></div>
+<div class="image-wrapper"><img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/cheetah-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -471,7 +471,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <!--ANIMAL-15-Bat-->
         
 <div class="swiper-slide"><div class="slide q15"><button class="corner-page-number">15</button>
-<div class="image-wrapper"><img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/bat-1.jpg"/></div>
+<div class="image-wrapper"><img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/bat-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -496,7 +496,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q16"><button class="corner-page-number">16</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/bison-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/bison-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -521,7 +521,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q17"><button class="corner-page-number">17</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/alpaca-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/alpaca-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -546,7 +546,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q18"><button class="corner-page-number">18</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/horse-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/horse-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -571,7 +571,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q19"><button class="corner-page-number">19</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/tortoise-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/tortoise-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -596,7 +596,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q20"><button class="corner-page-number">20</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/kangaroo-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/kangaroo-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -621,7 +621,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q21"><button class="corner-page-number">21</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/buffalo-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/buffalo-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -646,7 +646,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q22"><button class="corner-page-number">22</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/crocodile-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/crocodile-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -671,7 +671,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q23"><button class="corner-page-number">23</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/giraffe-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/giraffe-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -696,7 +696,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q24"><button class="corner-page-number">24</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/whale-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/whale-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -721,7 +721,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q25"><button class="corner-page-number">25</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/mongoose-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/mongoose-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -746,7 +746,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q26"><button class="corner-page-number">26</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/langur-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/langur-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -771,7 +771,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q27"><button class="corner-page-number">27</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/jackal-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/jackal-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -796,7 +796,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q28"><button class="corner-page-number">28</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/lemur-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/lemur-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -821,7 +821,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q29"><button class="corner-page-number">29</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/monkey-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/monkey-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -846,7 +846,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q30"><button class="corner-page-number">30</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/iguana-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/iguana-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -871,7 +871,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q31"><button class="corner-page-number">31</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/shark-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/shark-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -896,7 +896,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q32"><button class="corner-page-number">32</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/wolf-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/wolf-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -921,7 +921,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q33"><button class="corner-page-number">33</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/anteater-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/anteater-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -947,7 +947,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q34"><button class="corner-page-number">34</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/barasingha-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/barasingha-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -972,7 +972,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q35"><button class="corner-page-number">35</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/donkey-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/donkey-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -997,7 +997,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q36"><button class="corner-page-number">36</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/hyena-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/hyena-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1022,7 +1022,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q37"><button class="corner-page-number">37</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/dolphin-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/dolphin-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1047,7 +1047,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q38"><button class="corner-page-number">38</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/chimpanzee-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/chimpanzee-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1072,7 +1072,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q39"><button class="corner-page-number">39</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/fox-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/fox-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1097,7 +1097,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q40"><button class="corner-page-number">40</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/snail-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/snail-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1122,7 +1122,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q41"><button class="corner-page-number">41</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/panda-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/panda-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1147,7 +1147,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q42"><button class="corner-page-number">42</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/otter-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/otter-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1172,7 +1172,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q43"><button class="corner-page-number">43</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/rhinoceros-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/rhinoceros-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1197,7 +1197,7 @@ onhashchange = function (){ if(location.hash){ } else{
         
 <div class="swiper-slide"><div class="slide q44"><button class="corner-page-number">44</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/rabbit.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/rabbit.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1222,7 +1222,7 @@ onhashchange = function (){ if(location.hash){ } else{
   
 <div class="swiper-slide"><div class="slide q45"><button class="corner-page-number">45</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/mole-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/mole-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1248,7 +1248,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="swiper-slide">       
 <div class="slide q46"><button class="corner-page-number">46</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/Pangolin-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/Pangolin-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1274,7 +1274,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="swiper-slide">      
 <div class="slide q47"><button class="corner-page-number">47</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/goat-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/goat-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1300,7 +1300,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="swiper-slide">      
 <div class="slide q48"><button class="corner-page-number">48</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/beaver-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/beaver-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1326,7 +1326,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="swiper-slide">
 <div class="slide q49"><button class="corner-page-number">49</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/baboon-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/baboon-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1352,7 +1352,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="swiper-slide">      
 <div class="slide q50"><button class="corner-page-number">50</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/deer-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/deer-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1378,7 +1378,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="swiper-slide">
 <div class="slide q51"><button class="corner-page-number">51</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/cow-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/cow-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1404,7 +1404,7 @@ onhashchange = function (){ if(location.hash){ } else{
 <div class="swiper-slide">       
 <div class="slide q52"><button class="corner-page-number">52</button>
 <div class="image-wrapper">
-<img class="swiper-lazy" data-src="https://cdn.jsdelivr.net/gh/gkcube/animal@1.0.0.0/rat-1.jpg"/></div>
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1.0.0.0/rat-1.jpg"/></div>
 
 <wm><button class="mood2">-1<br/><i class="m-i">mood_bad</i></button></wm>
 <cm><button class="mood1">+4<br/><i class="m-i">mood</i></button></cm>
@@ -1619,7 +1619,6 @@ setTimeout(function() {
      if(sessionStorage.getItem('f2')){showpage();}
      sessionStorage.setItem('f2','t'); }, 300);
     
-                                    
   
  }); 
     
@@ -1636,5 +1635,5 @@ $(document).ready(function() {cont(); });
 $('.loading').click(function(){hidepage();});
  
 </script>
-
-
+</body>
+</html>

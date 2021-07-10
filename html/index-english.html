@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <head>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
 	<title>INDEX</title>
@@ -21,13 +20,12 @@
 
 <script>
 
-
 function delayloading() {
 var loading = document.getElementsByTagName("loading");
 setTimeout(function() {loading[0].innerHTML = "NETWORK SLOW";}, 7000);
 setTimeout(function() {loading[0].innerHTML = "RETRYING";}, 8000);
 setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
-delayloading();
+delayloading(); 
 
 function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
 function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
@@ -93,12 +91,16 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
  document.getElementsByTagName("toolicon")[0].innerHTML = '&#xe5d2';
  document.getElementsByClassName("tooltitle")[0].innerHTML = '<tool1h>GKCube</tool1h><br/><tool2h>The Study App</tool2h>';
   function toolicon() {location.replace('drawer://')}
+  
 function cont(){
 if(sessionStorage.getItem('cl') === 't'){
 $('.change').click();
 $('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');} 
 else {
-$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');}}
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');}
+  
+
+}
 </script>
   
 
@@ -191,7 +193,7 @@ $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাং�
 </div>
 </a>
 
-<a href="2-bird.html">
+<a href="/2020/10/t2.html?m=1">
 <div class="box1 loading">
 <div class="image-wrapper3">
 <img src="https://cdn.jsdelivr.net/gh/gkcube/images@1/bird-icon-001.png"/>
@@ -213,7 +215,7 @@ $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাং�
 </div>
 </a>
 
-<a href="4-flower.html">
+<a href="/2020/10/flower.html?m=1">
 <div class="box1 loading">
 <div class="image-wrapper3">
 <img src="https://cdn.jsdelivr.net/gh/gkcube/images@1/flower-icon-001.png"/>
@@ -311,6 +313,7 @@ $('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাং�
 $('touchoption').html('<ben>সঠিক অপশনটি টাচ করুন !');
 $('CorrectAnswer').html('<ben>সঠিক উত্তর !');
 $('language1').html('bng');sessionStorage.setItem('cl','t');
+sessionStorage.setItem('cl1','t');
 
 } else {
 
@@ -320,7 +323,6 @@ $('Fruits').html('Fruits');
 $('Flowers').html('Flowers');
 $('Vegetables').html('Vegetables');
 $('guess').html('Guess The Picture');
-
 
 $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');
 $('touchoption').html('Touch The Correct Option !');
@@ -338,17 +340,12 @@ $('language1').html('eng');sessionStorage.removeItem('cl');
    
    setTimeout(function() { $('.tooltitle').slideDown();
       }, 300);
-  
-   
+ 
  });
 </script>
 
  
 <link rel="prefetch" href="index-english.html"/>
-
-
-
-
 
 
 <script>

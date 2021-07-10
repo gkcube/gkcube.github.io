@@ -20,23 +20,11 @@
 
 <script>
 
-
 function delayloading() {
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { $('loading').html('NETWORK SLOW');}
-}, 7000);
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { 
-$('loading').html('RETRYING');}
-}, 8000);
-
-setTimeout(function() {
-if($('#popup2').is(':visible')) { 
-location.reload();}
-}, 10000); 
-}
+var loading = document.getElementsByTagName("loading");
+setTimeout(function() {loading[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {loading[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
 delayloading(); 
 
 function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
@@ -112,7 +100,8 @@ else {
 $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');}
   
 if(sessionStorage.getItem('cl1') === null){
-$('.change').click(); $('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');}}
+$('.change').click(); $('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');}
+}
 </script>
   
 
@@ -252,7 +241,7 @@ $('.change').click(); $('cl').html('<button id="lc2">ENGLISH</button><button id=
 <a href="/2021/05/testautosave.html?m=1" >
 <div class="box1 loading">
 <div class="image-wrapper3">
-<img src="https://cdn.jsdelivr.net/gh/gkcube/images@1/body-icon-001.png"/>
+<img src="https://cdn.jsdelivr.net/gh/gkcube/images@1/animal-icon-001.png"/>
 </div>
 <button class="mmb2">
 Spelling
@@ -307,6 +296,9 @@ Settings
 <div style="opacity:0;position:absolute;"><ben>বাংলা</ben></div>
 
 
+
+
+
 <script>
 function mylanguage() {  
   if($('language1').html() == 'eng') {
@@ -333,7 +325,6 @@ $('Flowers').html('Flowers');
 $('Vegetables').html('Vegetables');
 $('guess').html('Guess The Picture');
 
-
 $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');
 $('touchoption').html('Touch The Correct Option !');
 $('CorrectAnswer').html('Correct Answer !');
@@ -350,13 +341,14 @@ $('language1').html('eng');sessionStorage.removeItem('cl');
    
    setTimeout(function() { $('.tooltitle').slideDown();
       }, 300);
-  
-   
+ 
  });
 </script>
 
  
-<link rel="prefetch" href="index-english.html"/>
+<link rel="prefetch" href="index-bengali.html"/>
+
+
 
 
 

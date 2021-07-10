@@ -58,7 +58,7 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 <quizbtn>
 
 <div class="scorebg">
-<button id="score1"><score>Score</score> : </button><div class="sbox1"><input type="text" id="sbox" value="0" readonly/></div>
+<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
 <button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
 </div>
 <button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
@@ -1174,6 +1174,8 @@ var ns5 = localStorage.getItem('ns5');
                                 
 function nbox() {if (localStorage.getItem("ns5") === null) {
 swiper.slideTo(1,0,true); }else {swiper.slideTo(ns5,0,true);}  }
+
+$('.togglereset').click(function() {showreset();  });
     
     nbox();
                                
@@ -1325,6 +1327,10 @@ setTimeout(function() {
     
     </script>
 <link rel="prefetch" href="5-vegetable.html"/>
+
+
+
+
 
 
 <script>
