@@ -39,7 +39,9 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 <button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
 
 <toolimg></toolimg>
-<button class="tooltitle"></button>
+<button class="tooltitle">
+<tool1>Guess The Picture</tool1><br/><tool2>Fruits</tool2>
+</button>
 
 <button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
 
@@ -1190,14 +1192,14 @@ onhashchange = function (){ if(location.hash){ } else{ $("#resetpopup,#belowpopu
 
 <script>
 var swiper = new Swiper('.swiper-container',{loop: true, loopPreventsSlide: false,
-                              preloadImages: true, lazy: true,
+preloadImages: true, lazy: true,
 navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
-                                
+
 swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
-                                        
+
 localStorage.setItem('ns3', swiper.activeIndex);  });
 var ns3 = localStorage.getItem('ns3');
-                                
+
 function gotoslide() {if (localStorage.getItem("ns3") === null) {
 swiper.slideTo(1,0,true); }else {swiper.slideTo(ns3,0,true);}  }
     

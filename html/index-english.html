@@ -37,10 +37,12 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 
 <div id="sticky">
 <div class="subhead">
-<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon></toolicon></i></button>
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5d2</toolicon></i></button>
 
 <toolimg></toolimg>
-<button class="tooltitle"></button>
+<button class="tooltitle">
+<tool1h>GKCube</tool1h><br/><tool2h>The Study App</tool2h>
+</button>
 
 
 <button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
@@ -57,19 +59,14 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 </style>
 <script>
   sessionStorage.setItem('1i','0');
- document.getElementsByTagName("toolicon")[0].innerHTML = '&#xe5d2';
- document.getElementsByClassName("tooltitle")[0].innerHTML = '<tool1h>GKCube</tool1h><br/><tool2h>The Study App</tool2h>';
   function toolicon() {location.replace('drawer://')}
-  
 function cont(){
 if(sessionStorage.getItem('cl') === 't'){
 $('.change').click();
 $('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');} 
 else {
 $('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');}
-  
-
-}
+  }
 </script>
   
  
