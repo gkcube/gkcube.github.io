@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
-<title>ANIMAL</title>
+<title>3 FRUIT</title>
 <script>
 function delayloading() {
-var loading = document.getElementsByTagName("loading");
-setTimeout(function() {loading[0].innerHTML = "NETWORK SLOW";}, 7000);
-setTimeout(function() {loading[0].innerHTML = "RETRYING";}, 8000);
-setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
 delayloading(); 
 </script>
 <script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
@@ -56,20 +56,17 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 
 <script>
 var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
-var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}</script>
-<script>
-  
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}
+
  function toolicon() {
- if(sessionStorage.getItem('1i'))
- {window.history.back();}
+ if(sessionStorage.getItem('1i')) {window.history.back();}
  else {location.replace('index-english.html'); }}
-	
-onhashchange = function (){ if(location.hash){ } else{
  
- $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+onhashchange = function (){ if(location.hash){ } else{ $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+
  function historyback() { if(location.hash){ history.back(); }  }
   
- function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }    
+ function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }
 </script>
 
 <div id="belowpopup" onclick="historyback()";></div>
@@ -1201,10 +1198,10 @@ swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
 localStorage.setItem('ns3', swiper.activeIndex);  });
 var ns3 = localStorage.getItem('ns3');
                                 
-function nbox() {if (localStorage.getItem("ns3") === null) {
+function gotoslide() {if (localStorage.getItem("ns3") === null) {
 swiper.slideTo(1,0,true); }else {swiper.slideTo(ns3,0,true);}  }
     
-    nbox();
+    gotoslide();
    
 
 </script>
@@ -1332,30 +1329,21 @@ $('language1').html('eng');sessionStorage.removeItem('cl');
 
 <script>
  $(document).ready(function() {
-   document.getElementsByClassName("tooltitle")[0].innerHTML = '<tool1>Guess The Picture</tool1><br/><tool2>Animals</tool2>';
+ 
    if(location.hash){window.history.back();}
    $('.tooltitle').delay(500).slideDown('slow');
    
-setTimeout(function() {
-     if(sessionStorage.getItem('f2')){showpage();}
-     sessionStorage.setItem('f2','t'); }, 300);
-    
-  
- }); 
-    
-    
-    </script>
+setTimeout(function() {if(sessionStorage.getItem('f3')){showpage();}sessionStorage.setItem('f3','t'); }, 300);
+
+}); 
+$(document).ready(function() { cont(); });
+window.onload = function() {showpage();};
+$('.loading').click(function(){hidepage();});
+</script>
 <link rel="prefetch" href="index-english.html"/>
+<link rel="prefetch" href="index-bengali.html"/>
 <link rel="prefetch" href="3-fruit.html"/>
     
-<script>
-
-window.onload = function() {showpage();};
-$(document).ready(function() {cont(); });
-
-$('.loading').click(function(){hidepage();});
- 
-</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
 <script>

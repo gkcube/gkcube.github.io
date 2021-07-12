@@ -2,20 +2,19 @@
 <html>
 <head>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
-<title>ANIMAL</title>
+<title>1 ANIMAL</title>
 <script>
 function delayloading() {
-var loading = document.getElementsByTagName("loading");
-setTimeout(function() {loading[0].innerHTML = "NETWORK SLOW";}, 7000);
-setTimeout(function() {loading[0].innerHTML = "RETRYING";}, 8000);
-setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
 delayloading(); 
 </script>
 <script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
 <script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/m1.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/s1.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@3/m.css">
-
 
 </head>
 <body>
@@ -59,22 +58,17 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 
 <script>
 var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
-var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}</script>
-<script>
-  
-document.getElementsByTagName("toolicon")[0].innerHTML = '&#xe5c4';
-  
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}
+
  function toolicon() {
- if(sessionStorage.getItem('1i'))
- {window.history.back();}
+ if(sessionStorage.getItem('1i')) {window.history.back();}
  else {location.replace('index-english.html'); }}
-	
-onhashchange = function (){ if(location.hash){ } else{
  
- $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+onhashchange = function (){ if(location.hash){ } else{ $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+
  function historyback() { if(location.hash){ history.back(); }  }
   
- function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }    
+ function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }
 </script>
 
 <div id="belowpopup" onclick="historyback()";></div>
@@ -1425,18 +1419,18 @@ onhashchange = function (){ if(location.hash){ } else{
 
 <script>
 var swiper = new Swiper('.swiper-container',{loop: true, loopPreventsSlide: false,
-                              preloadImages: true, lazy: true,
+preloadImages: true, lazy: true,
 navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
-                                
+
 swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
-                                        
+
 localStorage.setItem('ns1', swiper.activeIndex);  });
 var ns1 = localStorage.getItem('ns1');
-                                
-function nbox() {if (localStorage.getItem("ns1") === null) {
+
+function gotoslide() {if (localStorage.getItem("ns1") === null) {
 swiper.slideTo(1,0,true); }else {swiper.slideTo(ns1,0,true);}  }
     
-    nbox();
+    gotoslide();
    
 
 </script>
@@ -1600,36 +1594,22 @@ $('language1').html('eng');sessionStorage.removeItem('cl');
   
 </script>
 
-
-
-
-
-
-
 <script>
  $(document).ready(function() {
-   document.getElementsByClassName("tooltitle")[0].innerHTML = '<tool1>Guess The Picture</tool1><br/><tool2>Animals</tool2>';
+ 
    if(location.hash){window.history.back();}
    $('.tooltitle').delay(500).slideDown('slow');
    
-setTimeout(function() {
-     if(sessionStorage.getItem('f2')){showpage();}
-     sessionStorage.setItem('f2','t'); }
-	 , 300); }); 
-    
-    
-    </script>
+setTimeout(function() {if(sessionStorage.getItem('f1')){showpage();}sessionStorage.setItem('f1','t'); }, 300);
+
+}); 
+$(document).ready(function() { cont(); });
+window.onload = function() {showpage();};
+$('.loading').click(function(){hidepage();});
+</script>
 <link rel="prefetch" href="index-english.html"/>
 <link rel="prefetch" href="1-animal.html"/>
     
-<script>
-
-window.onload = function() {showpage();};
-$(document).ready(function() {cont(); });
-
-$('.loading').click(function(){hidepage();});
- 
-</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
-<title>BIRDS 2</title>
+<title>4 FLOWER</title>
 <script>
 function delayloading() {
-var loading = document.getElementsByTagName("loading");
-setTimeout(function() {loading[0].innerHTML = "NETWORK SLOW";}, 7000);
-setTimeout(function() {loading[0].innerHTML = "RETRYING";}, 8000);
-setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
 delayloading(); 
 </script>
 <script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
@@ -38,7 +38,6 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 <div class="subhead">
 <button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
 
-<toolimg></toolimg>
 <button class="tooltitle"></button>
 
 <button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
@@ -1348,14 +1347,15 @@ $('language1').html('eng');sessionStorage.removeItem('cl');
 
 <script>
  $(document).ready(function() {
+ 
    if(location.hash){window.history.back();}
    $('.tooltitle').delay(500).slideDown('slow');
    
 setTimeout(function() {if(sessionStorage.getItem('f4')){showpage();}sessionStorage.setItem('f4','t'); }, 300);
-cont();
+
 }); 
-    
- window.onload = function() {showpage();};
+$(document).ready(function() { cont(); });
+window.onload = function() {showpage();};
 $('.loading').click(function(){hidepage();});
 </script>
 
