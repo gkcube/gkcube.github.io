@@ -12,18 +12,11 @@ setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':vis
 delayloading(); 
 </script>
 <script src='https://cdn.jsdelivr.net/gh/gkcube/js@1.0.0.2/jquery.min.js'></script>
-<script src="../js/m1.js"></script>
-<script src="../js/s1.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@2/m.css">
+<script src="../../js/m1.js"></script>
+<script src="../../js/s1.js"></script>
+<link rel="stylesheet" href="../../css/m.css">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'UA-124695825-3');
-</script>
+
 </head>
 <body>
 <header>
@@ -55,24 +48,7 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 
 </div></div>
 
-<quizbtn>
 
-<div class="scorebg">
-<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
-<button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
-</div>
-<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
-</quizbtn> 
-
-<next-previous-buttons>
-
-<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
-  
-<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
-
-<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
- 
-</next-previous-buttons>
 
 <audio id="Audio2" preload="auto">
   <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
@@ -1428,6 +1404,20 @@ onhashchange = function (){ if(location.hash){ } else{
  </div></div>
 
 
+<quizbtn>
+<div class="scorebg">
+<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
+<button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
+</div>
+<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
+</quizbtn> 
+<next-previous-buttons>
+<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
+</next-previous-buttons>
+
+
 <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper-bundle.min.js"></script>
 
@@ -1450,6 +1440,7 @@ swiper.slideTo(1,0,true); }else {swiper.slideTo(ns1,0,true);}  }
    
 
 </script>
+
 
 <script>
 <!-- Animal Quiz Language Change With Local Storage -->
@@ -1608,19 +1599,23 @@ $('language1').html('eng');sessionStorage.removeItem('cl');
 }}
   
 </script>
+
+
+
+
+
+
+
 <script>
  $(document).ready(function() {
    document.getElementsByClassName("tooltitle")[0].innerHTML = '<tool1>Guess The Picture</tool1><br/><tool2>Animals</tool2>';
    if(location.hash){window.history.back();}
    $('.tooltitle').delay(500).slideDown('slow');
    
- 
 setTimeout(function() {
      if(sessionStorage.getItem('f2')){showpage();}
-     sessionStorage.setItem('f2','t'); }, 300);
-    
-  
- }); 
+     sessionStorage.setItem('f2','t'); }
+	 , 300); }); 
     
     
     </script>
@@ -1635,5 +1630,15 @@ $(document).ready(function() {cont(); });
 $('.loading').click(function(){hidepage();});
  
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-124695825-3');
+</script>
+
 </body>
 </html>

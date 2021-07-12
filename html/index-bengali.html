@@ -1,18 +1,11 @@
+<!DOCTYPE html>
+<html>
 <head>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
 	<title>INDEX</title>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-124695825-3');
-</script>
 <script src='https://cdn.jsdelivr.net/gh/gkcube/js@1.0.0.2/jquery.min.js'></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@2/m.css">
+<link rel="stylesheet" href="../../css/m.css">
 </head>
 
 <div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
@@ -31,6 +24,7 @@ function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','au
 function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
 
 </script>
+<body>
 <div id="popup2" class="popup2">
 <div class="loadshadow">
 <div class="loader">
@@ -43,10 +37,12 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 
 <div id="sticky">
 <div class="subhead">
-<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon></toolicon></i></button>
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5d2</toolicon></i></button>
 
 <toolimg></toolimg>
-<button class="tooltitle"></button>
+<button class="tooltitle">
+<tool1h>GKCube</tool1h><br/><tool2h>The Study App</tool2h>
+</button>
 
 
 <button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
@@ -57,39 +53,12 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 </div></div>
 
 
-<quizbtn>
-
-<div class="scorebg">
-<button id="score1"><score>Score</score> : </button><div class="sbox1"><input type="text" id="sbox" value="0" readonly/></div>
-<button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
-
-</div>
-
-
-<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
-</quizbtn> 
-<next-previous-buttons>
-
-
-<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
-  
-<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
-
-<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
- 
-  
-</next-previous-buttons>
-
-
 <style>
-  quizbtn {display:none;opacity: 0;}
   .next-previous {opacity: 0;}
   next-previous-buttons {background:none;}
 </style>
 <script>
   sessionStorage.setItem('1i','0');
- document.getElementsByTagName("toolicon")[0].innerHTML = '&#xe5d2';
- document.getElementsByClassName("tooltitle")[0].innerHTML = '<tool1h>GKCube</tool1h><br/><tool2h>The Study App</tool2h>';
   function toolicon() {location.replace('drawer://')}
   
 function cont(){
@@ -104,85 +73,10 @@ $('.change').click(); $('cl').html('<button id="lc2">ENGLISH</button><button id=
 }
 </script>
   
-
-<style>
-  .mainbox {
-    width:calc(100% - 20px); 
-    background-color:#27273f;
-    float:left;
-    margin-left:10px;
-    margin-top:10px;
-    margin-bottom:100px;
-    padding-top:0px;
-    border-radius:20px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
-  }
-  .box1 {float:left;
-    width:calc(50% - 26px);
-    margin-bottom:10px;
-    margin-left:13.34px;
-    border-radius:15px;
-    padding-bottom:0px;
-    padding-top:0px;
-    box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.40);
-    
-  border:3px solid #3a3a5f;} 
-  
-  .box1:after {
-  content: "";
-  display: block;
-  padding-bottom: 82%;
-}
-  
-  .box1:before {
-  content: "";
-  display: block;
-  padding-top: 18%;
-}
-  
-  .heading {
-    height:65px;
-    background-color:#138D75;
-    border-radius:0px;
-    border-top-right-radius:20px;
-    border-top-left-radius:20px;
-    color:white;
-    margin-top:0px;
-    float:left;
-    width:100%;
-    margin-bottom:10px;
-    font-size: 17px;
-  }
-  .image-wrapper3 img {
-    margin-left:25%;}
-  
- .mmb2 {
-   color: white;
-   font-size: 15px;
-   width: 100%;
-   text-align: center;
-   border-width:0px;
-   font-family: Quicksand;
-   max-width:100%;
-   float:left;
-   margin-top:10px;}
-
-  
- .image-wrapper3 img {
-  border-radius:0px;
-  border-top-right-radius:20px;
-  border-top-left-radius:20px;
-  width:50%;
-  border: 0px solid #5e6fa3;
-  float:left;}
-  
-  
-</style>
 <div class="mainbox">
   
-  <button class="heading"><guess>Guess The Pictures</guess></button>
-  
-  
+ <button class="heading"><guess>Guess The Pictures</guess></button>
+
 <a href="1-animal.html">
 <div class="box1 loading">
 <div class="image-wrapper3">
@@ -295,10 +189,13 @@ Settings
 <language1 hidden>eng</language1>
 <div style="opacity:0;position:absolute;"><ben>বাংলা</ben></div>
 
+<next-previous-buttons>
+<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
+</next-previous-buttons>
 
-
-
-
+</body>
 <script>
 function mylanguage() {  
   if($('language1').html() == 'eng') {
@@ -345,13 +242,7 @@ $('language1').html('eng');sessionStorage.removeItem('cl');
  });
 </script>
 
- 
 <link rel="prefetch" href="index-bengali.html"/>
-
-
-
-
-
 
 <script>
 
@@ -361,3 +252,4 @@ $(document).ready(function() {cont(); });
 $('.loading').click(function(){hidepage();});
  
 </script>
+</html>
