@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+<title>6 SPELLING</title>
+<script>
+function delayloading() {
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+</script>
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@e635e11/m.css">
+
+<style>
+.box {width:12%;height:40px;background-color:#2f2956;margin:1px 0.25%;border-radius:5px;color:white;float:left;font-size:20px;font-family:quicksand;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); }
+
+  .box:active {background-color:#000000;}
+
+   .dox {width:100%;height:82px;background-color:green;margin:1px 0px;border-radius:50px;color:white;float:left;font-size:20px;font-family:quicksand;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);float:left;}
+  g, r {font-size:22px; width:8%; height:25px; margin:1px 0.16% 1px 0.16%;text-align:center;border-radius:4px;display:inline-block;vertical-align: top;line-height:1.1;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);overflow:hidden;max-width:35px;font-family:quicksand;}
+  g {background-color:green;}
+  r {background-color:black;}
+
+  r::after {content: "_";padding-right:10px;padding-left:8px;color:#C3B2F5;}
+
+  .word {margin:20px 0px 10px 0px;width:100%;height:50px;float:left; word-wrap:break-word}
+  </style>
+
+</head>
+<body>
+<header>
+<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
+<div style="height:54px;"></div>
+<script>
+function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
+function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
+</script>
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
+
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
+
+<toolimg></toolimg>
+<button class="tooltitle">
+<tool1>Spelling Test</tool1><br/><tool2>Animals</tool2>
+</button>
+<button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
+<button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+</div>
+</div>
+
+
+<audio id="Audio2" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/correct.ogg" type="audio/ogg">
+</source></audio>
+
+<script>
+var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}
+
+ function toolicon() {
+ if(sessionStorage.getItem('1i')) {window.history.back();}
+ else {location.replace('index-english.html'); }}
+ 
+onhashchange = function (){ if(location.hash){ } else{ $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+
+ function historyback() { if(location.hash){ history.back(); }  }
+  
+ function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }
+</script>
+
+<div id="belowpopup" onclick="historyback()";></div>
+<div id="resetpopup" class="dbox">Reset Score (Vegetables)<hr/><div align="center">
+<button class="resetbutton" onclick="historyback()">Cancel</button>
+<button class="doreset resetbutton" onclick="storagereset();">Reset</button>
+</div></div>
+
+<language1 hidden>eng</language1>
+<ben hidden>বাংলা</ben>
+
+</header>
+
+
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper.min.css">
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+  <div class="swiper-wrapper">
+
+<!--1-RED-->
+
+<div class="swiper-slide">
+<div class="slide 1"><button class="corner-page-number">1</button>
+
+<div class="image-wrapper">  
+<img src="https://cdn.statically.io/gh/gkcube/fruits@1/Mango-1.jpg"/>
+    </div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div align="center">
+<button class="word">
+<word><r></r><r></r><r></r><r></r><r></r></word>
+</button>
+<ww 2>
+<button class="box 2">A</button><button class="box 0">D</button>
+<button class="box 0">C</button><button class="box 1">M</button>
+<button class="box 4">G</button><button class="box 5">O</button>
+<button class="box 3">N</button><button class="box 0">J</button>
+<button class="box 0">K</button><button class="box 0">L</button>
+<button class="box 0">P</button><button class="box 0">Q</button>
+<button class="box 0">R</button><button class="box 0">S</button>
+<button class="box 0">T</button><button class="box 0">L</button>
+</ww>
+<ch hidden>
+<button class="dox 2">Correct Answer!</button>
+</ch>
+</div>
+</div></div>
+
+<!--1-END-->
+
+<!--1-RED-->
+
+<div class="swiper-slide">
+<div class="slide 2"><button class="corner-page-number">1</button>
+<div class="image-wrapper">  
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/animal@1/cat-1.jpg"/>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div align="center">
+<button class="word">
+<word><r></r><r></r><r></r></word>
+</button>
+<ww>
+<button class="box 0">0</button><button class="box 1">C</button>
+<button class="box 0">0</button><button class="box 2">A</button>
+<button class="box 0">0</button><button class="box 0">0</button>
+<button class="box 3">T</button><button class="box 0">0</button>
+<button class="box 0">0</button><button class="box 0">0</button>
+<button class="box 0">0</button><button class="box 0">0</button>
+<button class="box 0">0</button><button class="box 0">0</button>
+<button class="box 0">0</button><button class="box 0">0</button>
+</ww>
+<ch hidden>
+<button class="dox 2">Correct Answer!</button>
+</ch>
+</div>
+</div></div>
+
+<!--1-END-->
+
+      </div></div>
+
+<quizbtn>
+<div class="scorebg">
+<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
+<button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
+</div>
+<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
+</quizbtn> 
+<next-previous-buttons>
+<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
+</next-previous-buttons>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+<script>
+var swiper = new Swiper('.swiper-container',{loop: true, loopPreventsSlide: false,
+preloadImages: true, lazy: true,
+navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
+
+swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
+
+localStorage.setItem('ns7', swiper.activeIndex);   });
+var ns7 = localStorage.getItem('ns7');
+
+function gotoslide() {if (localStorage.getItem("ns7") === null) {
+swiper.slideTo(1,0,true); }else {swiper.slideTo(ns7,0,true);}  }
+
+$('.togglereset').click(function() {showreset();  });
+
+gotoslide();
+</script>
+
+<script>
+ 
+var l = localStorage,
+l1 = l.getItem('1w1'),
+l2 = l.getItem('1w2'),
+s1 = l.getItem('1s1'),
+
+w1 = $('.1 word'),
+w1_0 = '<r></r><r></r><r></r><r></r><r></r>'
+w1_1 = '<g>M</g><r></r><r></r><r></r><r></r>',
+w1_2 = '<g>M</g><g>A</g><r></r><r></r><r></r>',
+w1_3 = '<g>M</g><g>A</g><g>N</g><r></r><r></r>',
+w1_4 = '<g>M</g><g>A</g><g>N</g><g>G</g><r></r>',
+w1_5 = '<g>M</g><g>A</g><g>N</g><g>G</g><g>O</g>',
+
+w2 = $('.2 word'),
+w2_0 = '<r></r><r></r><r></r>'
+w2_1 = '<g>C</g><r></r><r></r>',
+w2_2 = '<g>C</g><g>A</g><r></r>',
+w2_3 = '<g>C</g><g>A</g><g>T</g>';
+
+
+
+
+
+
+function ccc() {var c = $('#sbox'); c.html(Number(c.html())+4); 
+l.setItem('1s1', c.html()); Audio1();}
+
+function www() {var w = $('#sbox'); w.html(Number(w.html())-1); 
+l.setItem('1s1', w.html()); Audio2(); }
+
+
+$('.1 .0').click(function(){ww1();} );
+$('.1 .1').click(function(){if (w1.html() == w1_0) {l.setItem('1w1','1'); cw1(); w1.html(w1_1);} else {ww1();}} );
+$('.1 .2').click(function(){if (w1.html() == w1_1) {l.setItem('1w1','2'); cw1(); w1.html(w1_2);} else {ww1();}} );
+$('.1 .3').click(function() {if (w1.html() == w1_2) {l.setItem('1w1','3'); cw1(); w1.html(w1_3);} else {ww1();}} );
+$('.1 .4').click(function() {if (w1.html() == w1_3) {l.setItem('1w1','4'); cw1(); w1.html(w1_4);} else {ww1();}} );
+$('.1 .5').click(function() {if (w1.html() == w1_4) {l.setItem('1w1','5'); rw1(); cw1(); w1.html(w1_5);} else {ww1();}} );
+
+function cw1() {ccc();  $('.1 cm').finish().hide().slideDown('fast').delay(800).fadeOut(); }
+function ww1() {www();  $('.1 wm').finish().hide().slideDown('fast').delay(800).fadeOut();}
+function rw1() {$('.1 ww').hide(); $('.1 ch').fadeIn(); $(".next-right").addClass("mynext");}
+
+$('.2 .0').click(function(){ww2();} );
+$('.2 .1').click(function(){if (w2.html() == w2_0) {l.setItem('1w2','1'); cw2(); w2.html(w2_1);} else {ww2();}} );
+$('.2 .2').click(function(){if (w2.html() == w2_1) {l.setItem('1w2','2'); cw2(); w2.html(w2_2);} else {ww2();}} );
+$('.2 .3').click(function() {if (w2.html() == w2_2) {l.setItem('1w2','3'); rw2(); cw2(); w2.html(w2_3);} else {ww2();}} );
+
+function cw2() {ccc();  $('.2 cm').finish().hide().slideDown('fast').delay(800).fadeOut();}
+function ww2() {www();  $('.2 wm').finish().hide().slideDown('fast').delay(800).fadeOut();}
+function rw2() {$('.2 ww').hide(); $('.2 ch').fadeIn(); $(".next-right").addClass("mynext");}
+
+function cont(){
+ if(l.getItem('1s1')){$('#sbox').html(s1);}
+ 
+if(l1 === '1'){w1.html(w1_1);} if(l1 === '2'){w1.html(w1_2);}
+if(l1 === '3'){w1.html(w1_3);} if(l1 === '4'){w1.html(w1_4);}
+if(l1 === '5'){rw1(); w1.html(w1_5);}
+
+if(l2 === '1'){w2.html(w2_1);} if(l2 === '2'){w2.html(w2_2);}
+if(l2 === '3'){rw2(); w2.html(w2_3);}
+
+if(sessionStorage.getItem('cl') === 't'){
+$('.change').click();
+$('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');} 
+else {
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');}}
+      
+      
+function storagereset(){
+$("#resetpopup,#belowpopup").hide();
+hidepage();
+var remove = ['1w1','1w2','1s1'];
+for (key of remove) {localStorage.removeItem(key);}
+location.reload(); }
+    
+    </script>
+  
+
+
+
+<script>
+<!-- Animal Quiz Language Change With Local Storage -->
+  
+function mylanguage() {  
+  if($('language1').html() == 'eng') {
+
+$('tool1').html('<ben>ছবি দেখে বানান কর<br/>');
+$('tool2').html('<ben>পশু');
+
+$('Score').html('<ben>স্কোর');
+$('Reset').html('<ben>রিসেট');
+$('Share').html('<ben>শেয়ার');
+$('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');
+$('touchoption').html('<ben>সঠিক অপশনটি টাচ করুন !');
+$('CorrectAnswer').html('<ben>সঠিক উত্তর !');
+$('language1').html('bng');sessionStorage.setItem('cl','t');
+
+} else {
+
+$('tool1').html('Spell With Picture<br/>');
+$('tool2').html('Animals');
+
+$('Score').html('Score');
+$('Reset').html('Reset');
+$('Share').html('Share');
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');
+$('touchoption').html('Touch The Correct Option !');
+$('CorrectAnswer').html('Correct Answer !');
+$('language1').html('eng');sessionStorage.removeItem('cl');
+}}
+  
+</script>
+
+
+
+<script>
+ $(document).ready(function() {
+ 
+   if(location.hash){window.history.back();}
+   $('.tooltitle').delay(500).slideDown('slow');
+   
+setTimeout(function() {if(sessionStorage.getItem('f7')){showpage();}sessionStorage.setItem('f7','t'); }, 300);
+
+}); 
+$(document).ready(function() { cont(); });
+window.onload = function() {showpage();};
+$('.loading').click(function(){hidepage();});
+</script>
+
+
+<link rel="prefetch" href="1-spell.html"/>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-124695825-3');
+</script>
+
+</body>
+</html>

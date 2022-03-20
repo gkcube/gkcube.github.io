@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+<title>6 VEHICLES</title>
+<script>
+function delayloading() {
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+</script>
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/m1.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/s7.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@e635e11/m.css">
+
+</head>
+<body>
+<header>
+<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
+<div style="height:54px;"></div>
+<script>
+function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
+function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
+</script>
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
+
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
+
+<toolimg></toolimg>
+<button class="tooltitle">
+<tool1>Guess The Picture</tool1><br/><tool2>Vehicles</tool2>
+</button>
+
+<button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
+
+<button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+
+</div></div>
+
+
+<audio id="Audio2" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/correct.ogg" type="audio/ogg">
+</source></audio>
+
+<script>
+var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}
+
+ function toolicon() {
+ if(sessionStorage.getItem('1i')) {window.history.back();}
+ else {location.replace('index-english.html'); }}
+ 
+onhashchange = function (){ if(location.hash){ } else{ $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+
+ function historyback() { if(location.hash){ history.back(); }  }
+  
+ function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }
+</script>
+
+<div id="belowpopup" onclick="historyback()";></div>
+<div id="resetpopup" class="dbox">Reset Score (Vegetables)<hr/><div align="center">
+<button class="resetbutton" onclick="historyback()">Cancel</button>
+<button class="doreset resetbutton" onclick="storagereset();">Reset</button>
+</div></div>
+
+<language1 hidden>eng</language1>
+<ben hidden>বাংলা</ben>
+
+</header>
+
+<style>
+ .box2:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.box2 {float:left;
+    width:58%;
+    margin-top:4%;
+    margin-left:21%;
+    border-radius:50%;
+    padding-bottom:0px;
+    padding-top:0px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45); }
+	.color {float:left;
+    width:100%;
+    
+    height:0;
+	padding-bottom:68%;
+    border-radius:18px;
+    background-color:white;}
+	
+</style>
+
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper.min.css">
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+  <div class="swiper-wrapper">
+
+<!--1-RED-->
+
+<div class="swiper-slide">
+<div class="slide q1"><button class="corner-page-number">1</button>
+
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#FFFF00;"></div>
+</div>
+</div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Dumper>Dumper</Dumper></button></ww>
+<ww><button class="opt c1"><Bus>Bus</Bus></button></ww>
+<ww><button class="opt b2"><SchoolBus>School Bus</SchoolBus></button></ww>
+<ww><button class="opt b3"><Truck>Truck</Truck></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Bus>Bus</Bus></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--1-END-->
+
+<!--2-RED-->
+
+<div class="swiper-slide">
+<div class="slide q2"><button class="corner-page-number">2</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#FF0000;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt c1"><FireEngine>Fire Engine</FireEngine></button></ww>
+<ww><button class="opt b1"><Roller>Roller</Roller></button></ww>
+<ww><button class="opt b2"><Tank>Tank</Tank></button></ww>
+<ww><button class="opt b3"><Bulldozer>Bulldozer</Bulldozer></button></ww>
+<ch hidden>
+<button class="opt cbt1"><FireEngine>Fire Engine</FireEngine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--2-END-->
+
+<!--3-PINK-->
+
+<div class="swiper-slide">
+<div class="slide q3"><button class="corner-page-number">3</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#FFC0CB;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Aeroplane>Aeroplane</Aeroplane></button></ww>
+<ww><button class="opt b2"><BulletTrain>Bullet Train</BulletTrain></button></ww>
+<ww><button class="opt b3"><Parachute>Parachute</Parachute></button></ww>
+<ww><button class="opt c1"><Helicopter>Helicopter</Helicopter></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Helicopter>Helicopter</Helicopter></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--3-END-->
+
+<!--4-ORANGE-->
+
+<div class="swiper-slide">
+<div class="slide q4"><button class="corner-page-number">4</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#FFA500;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Crane>Crane</Crane></button></ww>
+<ww><button class="opt c1"><Roller>Roller</Roller></button></ww>
+<ww><button class="opt b2"><Dumper>Dumper</Dumper></button></ww>
+<ww><button class="opt b3"><Truck>Truck</Truck></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Roller>Roller</Roller></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--4-END-->
+
+<!--5-PURPLE-->
+
+<div class="swiper-slide">
+<div class="slide q5"><button class="corner-page-number">5</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#800080;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Ambulance>Ambulance</Ambulance></button></ww>
+<ww><button class="opt b2"><Jeep>Jeep</Jeep></button></ww>
+<ww><button class="opt c1"><Car>Car</Car></button></ww>
+<ww><button class="opt b3"><Tram>Tram</Tram></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Car>Car</Car></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--5-END-->
+
+<!--6-GREEN-->
+
+<div class="swiper-slide">
+<div class="slide q6"><button class="corner-page-number">6</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#008000;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><PoliceCar>Police Car</PoliceCar></button></ww>
+<ww><button class="opt b2"><FireEngine>Fire Engine</FireEngine></button></ww>
+<ww><button class="opt b3"><Bulldozer>Bulldozer</Bulldozer></button></ww>
+<ww><button class="opt c1"><Van>Van</Van></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Van>Van</Van></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--6-END-->
+
+<!--7-BLUE-->
+
+<div class="swiper-slide">
+<div class="slide q7"><button class="corner-page-number">7</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#0000FF;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Ship>Ship</Ship></button></ww>
+<ww><button class="opt c1"><Submarine>Submarine</Submarine></button></ww>
+<ww><button class="opt b2"><Jetboat>Jetboat</Jetboat></button></ww>
+<ww><button class="opt b3"><Boat>Boat</Boat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Submarine>Submarine</Submarine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--7-END-->
+
+<!--8-BROWN-->
+
+<div class="swiper-slide">
+<div class="slide q7"><button class="corner-page-number">8</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#A52A2A;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Ship>Ship</Ship></button></ww>
+<ww><button class="opt c1"><Submarine>Submarine</Submarine></button></ww>
+<ww><button class="opt b2"><Jetboat>Jetboat</Jetboat></button></ww>
+<ww><button class="opt b3"><Boat>Boat</Boat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Submarine>Submarine</Submarine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--8-END-->
+
+<!--9-GRAY-->
+
+<div class="swiper-slide">
+<div class="slide q7"><button class="corner-page-number">9</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:gray;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Ship>Ship</Ship></button></ww>
+<ww><button class="opt c1"><Submarine>Submarine</Submarine></button></ww>
+<ww><button class="opt b2"><Jetboat>Jetboat</Jetboat></button></ww>
+<ww><button class="opt b3"><Boat>Boat</Boat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Submarine>Submarine</Submarine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--9-END-->
+
+<!--10-DarkRed-->
+
+<div class="swiper-slide">
+<div class="slide q7"><button class="corner-page-number">10</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:DarkRed;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Ship>Ship</Ship></button></ww>
+<ww><button class="opt c1"><Submarine>Submarine</Submarine></button></ww>
+<ww><button class="opt b2"><Jetboat>Jetboat</Jetboat></button></ww>
+<ww><button class="opt b3"><Boat>Boat</Boat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Submarine>Submarine</Submarine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--10-END-->
+
+<!--8-BLUE-->
+
+<div class="swiper-slide">
+<div class="slide q7"><button class="corner-page-number">7</button>
+<div class="image-wrapper">
+<div class="color">
+<div class="box2" style="background-color:#0000FF;"></div>
+</div>
+</div>
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+<ww><button class="opt b1"><Ship>Ship</Ship></button></ww>
+<ww><button class="opt c1"><Submarine>Submarine</Submarine></button></ww>
+<ww><button class="opt b2"><Jetboat>Jetboat</Jetboat></button></ww>
+<ww><button class="opt b3"><Boat>Boat</Boat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Submarine>Submarine</Submarine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch></div></div></div>
+
+<!--8-END-->
+
+      </div></div>
+
+<quizbtn>
+<div class="scorebg">
+<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
+<button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
+</div>
+<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
+</quizbtn> 
+<next-previous-buttons>
+<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
+</next-previous-buttons>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+<script>
+var swiper = new Swiper('.swiper-container',{loop: true, loopPreventsSlide: false,
+preloadImages: true, lazy: true,
+navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
+
+swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
+
+localStorage.setItem('ns6', swiper.activeIndex);  });
+var ns6 = localStorage.getItem('ns6');
+
+function gotoslide() {if (localStorage.getItem("ns6") === null) {
+swiper.slideTo(1,0,true); }else {swiper.slideTo(ns6,0,true);}  }
+
+$('.togglereset').click(function() {showreset();  });
+    
+gotoslide();
+</script>
+
+<script>
+<!-- Animal Quiz Language Change With Local Storage -->
+  
+function mylanguage() {  
+  if($('language1').html() == 'eng') {
+  
+sessionStorage.setItem('cl','t');
+$('Score').html('<ben>স্কোর');
+$('Reset').html('<ben>রিসেট');
+$('Share').html('<ben>শেয়ার');
+$('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');
+$('touchoption').html('<ben>সঠিক অপশনটি টাচ করুন !');
+$('CorrectAnswer').html('<ben>সঠিক উত্তর !');
+$('language1').html('bng');
+$('tool1').html('<ben>ছবি দেখে উত্তর দাও<br/>');
+$('tool2').html('<ben>যানবাহন');
+
+$('Aeroplane').html('<ben>উড়োজাহাজ');
+$('Ambulance').html('<ben>অ্যাম্বুলেন্স');
+$('AutoRickshaw').html('<ben>অটোরিকশা');
+$('Bicycle').html('<ben>সাইকেল');
+$('Boat').html('<ben>নৌকা');
+$('Bulldozer').html('<ben>বুলডোজার');
+$('BulletTrain').html('<ben>বুলেট ট্রেন');
+$('Bus').html('<ben>বাস');
+$('Car').html('<ben>গাড়ি');
+$('Carriage').html('<ben>ঘোড়ার গাড়ি');
+$('CementMixer').html('<ben>সিমেন্ট মিক্সার');
+$('Crane').html('<ben>কপিকল (ক্রেন)');
+$('Dumper').html('<ben>ডাম্পার');
+$('ElectricRickshaw').html('<ben>ইলেক্ট্রিক রিকশা<br/>(টোটো)');
+$('FireEngine').html('<ben>দমকল');
+$('GarbageTruck').html('<ben>আবর্জনার ট্রাক');
+$('Helicopter').html('<ben>হেলিকপ্টার');
+$('Jeep').html('<ben>জীপ');
+$('JetBoat').html('<ben>জেট বোট');
+$('Motorcycle').html('<ben>মোটর সাইকেল (বাইক)');
+$('Parachute').html('<ben>প্যারাশুট');
+$('PoliceCar').html('<ben>পুলিশ গাড়ি');
+$('Rocket').html('<ben>রকেট');
+$('Roller').html('<ben>রোলার');
+$('Ropeway').html('<ben>রোপওয়ে');
+$('SchoolBus').html('<ben>স্কুল বাস');
+$('Scooter').html('<ben>স্কুটার');
+$('Ship').html('<ben>জাহাজ');
+$('Skateboard').html('<ben>স্কেটবোর্ড');
+$('Submarine').html('<ben>ডুবো জাহাজ');
+$('Tank').html('<ben>ট্যাঙ্ক');
+$('Tractor').html('<ben>ট্রাক্টর');
+$('Train').html('<ben>ট্রেন');
+$('Tram').html('<ben>ট্রাম');
+$('Truck').html('<ben>ট্রাক');
+$('Van').html('<ben>ভ্যান');
+$('Wheelchair').html('<ben>হুইলচেয়ার');
+
+} else {
+
+sessionStorage.removeItem('cl');
+$('Score').html('Score');
+$('Reset').html('Reset');
+$('Share').html('Share');
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');
+$('touchoption').html('Touch The Correct Option !');
+$('CorrectAnswer').html('Correct Answer !');
+$('language1').html('eng');
+ $('tool1').html('Guess The Picture<br/>');
+ $('tool2').html('Vehicles');
+  
+$('Aeroplane').html('Aeroplane');
+$('Ambulance').html('Ambulance');
+$('AutoRickshaw').html('Auto Rickshaw');
+$('Bicycle').html('Bicycle');
+$('Boat').html('Boat');
+$('Bulldozer').html('Bulldozer');
+$('BulletTrain').html('Bullet Train');
+$('Bus').html('Bus');
+$('Car').html('Car');
+$('Carriage').html('Carriage');
+$('CementMixer').html('Cement Mixer');
+$('Crane').html('Crane');
+$('Dumper').html('Dumper');
+$('ElectricRickshaw').html('Electric Rickshaw<br/>(Toto)');
+$('FireEngine').html('Fire Engine');
+$('GarbageTruck').html('Garbage Truck');
+$('Helicopter').html('Helicopter');
+$('Jeep').html('Jeep');
+$('JetBoat').html('Jet Boat');
+$('Motorcycle').html('Motorcycle (Bike)');
+$('Parachute').html('Parachute');
+$('PoliceCar').html('Police Car');
+$('Rocket').html('Rocket');
+$('Roller').html('Roller');
+$('Ropeway').html('Ropeway');
+$('SchoolBus').html('School Bus');
+$('Scooter').html('Scooter');
+$('Ship').html('Ship');
+$('Skateboard').html('Skateboard');
+$('Submarine').html('Submarine');
+$('Tank').html('Tank');
+$('Tractor').html('Tractor');
+$('Train').html('Train');
+$('Tram').html('Tram');
+$('Truck').html('Truck');
+$('Van').html('Van');
+$('Wheelchair').html('Wheelchair');
+
+}}
+  
+</script>
+  
+<script>
+ $(document).ready(function() {
+ 
+   if(location.hash){window.history.back();}
+   $('.tooltitle').delay(500).slideDown('slow');
+   
+setTimeout(function() {if(sessionStorage.getItem('f6')){showpage();}sessionStorage.setItem('f6','t'); }, 300);
+
+}); 
+$(document).ready(function() { cont(); });
+window.onload = function() {showpage();};
+$('.loading').click(function(){hidepage();});
+</script>
+
+<link rel="prefetch" href="6-vehicle.html"/>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-124695825-3');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+<title>1 ANIMAL</title>
+<script>
+function delayloading() {
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+</script>
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/m1.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/s1.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@e635e11/m.css">
+
+</head>
+<body>
+<header>
+<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
+<div style="height:54px;"></div>
+<script>
+function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
+function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
+</script>
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
+
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
+
+<toolimg></toolimg>
+<button class="tooltitle">
+<tool1>Guess The Picture</tool1><br/><tool2>Animals</tool2>
+</button>
+
+<button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
+
+<button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+
+</div></div>
+
+
+
+<audio id="Audio2" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/correct.ogg" type="audio/ogg">
+</source></audio>
+
+<script>
+var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}
+
+ function toolicon() {
+ if(sessionStorage.getItem('1i')) {window.history.back();}
+ else {location.replace('index-english.html'); }}
+ 
+onhashchange = function (){ if(location.hash){ } else{ $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+
+ function historyback() { if(location.hash){ history.back(); }  }
+  
+ function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }
+</script>
+
+<div id="belowpopup" onclick="historyback()";></div>
+<div id="resetpopup" class="dbox">Reset Score For Animals?<hr/><div align="center">
+<button class="resetbutton" onclick="historyback()">Cancel</button>
+<button class="doreset resetbutton" onclick="storagereset();">Reset</button>
+</div></div>
+
+<language1 hidden>eng</language1>
+<ben hidden>বাংলা</ben>
+
+</header>
+
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper.min.css">
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+  <div class="swiper-wrapper">
+
+<!--ANIMAL-1-TIGER-->
+
+<div class="swiper-slide">
+<div class="slide q1"><button class="corner-page-number">1</button>
+<div class="image-wrapper">
+  
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/tiger-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Rhinoceros>Rhinoceros</Rhinoceros></button></ww>
+<ww><button class="opt b2"><Jackal>Jackal</Jackal></button></ww>
+<ww><button class="opt b3"><Cow>Cow</Cow></button></ww>
+<ww><button class="opt c1"><Tiger>Tiger</Tiger></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Tiger>Tiger</Tiger></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-1-->
+
+<!--ANIMAL-2-Lion-->
+        
+<div class="swiper-slide">
+<div class="slide q2"><button class="corner-page-number">2</button>
+  <div class="image-wrapper">  
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/lion-1.jpeg"/>
+    </div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Tiger>Tiger</Tiger></button></ww>
+<ww><button class="opt c1"><Lion>Lion</Lion></button></ww>
+  
+<ww><button class="opt b2"><Deer>Deer</Deer></button></ww>
+<ww><button class="opt b3"><Cat>Cat</Cat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Lion>Lion</Lion></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-2-->
+
+
+<!--ANIMAL-3-Elephant-->
+        
+<div class="swiper-slide"><div class="slide q3"><button class="corner-page-number">3</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/elephant-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Buffalo>Buffalo</Buffalo></button></ww>
+<ww><button class="opt b2"><Giraffe>Giraffe</Giraffe></button></ww>
+<ww><button class="opt c1"><Elephant>Elephant</Elephant></button></ww>
+
+<ww><button class="opt b3"><Cow>Cow</Cow></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Elephant>Elephant</Elephant></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-3-->
+
+<!--ANIMAL-4-Bear-->
+        
+<div class="swiper-slide"><div class="slide q4"><button class="corner-page-number">4</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/bear-1.jpeg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Chimpanzee>Chimpanzee</Chimpanzee></button></ww>
+<ww><button class="opt c1"><Bear>Bear</Bear></button></ww>
+  
+<ww><button class="opt b2"><Pig>Pig</Pig></button></ww>
+<ww><button class="opt b3"><Lion>Lion</Lion></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Bear>Bear</Bear></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-4-->
+
+<!--ANIMAL-5-Squirrel-->
+        
+<div class="swiper-slide"><div class="slide q5"><button class="corner-page-number">5</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/squirrel-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Squirrel>Squirrel</Squirrel></button></ww>
+
+<ww><button class="opt b1"><Chameleon>Chameleon</Chameleon></button></ww>
+<ww><button class="opt b2"><Kangaroo>Kangaroo</Kangaroo></button></ww>
+<ww><button class="opt b3"><Dog>Dog</Dog></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Squirrel>Squirrel</Squirrel></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-5-->
+
+<!--ANIMAL-6-Snake-->
+        
+<div class="swiper-slide"><div class="slide q6"><button class="corner-page-number">6</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/snake-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Lizard>Lizard</Lizard></button></ww>
+<ww><button class="opt b2"><Iguana>Iguana</Iguana></button></ww>
+<ww><button class="opt c1"><Snake>Snake</Snake></button></ww>
+
+<ww><button class="opt b3"><Rat>Rat</Rat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Snake>Snake</Snake></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-6------------------------->
+
+<!--ANIMAL-7-Polecat----------------->
+  
+<div class="swiper-slide"><div class="slide q7"><button class="corner-page-number">7</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/polecat-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Otter>Otter</Otter></button></ww>
+<ww><button class="opt b2"><Fox>Fox</Fox></button></ww>
+<ww><button class="opt b3"><Rabbit>Rabbit</Rabbit></button></ww>
+<ww><button class="opt c1"><Polecat>Polecat</Polecat></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Polecat>Polecat</Polecat></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-7---------------------->
+
+<!--ANIMAL-8-Badger--------------->
+        
+<div class="swiper-slide"><div class="slide q8"><button class="corner-page-number">8</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/badger-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+
+<ww><button class="opt c1"><Badger>Badger</Badger></button></ww>
+
+<ww><button class="opt b1"><Pig>Pig</Pig></button></ww>
+<ww><button class="opt b2"><Kangaroo>Kangaroo</Kangaroo></button></ww>
+<ww><button class="opt b3"><Otter>Otter</Otter></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Badger>Badger</Badger></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-8------------------------------->
+
+<!--ANIMAL-9-Porcupine-->
+        
+<div class="swiper-slide"><div class="slide q9"><button class="corner-page-number">9</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/porcupine-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Alpaca>Alpaca</Alpaca></button></ww>
+<ww><button class="opt b2"><Langur>Langur</Langur></button></ww>
+<ww><button class="opt c1"><Porcupine>Porcupine</Porcupine></button></ww>
+
+<ww><button class="opt b3"><Rat>Rat</Rat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Porcupine>Porcupine</Porcupine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-9-->
+
+<!--ANIMAL-10-Zebra-->
+  
+<div class="swiper-slide"><div class="slide q10"><button class="corner-page-number">10</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/zebra-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Giraffe>Giraffe</Giraffe></button></ww>
+<ww><button class="opt b2"><Horse>Horse</Horse></button></ww>
+<ww><button class="opt b3"><Donkey>Donkey</Donkey></button></ww>
+<ww><button class="opt c1"><Zebra>Zebra</Zebra></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Zebra>Zebra</Zebra></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-10-->
+
+<!--ANIMAL-11-Sheep-->
+        
+<div class="swiper-slide"><div class="slide q11"><button class="corner-page-number">11</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/sheep-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Sheep>Sheep</Sheep></button></ww>
+
+<ww><button class="opt b1"><Alpaca>Alpaca</Alpaca></button></ww>
+<ww><button class="opt b2"><Goat>Goat</Goat></button></ww>
+<ww><button class="opt b3"><Panda>Panda</Panda></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Sheep>Sheep</Sheep></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-11-->
+
+<!--ANIMAL-12-Dog-->
+        
+<div class="swiper-slide"><div class="slide q12"><button class="corner-page-number">12</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/dog-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Goat>Goat</Goat></button></ww>
+<ww><button class="opt b2"><Fox>Fox</Fox></button></ww>
+<ww><button class="opt c1"><Dog>Dog</Dog></button></ww>
+
+<ww><button class="opt b3"><Hyena>Hyena</Hyena></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Dog>Dog</Dog></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-12-->
+
+<!--ANIMAL-13-Cat-->
+        
+<div class="swiper-slide"><div class="slide q13"><button class="corner-page-number">13</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/cat-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Kangaroo>Kangaroo</Kangaroo></button></ww>
+<ww><button class="opt c1"><Cat>Cat</Cat></button></ww>
+  
+<ww><button class="opt b2"><Lemur>Lemur</Lemur></button></ww>
+<ww><button class="opt b3"><Polecat>Polecat</Polecat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Cat>Cat</Cat></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-13-->
+
+<!--ANIMAL-14-Cheetah-->
+  
+<div class="swiper-slide"><div class="slide q14"><button class="corner-page-number">14</button>
+<div class="image-wrapper"><img src="https://cdn.statically.io/gh/gkcube/animal@1/cheetah-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Tiger>Tiger</Tiger></button></ww>
+<ww><button class="opt b2"><Wolf>Wolf</Wolf></button></ww>
+<ww><button class="opt b3"><Lion>Lion</Lion></button></ww>
+<ww><button class="opt c1"><Cheetah>Cheetah</Cheetah></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Cheetah>Cheetah</Cheetah></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-14-->
+
+<!--ANIMAL-15-Bat-->
+        
+<div class="swiper-slide"><div class="slide q15"><button class="corner-page-number">15</button>
+<div class="image-wrapper"><img src="https://cdn.statically.io/gh/gkcube/animal@1/bat-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Mole>Mole</Mole></button></ww>
+<ww><button class="opt c1"><Bat>Bat</Bat></button></ww>
+  
+<ww><button class="opt b2"><Anteater>Anteater</Anteater></button></ww>
+<ww><button class="opt b3"><Tortoise>Tortoise</Tortoise></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Bat>Bat</Bat></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-15-->
+
+<!--ANIMAL-16-Bison-->
+        
+<div class="swiper-slide"><div class="slide q16"><button class="corner-page-number">16</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/bison-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Bison>Bison</Bison></button></ww>
+
+<ww><button class="opt b1"><Cow>Cow</Cow></button></ww>
+<ww><button class="opt b2"><Buffalo>Buffalo</Buffalo></button></ww>
+<ww><button class="opt b3"><Rhinoceros>Rhinoceros</Rhinoceros></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Bison>Bison</Bison></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-16-->
+
+<!--ANIMAL-17-Alpaca-->
+        
+<div class="swiper-slide"><div class="slide q17"><button class="corner-page-number">17</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/alpaca-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Sheep>Sheep</Sheep></button></ww>
+<ww><button class="opt b2"><Deer>Deer</Deer></button></ww>
+<ww><button class="opt c1"><Alpaca>Alpaca</Alpaca></button></ww>
+
+<ww><button class="opt b3"><Donkey>Donkey</Donkey></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Alpaca>Alpaca</Alpaca></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-17-->
+
+<!--ANIMAL-18-Horse-->
+        
+<div class="swiper-slide"><div class="slide q18"><button class="corner-page-number">18</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/horse-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Horse>Horse</Horse></button></ww>
+
+<ww><button class="opt b1"><Donkey>Donkey</Donkey></button></ww>
+<ww><button class="opt b2"><Barasingha>Barasingha</Barasingha></button></ww>
+<ww><button class="opt b3"><Baboon>Baboon</Baboon></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Horse>Horse</Horse></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-18-->
+
+<!--ANIMAL-19-Tortoise-->
+        
+<div class="swiper-slide"><div class="slide q19"><button class="corner-page-number">19</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/tortoise-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Snail>Snail</Snail></button></ww>
+<ww><button class="opt b2"><Shark>Shark</Shark></button></ww>
+<ww><button class="opt c1"><Tortoise>Tortoise</Tortoise></button></ww>
+<ww><button class="opt b3"><Dolphin>Dolphin</Dolphin></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Tortoise>Tortoise</Tortoise></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-19-->
+
+<!--ANIMAL-20-Kangaroo-->
+  
+<div class="swiper-slide"><div class="slide q20"><button class="corner-page-number">20</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/kangaroo-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Mongoose>Mongoose</Mongoose></button></ww>
+<ww><button class="opt b2"><Langur>Langur</Langur></button></ww>
+<ww><button class="opt b3"><Jackal>Jackal</Jackal></button></ww>
+<ww><button class="opt c1"><Kangaroo>Kangaroo</Kangaroo></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Kangaroo>Kangaroo</Kangaroo></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-20-->
+
+<!--ANIMAL-21-Buffalo-->
+        
+<div class="swiper-slide"><div class="slide q21"><button class="corner-page-number">21</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/buffalo-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Cow>Cow</Cow></button></ww>
+<ww><button class="opt c1"><Buffalo>Buffalo</Buffalo></button></ww>
+  
+<ww><button class="opt b2"><Rhinoceros>Rhinoceros</Rhinoceros></button></ww>
+<ww><button class="opt b3"><Elephant>Elephant</Elephant></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Buffalo>Buffalo</Buffalo></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-21-->
+
+<!--ANIMAL-22-Crocodile-->
+        
+<div class="swiper-slide"><div class="slide q22"><button class="corner-page-number">22</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/crocodile-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Crocodile>Crocodile</Crocodile></button></ww>
+
+<ww><button class="opt b1"><Iguana>Iguana</Iguana></button></ww>
+<ww><button class="opt b2"><Whale>Whale</Whale></button></ww>
+<ww><button class="opt b3"><Shark>Shark</Shark></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Crocodile>Crocodile</Crocodile></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-22-->
+
+<!--ANIMAL-23-Giraffe-->
+        
+<div class="swiper-slide"><div class="slide q23"><button class="corner-page-number">23</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/giraffe-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Zebra>Zebra</Zebra></button></ww>
+<ww><button class="opt b2"><Deer>Deer</Deer></button></ww>
+<ww><button class="opt c1"><Giraffe>Giraffe</Giraffe></button></ww>
+
+<ww><button class="opt b3"><Horse>Horse</Horse></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Giraffe>Giraffe</Giraffe></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-23-->
+
+<!--ANIMAL-24-Whale-->
+  
+<div class="swiper-slide"><div class="slide q24"><button class="corner-page-number">24</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/whale-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Dolphin>Dolphin</Dolphin></button></ww>
+<ww><button class="opt b2"><Crocodile>Crocodile</Crocodile></button></ww>
+<ww><button class="opt b3"><Shark>Shark</Shark></button></ww>
+<ww><button class="opt c1"><Whale>Whale</Whale></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Whale>Whale</Whale></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-24-->
+
+<!--ANIMAL-25-Mongoose-->
+        
+<div class="swiper-slide"><div class="slide q25"><button class="corner-page-number">25</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/mongoose-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Mongoose>Mongoose</Mongoose></button></ww>
+
+<ww><button class="opt b1"><Kangaroo>Kangaroo</Kangaroo></button></ww>
+<ww><button class="opt b2"><Otter>Otter</Otter></button></ww>
+<ww><button class="opt b3"><Pangolin>Pangolin</Pangolin></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Mongoose>Mongoose</Mongoose></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-25-->
+
+<!--ANIMAL-26-Langur-->
+  
+<div class="swiper-slide"><div class="slide q26"><button class="corner-page-number">26</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/langur-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Monkey>Monkey</Monkey></button></ww>
+<ww><button class="opt b2"><Chimpanzee>Chimpanzee</Chimpanzee></button></ww>
+<ww><button class="opt b3"><Baboon>Baboon</Baboon></button></ww>
+<ww><button class="opt c1"><Langur>Langur</Langur></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Langur>Langur</Langur></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-26-->
+
+<!--ANIMAL-27-Jackal-->
+        
+<div class="swiper-slide"><div class="slide q27"><button class="corner-page-number">27</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/jackal-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Hyena>Hyena</Hyena></button></ww>
+<ww><button class="opt c1"><Jackal>Jackal</Jackal></button></ww>
+  
+<ww><button class="opt b2"><Wolf>Wolf</Wolf></button></ww>
+<ww><button class="opt b3"><Lynx>Lynx</Lynx></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Jackal>Jackal</Jackal></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-27-->
+
+<!--ANIMAL-28-Lemur-->
+        
+<div class="swiper-slide"><div class="slide q28"><button class="corner-page-number">28</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/lemur-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Panda>Panda</Panda></button></ww>
+<ww><button class="opt b2"><Langur>Langur</Langur></button></ww>
+<ww><button class="opt c1"><Lemur>Lemur</Lemur></button></ww>
+
+<ww><button class="opt b3"><Mongoose>Mongoose</Mongoose></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Lemur>Lemur</Lemur></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-28-->
+
+<!--ANIMAL-29-Monkey-->
+        
+<div class="swiper-slide"><div class="slide q29"><button class="corner-page-number">29</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/monkey-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Langur>Langur</Langur></button></ww>
+<ww><button class="opt c1"><Monkey>Monkey</Monkey></button></ww>
+  
+<ww><button class="opt b2"><Chimpanzee>Chimpanzee</Chimpanzee></button></ww>
+<ww><button class="opt b3"><Baboon>Baboon</Baboon></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Monkey>Monkey</Monkey></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-29-->
+
+<!--ANIMAL-30-Iguana-->
+        
+<div class="swiper-slide"><div class="slide q30"><button class="corner-page-number">30</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/iguana-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Iguana>Iguana</Iguana></button></ww>
+
+<ww><button class="opt b1"><Chameleon>Chameleon</Chameleon></button></ww>
+<ww><button class="opt b2"><Lizard>Lizard</Lizard></button></ww>
+<ww><button class="opt b3"><Gecko>Gecko</Gecko></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Iguana>Iguana</Iguana></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-30-->
+
+<!--ANIMAL-31-Shark-->
+        
+<div class="swiper-slide"><div class="slide q31"><button class="corner-page-number">31</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/shark-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Dolphin>Dolphin</Dolphin></button></ww>
+<ww><button class="opt b2"><Crocodile>Crocodile</Crocodile></button></ww>
+<ww><button class="opt c1"><Shark>Shark</Shark></button></ww>
+
+<ww><button class="opt b3"><Whale>Whale</Whale></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Shark>Shark</Shark></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-31-->
+
+<!--ANIMAL-32-Wolf-->
+  
+<div class="swiper-slide"><div class="slide q32"><button class="corner-page-number">32</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/wolf-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Jackal>Jackal</Jackal></button></ww>
+<ww><button class="opt b2"><Hyena>Hyena</Hyena></button></ww>
+<ww><button class="opt b3"><Lemur>Lemur</Lemur></button></ww>
+<ww><button class="opt c1"><Wolf>Wolf</Wolf></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Wolf>Wolf</Wolf></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-32-->
+  
+  <!--ANIMAL-33-Anteater-->
+        
+<div class="swiper-slide"><div class="slide q33"><button class="corner-page-number">33</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/anteater-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Anteater>Anteater</Anteater></button></ww>
+
+<ww><button class="opt b1"><Pangolin>Pangolin</Pangolin></button></ww>
+<ww><button class="opt b2"><Mongoose>Mongoose</Mongoose></button></ww>
+<ww><button class="opt b3"><Mole>Mole</Mole></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Anteater>Anteater</Anteater></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-33-->
+  
+  
+  <!--ANIMAL-34-Barasingha-->
+        
+<div class="swiper-slide"><div class="slide q34"><button class="corner-page-number">34</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/barasingha-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Deer>Deer</Deer></button></ww>
+<ww><button class="opt b2"><Donkey>Donkey</Donkey></button></ww>
+<ww><button class="opt c1"><Barasingha>Barasingha</Barasingha></button></ww>
+
+<ww><button class="opt b3"><Bison>Bison</Bison></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Barasingha>Barasingha</Barasingha></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-34-->
+
+<!--ANIMAL-35-Donkey-->
+  
+<div class="swiper-slide"><div class="slide q35"><button class="corner-page-number">35</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/donkey-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Horse>Horse</Horse></button></ww>
+<ww><button class="opt b2"><Cow>Cow</Cow></button></ww>
+<ww><button class="opt b3"><Deer>Deer</Deer></button></ww>
+<ww><button class="opt c1"><Donkey>Donkey</Donkey></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Donkey>Donkey</Donkey></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-35-->
+
+  <!--ANIMAL-36-Hyena-->
+        
+<div class="swiper-slide"><div class="slide q36"><button class="corner-page-number">36</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/hyena-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Hyena>Hyena</Hyena></button></ww>
+
+<ww><button class="opt b1"><Dog>Dog</Dog></button></ww>
+<ww><button class="opt b2"><Wolf>Wolf</Wolf></button></ww>
+<ww><button class="opt b3"><Jackal>Jackal</Jackal></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Hyena>Hyena</Hyena></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-36-->
+  
+  <!--ANIMAL-37-Dolphin-->
+        
+<div class="swiper-slide"><div class="slide q37"><button class="corner-page-number">37</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/dolphin-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Whale>Whale</Whale></button></ww>
+<ww><button class="opt b2"><Shark>Shark</Shark></button></ww>
+<ww><button class="opt c1"><Dolphin>Dolphin</Dolphin></button></ww>
+
+<ww><button class="opt b3"><Crocodile>Crocodile</Crocodile></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Dolphin>Dolphin</Dolphin></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-37-->
+  
+  <!--ANIMAL-38-Chimpanzee-->
+        
+<div class="swiper-slide"><div class="slide q38"><button class="corner-page-number">38</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/chimpanzee-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Bear>Bear</Bear></button></ww>
+<ww><button class="opt c1"><Chimpanzee>Chimpanzee</Chimpanzee></button></ww>
+  
+<ww><button class="opt b2"><Monkey>Monkey</Monkey></button></ww>
+<ww><button class="opt b3"><Baboon>Baboon</Baboon></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Chimpanzee>Chimpanzee</Chimpanzee></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-38-->
+
+<!--ANIMAL-39-Fox-->
+  
+<div class="swiper-slide"><div class="slide q39"><button class="corner-page-number">39</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/fox-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Dog>Dog</Dog></button></ww>
+<ww><button class="opt b2"><Hyena>Hyena</Hyena></button></ww>
+<ww><button class="opt b3"><Wolf>Wolf</Wolf></button></ww>
+<ww><button class="opt c1"><Fox>Fox</Fox></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Fox>Fox</Fox></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-39-->
+
+<!--ANIMAL-40-Snail-->
+        
+<div class="swiper-slide"><div class="slide q40"><button class="corner-page-number">40</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/snail-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Tortoise>Tortoise</Tortoise></button></ww>
+<ww><button class="opt c1"><Snail>Snail</Snail></button></ww>
+  
+<ww><button class="opt b2"><Pangolin>Pangolin</Pangolin></button></ww>
+<ww><button class="opt b3"><Anteater>Anteater</Anteater></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Snail>Snail</Snail></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-40-->
+
+<!--ANIMAL-41-Panda-->
+        
+<div class="swiper-slide"><div class="slide q41"><button class="corner-page-number">41</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/panda-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Panda>Panda</Panda></button></ww>
+
+<ww><button class="opt b1"><Lemur>Lemur</Lemur></button></ww>
+<ww><button class="opt b2"><Otter>Otter</Otter></button></ww>
+<ww><button class="opt b3"><Bear>Bear</Bear></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Panda>Panda</Panda></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-41-->
+  
+  <!--ANIMAL-42-Otter-->
+        
+<div class="swiper-slide"><div class="slide q42"><button class="corner-page-number">42</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/otter-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Squirrel>Squirrel</Squirrel></button></ww>
+<ww><button class="opt b2"><Rabbit>Rabbit</Rabbit></button></ww>
+<ww><button class="opt c1"><Otter>Otter</Otter></button></ww>
+
+<ww><button class="opt b3"><Badger>Badger</Badger></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Otter>Otter</Otter></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-42-->
+
+<!--ANIMAL-43-Rhinoceros-->
+        
+<div class="swiper-slide"><div class="slide q43"><button class="corner-page-number">43</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/rhinoceros-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Rhinoceros>Rhinoceros</Rhinoceros></button></ww>
+
+<ww><button class="opt b1"><Hippopotamus>Hippopotamus</Hippopotamus></button></ww>
+<ww><button class="opt b2"><Bison>Bison</Bison></button></ww>
+<ww><button class="opt b3"><Elephant>Elephant</Elephant></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Rhinoceros>Rhinoceros</Rhinoceros></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-43-->
+
+<!--ANIMAL-44-Rabbit-->
+        
+<div class="swiper-slide"><div class="slide q44"><button class="corner-page-number">44</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/rabbit.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Badger>Badger</Badger></button></ww>
+<ww><button class="opt b2"><Mole>Mole</Mole></button></ww>
+<ww><button class="opt c1"><Rabbit>Rabbit</Rabbit></button></ww>
+
+<ww><button class="opt b3"><Mongoose>Mongoose</Mongoose></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Rabbit>Rabbit</Rabbit></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-44-->
+
+<!--ANIMAL-45-Mole-->
+  
+<div class="swiper-slide"><div class="slide q45"><button class="corner-page-number">45</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/mole-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Rat>Rat</Rat></button></ww>
+<ww><button class="opt b2"><Lizard>Lizard</Lizard></button></ww>
+<ww><button class="opt b3"><Chameleon>Chameleon</Chameleon></button></ww>
+<ww><button class="opt c1"><Mole>Mole</Mole></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Mole>Mole</Mole></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-45-->
+
+<!--ANIMAL-46-Pangolin-->
+  
+<div class="swiper-slide">       
+<div class="slide q46"><button class="corner-page-number">46</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/Pangolin-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Tortoise>Tortoise</Tortoise></button></ww>
+<ww><button class="opt c1"><Pangolin>Pangolin</Pangolin></button></ww>
+  
+<ww><button class="opt b2"><Iguana>Iguana</Iguana></button></ww>
+<ww><button class="opt b3"><Rat>Rat</Rat></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Pangolin>Pangolin</Pangolin></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-46-->
+
+<!--ANIMAL-47-Goat-->
+  
+<div class="swiper-slide">      
+<div class="slide q47"><button class="corner-page-number">47</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/goat-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Goat>Goat</Goat></button></ww>
+
+<ww><button class="opt b1"><Sheep>Sheep</Sheep></button></ww>
+<ww><button class="opt b2"><Alpaca>Alpaca</Alpaca></button></ww>
+<ww><button class="opt b3"><Deer>Deer</Deer></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Goat>Goat</Goat></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-47-->
+
+<!--ANIMAL-48-Beaver-->
+  
+<div class="swiper-slide">      
+<div class="slide q48"><button class="corner-page-number">48</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/beaver-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Rabbit>Rabbit</Rabbit></button></ww>
+<ww><button class="opt b2"><Rat>Rat</Rat></button></ww>
+<ww><button class="opt c1"><Beaver>Beaver</Beaver></button></ww>
+
+<ww><button class="opt b3"><Squirrel>Squirrel</Squirrel></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Beaver>Beaver</Beaver></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-48-->
+
+<!--ANIMAL-49-Baboon-->
+  
+<div class="swiper-slide">
+<div class="slide q49"><button class="corner-page-number">49</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/baboon-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Chimpanzee>Chimpanzee</Chimpanzee></button></ww>
+<ww><button class="opt b2"><Monkey>Monkey</Monkey></button></ww>
+<ww><button class="opt b3"><Langur>Langur</Langur></button></ww>
+<ww><button class="opt c1"><Baboon>Baboon</Baboon></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Baboon>Baboon</Baboon></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-49-->
+
+<!--ANIMAL-50-Deer-->
+  
+<div class="swiper-slide">      
+<div class="slide q50"><button class="corner-page-number">50</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/deer-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Deer>Deer</Deer></button></ww>
+
+<ww><button class="opt b1"><Goat>Goat</Goat></button></ww>
+<ww><button class="opt b" onclick="wb()149;Audio2();"><Barasingha>Barasingha</Barasingha></button></ww>
+<ww><button class="opt b3"><Sheep>Sheep</Sheep></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Deer>Deer</Deer></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-50-->
+
+<!--ANIMAL-51-Cow-->
+  
+<div class="swiper-slide">
+<div class="slide q51"><button class="corner-page-number">51</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/cow-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Buffalo>Buffalo</Buffalo></button></ww>
+<ww><button class="opt b2"><Donkey>Donkey</Donkey></button></ww>
+<ww><button class="opt b3"><Rhinoceros>Rhinoceros</Rhinoceros></button></ww>
+<ww><button class="opt c1"><Cow>Cow</Cow></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Cow>Cow</Cow></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--ANIMAL-51-->
+
+<!--ANIMAL-52-Rat-->
+  
+<div class="swiper-slide">       
+<div class="slide q52"><button class="corner-page-number">52</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/animal@1/rat-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Rabbit>Rabbit</Rabbit></button></ww>
+<ww><button class="opt c1"><Rat>Rat</Rat></button></ww>
+  
+<ww><button class="opt b2"><Beaver>Beaver</Beaver></button></ww>
+<ww><button class="opt b3"><Squirrel>Squirrel</Squirrel></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Rat>Rat</Rat></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--ANIMAL-52-->
+
+ </div></div>
+
+
+<quizbtn>
+<div class="scorebg">
+<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
+<button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
+</div>
+<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
+</quizbtn> 
+<next-previous-buttons>
+<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
+</next-previous-buttons>
+
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+<script>
+var swiper = new Swiper('.swiper-container',{loop: true, loopPreventsSlide: false,
+preloadImages: true, lazy: true,
+navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
+
+swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
+
+localStorage.setItem('ns1', swiper.activeIndex);  });
+var ns1 = localStorage.getItem('ns1');
+
+function gotoslide() {if (localStorage.getItem("ns1") === null) {
+swiper.slideTo(1,0,true); }else {swiper.slideTo(ns1,0,true);}  }
+    
+    gotoslide();
+   
+
+</script>
+
+
+<script>
+<!-- Animal Quiz Language Change With Local Storage -->
+  
+function mylanguage() {  
+  if($('language1').html() == 'eng') {
+
+$('Animals').html('<tool1><ben>ছবি দেখে উত্তর দাও</tool1><br/><tool2><ben>পশু</tool2>'); 
+$('Alpaca').html('<ben>আলপাকা');
+$('Anteater').html('<ben>পিপীলিকাভুক');
+$('Baboon').html('<ben>বেবুন');
+$('Badger').html('<ben>ব্যাজার');
+$('Bat').html('<ben>বাদুড়');
+$('Barasingha').html('<ben>বারশিঙ্গা');
+$('Bear').html('<ben>ভালুক');
+$('beaver').html('<ben>বীবর');
+$('Bison').html('<ben>বুনো মোষ');
+$('Buffalo').html('<ben>মহিষ');
+$('Cat').html('<ben>বিড়াল');
+$('Chameleon').html('<ben>গিরগিটি');
+$('Cheetah').html('<ben>চিতা');
+$('Chimpanzee').html('<ben>শিম্পাঞ্জি');
+$('Cow').html('<ben>গোরু');
+$('Crocodile').html('<ben>কুমির');
+$('Deer').html('<ben>হরিণ');
+$('Dog').html('<ben>কুকুর');
+$('Dolphin').html('<ben>শুশুক');
+$('Donkey').html('<ben>গাধা');
+$('Elephant').html('<ben>হাতি');
+$('Fox').html('<ben>খেঁকশিয়াল');
+$('Gecko').html('<ben>গেকো');
+$('Giraffe').html('<ben>জিরাফ');
+$('Goat').html('<ben>ছাগল');
+$('Hippopotamus').html('<ben>জলহস্তী');
+$('Horse').html('<ben>ঘোড়া');
+$('Hyena').html('<ben>হায়না');
+$('Iguana').html('<ben>গোসাপ');
+$('Jackal').html('<ben>শিয়াল');
+$('Kangaroo').html('<ben>ক্যাঙ্গারু');
+$('Langur').html('<ben>লেঙ্গুর');
+$('Lemur').html('<ben>লেমুর');
+$('Lion').html('<ben>সিংহ');
+$('Lizard').html('<ben>টিকটিকি');
+$('Lynx').html('<ben>বনবিড়াল');
+$('Mole').html('<ben>ছুঁচো');
+$('Mongoose').html('<ben>নেউল');
+$('Monkey').html('<ben>বানর');
+$('Otter').html('<ben>ভোঁদড়');
+$('Panda').html('<ben>পান্ডা');
+$('Pangolin').html('<ben>বনরুই');
+$('Pig').html('<ben>শূকর');
+$('Polecat').html('<ben>খট্টাশ');
+$('Porcupine').html('<ben>শজারু');
+$('Rabbit').html('<ben>খরগোশ');
+$('Raccoon').html('<ben>র‍্যাকুন');
+$('Rat').html('<ben>ইঁদুর');
+$('Rhinoceros').html('<ben>গণ্ডার');
+$('Shark').html('<ben>হাঙ্গর');
+$('Sheep').html('<ben>ভেড়া');
+$('Snail').html('<ben>শামুক');
+$('Snake').html('<ben>সাপ');
+$('Squirrel').html('<ben>কাঠবিড়ালি');
+$('Tiger').html('<ben>বাঘ');
+$('Tortoise').html('<ben>কচ্ছপ');
+$('Whale').html('<ben>তিমি');
+$('Wolf').html('<ben>নেকড়ে');
+$('Zebra').html('<ben>জেব্রা');
+$('Score').html('<ben>স্কোর');
+$('Reset').html('<ben>রিসেট');
+$('Share').html('<ben>শেয়ার');
+ 
+    
+
+$('Score').html('<ben>স্কোর');
+$('Reset').html('<ben>রিসেট');
+$('Share').html('<ben>শেয়ার');
+$('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');
+$('touchoption').html('<ben>সঠিক অপশনটি টাচ করুন !');
+$('CorrectAnswer').html('<ben>সঠিক উত্তর !');
+$('language1').html('bng');sessionStorage.setItem('cl','t');
+
+} else {
+
+$('Animals').html('<tool1>Guess The Picture</tool1><br/><tool2>Animals</tool2>'); 
+$('Alpaca').html('Alpaca');
+$('Anteater').html('Anteater');
+$('Baboon').html('Baboon');
+$('Badger').html('Badger');
+$('Bat').html('Bat');
+$('Barasingha').html('Barasingha');
+$('Bear').html('Bear');
+$('Beaver').html('Beaver');
+$('Bison').html('Bison');
+$('Buffalo').html('Buffalo');
+$('Cat').html('Cat');
+$('Chameleon').html('Chameleon');
+$('Cheetah').html('Cheetah');
+$('Chimpanzee').html('Chimpanzee');
+$('Cow').html('Cow');
+$('Crocodile').html('Crocodile');
+$('Deer').html('Deer');
+$('Dog').html('Dog');
+$('Dolphin').html('Dolphin');
+$('Donkey').html('Donkey');
+$('Elephant').html('Elephant');
+$('Fox').html('Fox');
+$('Gecko').html('Gecko');
+$('Giraffe').html('Giraffe');
+$('Goat').html('Goat');
+$('Hippopotamus').html('Hippopotamus');
+$('Horse').html('Horse');
+$('Hyena').html('Hyena');
+$('Iguana').html('Iguana');
+$('Jackal').html('Jackal');
+$('Kangaroo').html('Kangaroo');
+$('Langur').html('Langur');
+$('Lemur').html('Lemur');
+$('Lion').html('Lion');
+$('Lizard').html('Lizard');
+$('Lynx').html('Lynx');
+$('Mole').html('Mole');
+$('Mongoose').html('Mongoose');
+$('Monkey').html('Monkey');
+$('Otter').html('Otter');
+$('Panda').html('Panda');
+$('Pangolin').html('Pangolin');
+$('Pig').html('Pig');
+$('Polecat').html('Polecat');
+$('Porcupine').html('Porcupine');
+$('Rabbit').html('Rabbit');
+$('Raccoon').html('Raccoon');
+$('Rat').html('Rat');
+$('Rhinoceros').html('Rhinoceros');
+$('Shark').html('Shark');
+$('Sheep').html('Sheep');
+$('Snail').html('Snail');
+$('Snake').html('Snake');
+$('Squirrel').html('Squirrel');
+$('Tiger').html('Tiger');
+$('Tortoise').html('Tortoise');
+$('Whale').html('Whale');
+$('Wolf').html('Wolf');
+$('Zebra').html('Zebra');
+$('Score').html('Score');
+$('Reset').html('Reset');
+$('Share').html('Share');
+
+
+$('Score').html('Score');
+$('Reset').html('Reset');
+$('Share').html('Share');
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');
+$('touchoption').html('Touch The Correct Option !');
+$('CorrectAnswer').html('Correct Answer !');
+$('language1').html('eng');sessionStorage.removeItem('cl');
+}}
+  
+</script>
+
+<script>
+ $(document).ready(function() {
+ 
+   if(location.hash){window.history.back();}
+   $('.tooltitle').delay(500).slideDown('slow');
+   
+setTimeout(function() {if(sessionStorage.getItem('f1')){showpage();}sessionStorage.setItem('f1','t'); }, 300);
+
+}); 
+$(document).ready(function() { cont(); });
+window.onload = function() {showpage();};
+$('.loading').click(function(){hidepage();});
+</script>
+<link rel="prefetch" href="index-english.html"/>
+<link rel="prefetch" href="1-animal.html"/>
+    
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-124695825-3');
+</script>
+
+</body>
+</html>

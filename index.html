@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+<title>SELECT LANGUAGE</title>
+<script>
+function delayloading() {
+var loading = document.getElementsByTagName("loading");
+setTimeout(function() {loading[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {loading[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {loading[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+
+</script>
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/m1.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/s1.min.js'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@e635e11/m.css">
+
+</head>
+<body>
+<header>
+<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
+<div style="height:54px;"></div>
+<script>
+function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
+function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
+</script>
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
+
+
+<div id="sticky">
+    <div class="subhead">
+        <button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5d2</toolicon></i></button>
+
+        <toolimg></toolimg>
+        <button class="tooltitle"><tool1h>GKCube</tool1h><br/><tool2h>The Study App</tool2h></button>
+
+        <button id="closebtnr"  onclick="hidepage();location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
+
+        <button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+
+    </div></div>
+<script>
+function toolicon() {location.replace('drawer://')}
+$(document).ready(function() { $('#popup2').fadeOut();
+$('.subhead').fadeIn();
+$('.tooltitle').slideDown();
+$('.lbox').slideDown('slow');
+ });
+
+</script>
+ <div class="lbox">
+<div align="center">
+    <div class="indextxt">
+    <div class="indeximg">
+    <img src="https://cdn.jsdelivr.net/gh/gkcube/images@2/gkb005.png" width="70px"/>
+
+    </div>
+
+    <tool3h>GKCube</tool3h><br/><tool4h>The Study App</tool4h>
+    </div>
+
+</div>
+
+            <button class="lhead">Select Your Language</button>
+            <a href="html/index-english.html">
+                        <button class="lbtn" onclick="hidepage()">English</button></a>
+            <a href="html/index-bengali.html">
+                        <button class="lbtn" onclick="hidepage()"><ben>বাংলা</ben></button></a>
+        </div>
+
+<img style="display:none" src="https://cdn.jsdelivr.net/gh/gkcube/images@2/css-3.png"/>
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-124695825-3');
+</script>
+<link rel="prefetch" href="https://cloud.gkcube.com"/>
+    
+
+</html>

@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+<title>4 FLOWER</title>
+<script>
+function delayloading() {
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+</script>
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/m1.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/s4.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@e635e11/m.css">
+
+</head>
+<body>
+<header>
+<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
+<div style="height:54px;"></div>
+<script>
+function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
+function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
+</script>
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
+
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
+
+<button class="tooltitle">
+<tool1>Guess The Picture</tool1><br/><tool2>Flowers</tool2>
+</button>
+
+<button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
+
+<button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+
+</div></div>
+
+<audio id="Audio2" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/correct.ogg" type="audio/ogg">
+</source></audio>
+
+<script>
+var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}
+
+ function toolicon() {
+ if(sessionStorage.getItem('1i')) {window.history.back();}
+ else {location.replace('index-english.html'); }}
+ 
+onhashchange = function (){ if(location.hash){ } else{ $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+
+ function historyback() { if(location.hash){ history.back(); }  }
+  
+ function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }
+</script>
+
+<div id="belowpopup" onclick="historyback()";></div>
+<div id="resetpopup" class="dbox">Reset Score For Flowers?<hr/><div align="center">
+<button class="resetbutton" onclick="historyback()">Cancel</button>
+<button class="doreset resetbutton" onclick="storagereset();">Reset</button>
+</div></div>
+
+<language1 hidden>eng</language1>
+<ben hidden>বাংলা</ben>
+
+</header>
+
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper.min.css">
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+  <div class="swiper-wrapper">
+
+
+<!--FLOWER-1-Lotus-->
+  
+<div class="swiper-slide">      
+<div class="slide q1"><button class="corner-page-number">1</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Lotus-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Chrysanthemum>Chrysanthemum</Chrysanthemum></button></ww>
+<ww><button class="opt b2"><Magnolia>Magnolia</Magnolia></button></ww>
+<ww><button class="opt c1"><Lotus>Lotus</Lotus></button></ww>
+
+<ww><button class="opt b3"><Lily>Lily</Lily></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Lotus>Lotus</Lotus></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-1-->
+
+<!--FLOWER-2-Orange Jasmine-->
+  
+<div class="swiper-slide">      
+<div class="slide q2"><button class="corner-page-number">2</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/OrangeJasmine-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><OrangeJasmine>Orange Jasmine</OrangeJasmine></button></ww>
+
+<ww><button class="opt b1"><Oleander>Oleander</Oleander></button></ww>
+<ww><button class="opt b2"><Mallow>Mallow</Mallow></button></ww>
+<ww><button class="opt b3"><Jasmine>Jasmine</Jasmine></button></ww>
+<ch hidden>
+<button class="opt cbt1"><OrangeJasmine>Orange Jasmine</OrangeJasmine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-2-->
+
+<!--FLOWER-3-Palash-->
+  
+<div class="swiper-slide">       
+<div class="slide q3"><button class="corner-page-number">3</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Palash-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Aconitum>Aconitum</Aconitum></button></ww>
+<ww><button class="opt c1"><Palash>Palash</Palash></button></ww>
+  
+<ww><button class="opt b2"><Champa>Champa</Champa></button></ww>
+<ww><button class="opt b3"><Orchid>Orchid</Orchid></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Palash>Palash</Palash></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-3-->
+
+<!--FLOWER-4-Shiuli-->
+  
+<div class="swiper-slide">
+<div class="slide q4"><button class="corner-page-number">4</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Shiuli-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Lily>Lily</Lily></button></ww>
+<ww><button class="opt b2"><Jasmine>Jasmine</Jasmine></button></ww>
+<ww><button class="opt b3"><Magnolia>Magnolia</Magnolia></button></ww>
+<ww><button class="opt c1"><Shiuli>Shiuli</Shiuli></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Shiuli>Shiuli</Shiuli></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-4-->
+
+<!--FLOWER-5-Aconitum-->
+  
+<div class="swiper-slide">       
+<div class="slide q5"><button class="corner-page-number">5</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Aconitum-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Orchid>Orchid</Orchid></button></ww>
+<ww><button class="opt c1"><Aconitum>Aconitum</Aconitum></button></ww>
+  
+<ww><button class="opt b2"><Oleander>Oleander</Oleander></button></ww>
+<ww><button class="opt b3"><Anemone>Anemone</Anemone></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Aconitum>Aconitum</Aconitum></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-5-->
+
+<!--FLOWER-6-Sunflower-->
+  
+<div class="swiper-slide">      
+<div class="slide q6"><button class="corner-page-number">6</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Sunflower-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><PeacockFlower>Peacock Flower</PeacockFlower></button></ww>
+<ww><button class="opt b2"><Pansy>Pansy</Pansy></button></ww>
+<ww><button class="opt c1"><Sunflower>Sunflower</Sunflower></button></ww>
+
+<ww><button class="opt b3"><Primrose>Primrose</Primrose></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Sunflower>Sunflower</Sunflower></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-6-->
+
+<!--FLOWER-7-Calendula-->
+  
+<div class="swiper-slide">      
+<div class="slide q7"><button class="corner-page-number">7</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Calendula-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Calendula>Calendula</Calendula></button></ww>
+
+<ww><button class="opt b1"><Chrysanthemum>Chrysanthemum</Chrysanthemum></button></ww>
+<ww><button class="opt b2"><Daisy>Daisy</Daisy></button></ww>
+<ww><button class="opt b3"><Sunflower>Sunflower</Sunflower></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Calendula>Calendula</Calendula></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-7-->
+
+<!--FLOWER-8-Jasmine-->
+  
+<div class="swiper-slide">      
+<div class="slide q8"><button class="corner-page-number">8</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Jasmine-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><OrangeJasmine>Orange Jasmine</OrangeJasmine></button></ww>
+<ww><button class="opt b2"><Oleander>Oleander</Oleander></button></ww>
+<ww><button class="opt c1"><Jasmine>Jasmine</Jasmine></button></ww>
+
+<ww><button class="opt b3"><Lily>Lily</Lily></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Jasmine>Jasmine</Jasmine></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-8-->
+
+<!--FLOWER-9-Marigold-->
+  
+<div class="swiper-slide">
+<div class="slide q9"><button class="corner-page-number">9</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Marigold-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Daisy>Daisy</Daisy></button></ww>
+<ww><button class="opt b2"><Daffodil>Daffodil</Daffodil></button></ww>
+<ww><button class="opt b3"><Calendula>Calendula</Calendula></button></ww>
+<ww><button class="opt c1"><Marigold>Marigold</Marigold></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Marigold>Marigold</Marigold></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-9-->
+
+<!--FLOWER-10-Zinnia-->
+  
+<div class="swiper-slide">       
+<div class="slide q10"><button class="corner-page-number">10</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Zinnia-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Shiuli>Shiuli</Shiuli></button></ww>
+<ww><button class="opt c1"><Zinnia>Zinnia</Zinnia></button></ww>
+  
+<ww><button class="opt b2"><Marigold>Marigold</Marigold></button></ww>
+<ww><button class="opt b3"><Magnolia>Magnolia</Magnolia></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Zinnia>Zinnia</Zinnia></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-10-->
+
+<!--FLOWER-11-Tuberose-->
+  
+<div class="swiper-slide">      
+<div class="slide q11"><button class="corner-page-number">11</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Tuberose-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Tuberose>Tuberose</Tuberose></button></ww>
+
+<ww><button class="opt b1"><Gardenia>Gardenia</Gardenia></button></ww>
+<ww><button class="opt b2"><Dahlia>Dahlia</Dahlia></button></ww>
+<ww><button class="opt b3"><Bellflower>Bellflower</Bellflower></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Tuberose>Tuberose</Tuberose></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-11-->
+
+<!--FLOWER-12-Buttercup-->
+  
+<div class="swiper-slide">      
+<div class="slide q12"><button class="corner-page-number">12</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Buttercup-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Pansy>Pansy</Pansy></button></ww>
+<ww><button class="opt b2"><Aconitum>Aconitum</Aconitum></button></ww>
+<ww><button class="opt c1"><Buttercup>Buttercup</Buttercup></button></ww>
+
+<ww><button class="opt b3"><Chameli>Chameli</Chameli></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Buttercup>Buttercup</Buttercup></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-12-->
+
+<!--FLOWER-13-Daffodil-->
+  
+<div class="swiper-slide">
+<div class="slide q13"><button class="corner-page-number">13</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Daffodil-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Daisy>Daisy</Daisy></button></ww>
+<ww><button class="opt b2"><Hellebore>Hellebore</Hellebore></button></ww>
+<ww><button class="opt b3"><Oleander>Oleander</Oleander></button></ww>
+<ww><button class="opt c1"><Daffodil>Daffodil</Daffodil></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Daffodil>Daffodil</Daffodil></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-13-->
+
+
+<!--FLOWER-14-Gardenia-->
+  
+<div class="swiper-slide">       
+<div class="slide q14"><button class="corner-page-number">14</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Gardenia-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Gladiolus>Gladiolus</Gladiolus></button></ww>
+<ww><button class="opt c1"><Gardenia>Gardenia</Gardenia></button></ww>
+  
+<ww><button class="opt b2"><Lotus>Lotus</Lotus></button></ww>
+<ww><button class="opt b3"><ChinaRose>China Rose</ChinaRose></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Gardenia>Gardenia</Gardenia></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-14-->
+
+<!--FLOWER-15-Lily-->
+  
+<div class="swiper-slide">      
+<div class="slide q15"><button class="corner-page-number">15</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Lily-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Mallow>Mallow</Mallow></button></ww>
+<ww><button class="opt b2"><Primrose>Primrose</Primrose></button></ww>
+<ww><button class="opt c1"><Lily>Lily</Lily></button></ww>
+
+<ww><button class="opt b3"><Rose>Rose</Rose></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Lily>Lily</Lily></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-15-->
+
+<!--FLOWER-16-Oleander-->
+  
+<div class="swiper-slide">      
+<div class="slide q16"><button class="corner-page-number">16</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Oleander-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Oleander>Oleander</Oleander></button></ww>
+
+<ww><button class="opt b1"><Jasmine>Jasmine</Jasmine></button></ww>
+<ww><button class="opt b2"><Chameli>Chameli</Chameli></button></ww>
+<ww><button class="opt b3"><Orchid>Orchid</Orchid></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Oleander>Oleander</Oleander></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-16-->
+
+<!--FLOWER-17-Rose-->
+  
+<div class="swiper-slide">
+<div class="slide q17"><button class="corner-page-number">17</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Rose-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Champa>Champa</Champa></button></ww>
+<ww><button class="opt b2"><Primrose>Primrose</Primrose></button></ww>
+<ww><button class="opt b3"><Erica>Erica</Erica></button></ww>
+<ww><button class="opt c1"><Rose>Rose</Rose></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Rose>Rose</Rose></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-17-->
+
+<!--FLOWER-18-Chameli-->
+  
+<div class="swiper-slide">       
+<div class="slide q18"><button class="corner-page-number">18</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Chameli-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Dahlia>Dahlia</Dahlia></button></ww>
+<ww><button class="opt c1"><Chameli>Chameli</Chameli></button></ww>
+  
+<ww><button class="opt b2"><Pansy>Pansy</Pansy></button></ww>
+<ww><button class="opt b3"><ChinaRose>China Rose</ChinaRose></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Chameli>Chameli</Chameli></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-18-->
+
+<!--FLOWER-19-Orchid-->
+  
+<div class="swiper-slide">      
+<div class="slide q19"><button class="corner-page-number">19</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Orchid-0.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Daisy>Daisy</Daisy></button></ww>
+<ww><button class="opt b2"><PeacockFlower>Peacock Flower</PeacockFlower></button></ww>
+<ww><button class="opt c1"><Orchid>Orchid</Orchid></button></ww>
+
+<ww><button class="opt b3"><Yarrow>Yarrow</Yarrow></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Orchid>Orchid</Orchid></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-19-->
+
+<!--FLOWER-20-Tulip-->
+  
+<div class="swiper-slide">      
+<div class="slide q20"><button class="corner-page-number">20</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Tulip-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Tulip>Tulip</Tulip></button></ww>
+
+<ww><button class="opt b1"><Daffodil>Daffodil</Daffodil></button></ww>
+<ww><button class="opt b2"><Magnolia>Magnolia</Magnolia></button></ww>
+<ww><button class="opt b3"><Lily>Lily</Lily></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Tulip>Tulip</Tulip></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-20-->
+
+<!--FLOWER-21-Pansy-->
+  
+<div class="swiper-slide">
+<div class="slide q21"><button class="corner-page-number">21</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Pansy-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Aconitum>Aconitum</Aconitum></button></ww>
+<ww><button class="opt b2"><Waterlily>Waterlily</Waterlily></button></ww>
+<ww><button class="opt b3"><Tuberose>Tuberose</Tuberose></button></ww>
+<ww><button class="opt c1"><Pansy>Pansy</Pansy></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Pansy>Pansy</Pansy></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-21-->
+
+<!--FLOWER-22-Dahlia-->
+  
+<div class="swiper-slide">       
+<div class="slide q22"><button class="corner-page-number">22</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Dahlia-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Anemone>Anemone</Anemone></button></ww>
+<ww><button class="opt c1"><Dahlia>Dahlia</Dahlia></button></ww>
+  
+<ww><button class="opt b2"><ChinaRose>China Rose</ChinaRose></button></ww>
+<ww><button class="opt b3"><Marigold>Marigold</Marigold></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Dahlia>Dahlia</Dahlia></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-22-->
+
+<!--FLOWER-23-China Rose-->
+  
+<div class="swiper-slide">      
+<div class="slide q23"><button class="corner-page-number">23</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/ChinaRose-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Champa>Champa</Champa></button></ww>
+<ww><button class="opt b2"><Rose>Rose</Rose></button></ww>
+<ww><button class="opt c1"><ChinaRose>China Rose</ChinaRose></button></ww>
+
+<ww><button class="opt b3"><Primrose>Primrose</Primrose></button></ww>
+<ch hidden>
+<button class="opt cbt1"><ChinaRose>China Rose</ChinaRose></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-23-->
+
+<!--FLOWER-24-Waterlily-->
+  
+<div class="swiper-slide">      
+<div class="slide q24"><button class="corner-page-number">24</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/WaterLily-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Waterlily>Waterlily</Waterlily></button></ww>
+
+<ww><button class="opt b1"><Lily>Lily</Lily></button></ww>
+<ww><button class="opt b2"><Lotus>Lotus</Lotus></button></ww>
+<ww><button class="opt b3"><Wallflower>Wallflower</Wallflower></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Waterlily>Waterlily</Waterlily></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-24-->
+
+<!--FLOWER-25-Champa-->
+  
+<div class="swiper-slide">       
+<div class="slide q25"><button class="corner-page-number">25</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Champa-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Tulip>Tulip</Tulip></button></ww>
+<ww><button class="opt c1"><Champa>Champa</Champa></button></ww>
+  
+<ww><button class="opt b2"><OrangeJasmine>Orange Jasmine</OrangeJasmine></button></ww>
+<ww><button class="opt b3"><Chameli>Chameli</Chameli></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Champa>Champa</Champa></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-25-->
+
+<!--FLOWER-26-Chrysanthemum-->
+  
+<div class="swiper-slide">
+<div class="slide q26"><button class="corner-page-number">26</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Chrysanthemum-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Daisy>Daisy</Daisy></button></ww>
+<ww><button class="opt b2"><Marigold>Marigold</Marigold></button></ww>
+<ww><button class="opt b3"><Gladiolus>Gladiolus</Gladiolus></button></ww>
+<ww><button class="opt c1"><Chrysanthemum>Chrysanthemum</Chrysanthemum></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Chrysanthemum>Chrysanthemum</Chrysanthemum></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-26-->
+
+<!--FLOWER-27-Gladiolus-->
+  
+<div class="swiper-slide">      
+<div class="slide q27"><button class="corner-page-number">27</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Gladiolus-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Erica>Erica</Erica></button></ww>
+<ww><button class="opt b2"><Lavender>Lavender</Lavender></button></ww>
+<ww><button class="opt c1"><Gladiolus>Gladiolus</Gladiolus></button></ww>
+
+<ww><button class="opt b3"><Chrysanthemum>Chrysanthemum</Chrysanthemum></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Gladiolus>Gladiolus</Gladiolus></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-27-->
+
+<!--FLOWER-28-Primrose-->
+  
+<div class="swiper-slide">      
+<div class="slide q28"><button class="corner-page-number">28</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Primrose-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Primrose>Primrose</Primrose></button></ww>
+
+<ww><button class="opt b1"><OrangeJasmine>Orange Jasmine</OrangeJasmine></button></ww>
+<ww><button class="opt b2"><Tulip>Tulip</Tulip></button></ww>
+<ww><button class="opt b3"><Zinnia>Zinnia</Zinnia></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Primrose>Primrose</Primrose></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-28-->
+
+<!--FLOWER-29-Mallow-->
+  
+<div class="swiper-slide">       
+<div class="slide q29"><button class="corner-page-number">29</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Mallow-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Amaryllis>Amaryllis</Amaryllis></button></ww>
+<ww><button class="opt c1"><Mallow>Mallow</Mallow></button></ww>
+  
+<ww><button class="opt b2"><Moonflower>Moonflower</Moonflower></button></ww>
+<ww><button class="opt b3"><Daffodil>Daffodil</Daffodil></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Mallow>Mallow</Mallow></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-29-->
+
+<!--FLOWER-30-Daisy-->
+  
+<div class="swiper-slide">
+<div class="slide q30"><button class="corner-page-number">30</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Daisy-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Dahlia>Dahlia</Dahlia></button></ww>
+<ww><button class="opt b2"><Sunflower>Sunflower</Sunflower></button></ww>
+<ww><button class="opt b3"><Daffodil>Daffodil</Daffodil></button></ww>
+<ww><button class="opt c1"><Daisy>Daisy</Daisy></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Daisy>Daisy</Daisy></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-30-->
+
+<!--FLOWER-31-Yarrow-->
+  
+<div class="swiper-slide">      
+<div class="slide q31"><button class="corner-page-number">31</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Yarrow-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Chrysanthemum>Chrysanthemum</Chrysanthemum></button></ww>
+<ww><button class="opt b2"><Shiuli>Shiuli</Shiuli></button></ww>
+<ww><button class="opt c1"><Yarrow>Yarrow</Yarrow></button></ww>
+
+<ww><button class="opt b3"><Hellebore>Hellebore</Hellebore></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Yarrow>Yarrow</Yarrow></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-31-->
+
+<!--FLOWER-32-Bellflower-->
+  
+<div class="swiper-slide">      
+<div class="slide q32"><button class="corner-page-number">32</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Bellflower-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Bellflower>Bellflower</Bellflower></button></ww>
+
+<ww><button class="opt b1"><Tuberose>Tuberose</Tuberose></button></ww>
+<ww><button class="opt b2"><Buttercup>Buttercup</Buttercup></button></ww>
+<ww><button class="opt b3"><Lavender>Lavender</Lavender></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Bellflower>Bellflower</Bellflower></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-32-->
+
+<!--FLOWER-33-Amaryllis-->
+  
+<div class="swiper-slide">       
+<div class="slide q33"><button class="corner-page-number">33</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Amaryllis-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Aconitum>Aconitum</Aconitum></button></ww>
+<ww><button class="opt c1"><Amaryllis>Amaryllis</Amaryllis></button></ww>
+  
+<ww><button class="opt b2"><Anemone>Anemone</Anemone></button></ww>
+<ww><button class="opt b3"><Magnolia>Magnolia</Magnolia></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Amaryllis>Amaryllis</Amaryllis></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-33-->
+
+<!--FLOWER-34-Erica-->
+  
+<div class="swiper-slide">      
+<div class="slide q34"><button class="corner-page-number">34</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Erica-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Hyacinth>Hyacinth</Hyacinth></button></ww>
+<ww><button class="opt b2"><Gladiolus>Gladiolus</Gladiolus></button></ww>
+<ww><button class="opt c1"><Erica>Erica</Erica></button></ww>
+
+<ww><button class="opt b3"><Tulip>Tulip</Tulip></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Erica>Erica</Erica></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-34-->
+
+<!--FLOWER-35-Lavender-->
+  
+<div class="swiper-slide">
+<div class="slide q35"><button class="corner-page-number">35</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Lavender-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Palash>Palash</Palash></button></ww>
+<ww><button class="opt b2"><Oleander>Oleander</Oleander></button></ww>
+<ww><button class="opt b3"><Rose>Rose</Rose></button></ww>
+<ww><button class="opt c1"><Lavender>Lavender</Lavender></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Lavender>Lavender</Lavender></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-35-->
+
+<!--FLOWER-36-Anemone-->
+  
+<div class="swiper-slide">      
+<div class="slide q36"><button class="corner-page-number">36</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Anemone-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Anemone>Anemone</Anemone></button></ww>
+
+<ww><button class="opt b1"><PeacockFlower>Peacock Flower</PeacockFlower></button></ww>
+<ww><button class="opt b2"><Lotus>Lotus</Lotus></button></ww>
+<ww><button class="opt b3"><OrangeJasmine>Orange Jasmine</OrangeJasmine></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Anemone>Anemone</Anemone></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-36-->
+
+<!--FLOWER-37-Hyacinth-->
+  
+<div class="swiper-slide">       
+<div class="slide q37"><button class="corner-page-number">37</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Hyacinth-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Lavender>Lavender</Lavender></button></ww>
+<ww><button class="opt c1"><Hyacinth>Hyacinth</Hyacinth></button></ww>
+  
+<ww><button class="opt b2"><Erica>Erica</Erica></button></ww>
+<ww><button class="opt b3"><Champa>Champa</Champa></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Hyacinth>Hyacinth</Hyacinth></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-37-->
+
+<!--FLOWER-38-Wallflower-->
+  
+<div class="swiper-slide">      
+<div class="slide q38"><button class="corner-page-number">38</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Wallflower-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Cornflower>Cornflower</Cornflower></button></ww>
+<ww><button class="opt b2"><PeacockFlower>Peacock Flower</PeacockFlower></button></ww>
+<ww><button class="opt c1"><Wallflower>Wallflower</Wallflower></button></ww>
+
+<ww><button class="opt b3"><Jasmine>Jasmine</Jasmine></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Wallflower>Wallflower</Wallflower></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-38-->
+
+<!--FLOWER-39-Hellebore-->
+  
+<div class="swiper-slide">
+<div class="slide q39"><button class="corner-page-number">39</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Hellebore-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Tuberose>Tuberose</Tuberose></button></ww>
+<ww><button class="opt b2"><Gladiolus>Gladiolus</Gladiolus></button></ww>
+<ww><button class="opt b3"><Gardenia>Gardenia</Gardenia></button></ww>
+<ww><button class="opt c1"><Hellebore>Hellebore</Hellebore></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Hellebore>Hellebore</Hellebore></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-39-->
+
+<!--FLOWER-40-Cornflower-->
+  
+<div class="swiper-slide">      
+<div class="slide q40"><button class="corner-page-number">40</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Cornflower-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt c1"><Cornflower>Cornflower</Cornflower></button></ww>
+
+<ww><button class="opt b1"><Tulip>Tulip</Tulip></button></ww>
+<ww><button class="opt b2"><Bellflower>Bellflower</Bellflower></button></ww>
+<ww><button class="opt b3"><Aconitum>Aconitum</Aconitum></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Cornflower>Cornflower</Cornflower></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-40-->
+
+<!--FLOWER-41-Magnolia-->
+  
+<div class="swiper-slide">       
+<div class="slide q41"><button class="corner-page-number">41</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/Magnolia-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Rose>Rose</Rose></button></ww>
+<ww><button class="opt c1"><Magnolia>Magnolia</Magnolia></button></ww>
+  
+<ww><button class="opt b2"><Lotus>Lotus</Lotus></button></ww>
+<ww><button class="opt b3"><Mallow>Mallow</Mallow></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Magnolia>Magnolia</Magnolia></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FLOWER-41-->
+
+<!--FLOWER-42-Peacock Flower-->
+  
+<div class="swiper-slide">
+<div class="slide q42"><button class="corner-page-number">42</button>
+<div class="image-wrapper">
+<img src="https://cdn.jsdelivr.net/gh/gkcube/flower/PeacockFlower-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+<div class='ops'>
+
+<ww><button class="opt b1"><Pansy>Pansy</Pansy></button></ww>
+<ww><button class="opt b2"><Primrose>Primrose</Primrose></button></ww>
+<ww><button class="opt b3"><Palash>Palash</Palash></button></ww>
+<ww><button class="opt c1"><PeacockFlower>Peacock Flower</PeacockFlower></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><PeacockFlower>Peacock Flower</PeacockFlower></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FLOWER-42-->
+
+ </div></div>
+
+<quizbtn>
+<div class="scorebg">
+<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
+<button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
+</div>
+<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
+</quizbtn> 
+<next-previous-buttons>
+<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
+</next-previous-buttons>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+<script>
+var swiper = new Swiper('.swiper-container',{loop: true, loopPreventsSlide: false,
+ preloadImages: true, lazy: true,
+navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
+
+swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
+var x = navigator.onLine; if (x == false){location.reload();}
+
+localStorage.setItem('ns4', swiper.activeIndex);  });
+var ns4 = localStorage.getItem('ns4');
+
+function gotoslide() {if (localStorage.getItem("ns4") === null) {
+swiper.slideTo(1,0,true); }else {swiper.slideTo(ns4,0,true);}  }
+    
+gotoslide();
+
+</script>
+
+<script>
+<!-- Animal Quiz Language Change With Local Storage -->
+  
+function mylanguage() {  
+  if($('language1').html() == 'eng') {
+
+
+$('Aconitum').html('<ben>অ্যাকোনিটাম');
+$('Amaryllis').html('<ben>অ্যামেরেলিস');
+$('Anemone').html('<ben>বায়ুপরাগী');
+$('Bellflower').html('<ben>ঘণ্টাকর্ণ');
+$('Buttercup').html('<ben>ঝুমকো লতা');
+$('Calendula').html('<ben>ক্যালেন্ডুলা');
+$('Chameli').html('<ben>চামেলী');
+$('Champa').html('<ben>চম্পা');
+$('ChinaRose').html('<ben>জবা');
+$('Cornflower').html('<ben>নীল ঝুমকাফুল');
+$('Chrysanthemum').html('<ben>চন্দ্রমল্লিকা');
+$('Daffodil').html('<ben>ড্যাফোডিল');
+$('Dahlia').html('<ben>ডালিয়া');
+$('Daisy').html('<ben>ডেইজি');
+$('Erica').html('<ben>এরিকা');
+$('Gardenia').html('<ben>গার্ডেনিয়া');
+$('Gladiolus').html('<ben>গ্ল্যাডিওলাস');
+$('Hellebore').html('<ben>হেলিবোর');
+$('Hyacinth').html('<ben>হায়াসিনথ');
+$('Jasmine').html('<ben>জুঁই');
+$('Lavender').html('<ben>ল্যাভেন্ডার');
+$('Lily').html('<ben>লিলি');
+$('Lotus').html('<ben>পদ্ম');
+$('Magnolia').html('<ben>ম্যাগনোলিয়া');
+$('Mallow').html('<ben>ম্যালো');
+$('Marigold').html('<ben>গাঁদা');
+$('Moonflower').html('<ben>চাঁদ ফুল');
+$('Oleander').html('<ben>করবী');
+$('OrangeJasmine').html('<ben>কামিনী');
+$('Orchid').html('<ben>অর্কিড');
+$('Palash').html('<ben>পলাশ');
+$('Pansy').html('<ben>পানসি');
+$('PeacockFlower').html('<ben>রাধাচূড়া');
+$('Phlox').html('<ben>ফুলক্স');
+$('Primrose').html('<ben>প্রাইমরোজ');
+$('Rhododendron').html('<ben>রডোডেনড্রন');
+$('Rose').html('<ben>গোলাপ');
+$('Shiuli').html('<ben>শিউলি');
+$('Sunflower').html('<ben>সূর্যমুখী');
+$('Tuberose').html('<ben>রজনীগন্ধা');
+$('Tulip').html('<ben>টিউলিপ');
+$('Wallflower').html('<ben>ওয়ালফ্লাওয়ার');
+$('Waterlily').html('<ben>শাপলা');
+$('Yarrow').html('<ben>ইয়ারো');
+$('Zinnia').html('<ben>জিনিয়া');
+
+$('tool1').html('<ben>ছবি দেখে উত্তর দাও<br/>');
+$('tool2').html('<ben>ফুল');
+$('Score').html('<ben>স্কোর');
+$('Reset').html('<ben>রিসেট');
+$('Share').html('<ben>শেয়ার');
+$('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');
+$('touchoption').html('<ben>সঠিক অপশনটি টাচ করুন !');
+$('CorrectAnswer').html('<ben>সঠিক উত্তর !');
+$('language1').html('bng');sessionStorage.setItem('cl','t');
+
+} else {
+  
+  $('tool1').html('Guess The Picture<br/>');
+  $('tool2').html('Flowers');
+
+$('Aconitum').html('Aconitum');
+$('Amaryllis').html('Amaryllis');
+$('Anemone').html('Anemone');
+$('Bellflower').html('Bellflower');
+$('Buttercup').html('Buttercup');
+$('Calendula').html('Calendula');
+$('Chameli').html('Chameli');
+$('Champa').html('Champa');
+$('ChinaRose').html('China Rose');
+$('Cornflower').html('Cornflower');
+$('Chrysanthemum').html('Chrysanthemum');
+$('Daffodil').html('Daffodil');
+$('Dahlia').html('Dahlia');
+$('Daisy').html('Daisy');
+$('Erica').html('Erica');
+$('Gardenia').html('Gardenia');
+$('Gladiolus').html('Gladiolus');
+$('Hellebore').html('Hellebore');
+$('Hyacinth').html('Hyacinth');
+$('Jasmine').html('Jasmine');
+$('Lavender').html('Lavender');
+$('Lily').html('Lily');
+$('Lotus').html('Lotus');
+$('Magnolia').html('Magnolia');
+$('Mallow').html('Mallow');
+$('Marigold').html('Marigold');
+$('Moonflower').html('Moonflower');
+$('Oleander').html('Oleander');
+$('OrangeJasmine').html('Orange Jasmine');
+$('Orchid').html('Orchid');
+$('Palash').html('Palash');
+$('Pansy').html('Pansy');
+$('PeacockFlower').html('Peacock Flower');
+$('Phlox').html('Phlox');
+$('Primrose').html('Primrose');
+$('Rhododendron').html('Rhododendron');
+$('Rose').html('Rose');
+$('Shiuli').html('Shiuli');
+$('Sunflower').html('Sunflower');
+$('Tuberose').html('Tuberose');
+$('Tulip').html('Tulip');
+$('Wallflower').html('Wallflower');
+$('Waterlily').html('Waterlily');
+$('Yarrow').html('Yarrow');
+$('Zinnia').html('Zinnia');
+
+$('tool1').html('Guess The Picture<br/>');
+$('tool2').html('Birds');
+$('Score').html('Score');
+$('Reset').html('Reset');
+$('Share').html('Share');
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');
+$('touchoption').html('Touch The Correct Option !');
+$('CorrectAnswer').html('Correct Answer !');
+$('language1').html('eng');sessionStorage.removeItem('cl');
+}}
+  
+</script>
+
+<script>
+ $(document).ready(function() {
+ 
+   if(location.hash){window.history.back();}
+   $('.tooltitle').delay(500).slideDown('slow');
+   
+setTimeout(function() {if(sessionStorage.getItem('f4')){showpage();}sessionStorage.setItem('f4','t'); }, 300);
+
+}); 
+$(document).ready(function() { cont(); });
+window.onload = function() {showpage();};
+$('.loading').click(function(){hidepage();});
+</script>
+
+<link rel="prefetch" href="index-english.html"/>
+<link rel="prefetch" href="4-flower.html"/>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-124695825-3');
+</script>
+</body>
+</html>

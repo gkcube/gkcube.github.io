@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+<title>3 FRUIT</title>
+<script>
+function delayloading() {
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+</script>
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/m1.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gkcube/js@1/s3.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gkcube/css@e635e11/m.css">
+
+</head>
+<body>
+<header>
+<div style="font-family:Zen Dots;position:absolute;opacity:0;">ZenDots</div>
+<div style="height:54px;"></div>
+<script>
+function showpage() {$("#popup2").fadeOut();$(".lockb").css('pointer-events','auto');}
+function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $('#popup2').show();}
+</script>
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
+
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
+
+<toolimg></toolimg>
+<button class="tooltitle">
+<tool1>Guess The Picture</tool1><br/><tool2>Fruits</tool2>
+</button>
+
+<button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
+
+<button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+
+</div></div>
+
+<audio id="Audio2" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/correct.ogg" type="audio/ogg">
+</source></audio>
+
+<script>
+var x = document.getElementById("Audio2"); function Audio2() { x.currentTime = 0; x.play();}
+var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0; y.play();}
+
+ function toolicon() {
+ if(sessionStorage.getItem('1i')) {window.history.back();}
+ else {location.replace('index-english.html'); }}
+ 
+onhashchange = function (){ if(location.hash){ } else{ $("#resetpopup,#belowpopup").fadeOut('fast'); }}
+
+ function historyback() { if(location.hash){ history.back(); }  }
+  
+ function showreset() {  location.hash = "go";$("#belowpopup").fadeIn('fast');$("#resetpopup").slideDown('fast'); }
+</script>
+
+<div id="belowpopup" onclick="historyback()";></div>
+<div id="resetpopup" class="dbox">Reset Score For Fruits?<hr/><div align="center">
+<button class="resetbutton" onclick="historyback()">Cancel</button>
+<button class="doreset resetbutton" onclick="storagereset();">Reset</button>
+</div></div>
+
+<language1 hidden>eng</language1>
+<ben hidden>বাংলা</ben>
+
+</header>
+
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper.min.css">
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+  <div class="swiper-wrapper">
+
+
+<!--FRUIT-1-Mango-->
+  
+<div class="swiper-slide">
+<div class="slide q1"><button class="corner-page-number">1</button>
+<div class="image-wrapper">
+<img src="https://cdn.statically.io/gh/gkcube/fruits@1/Mango-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Olive>Olive</Olive></button></ww>
+<ww><button class="opt b2"><Guava>Guava</Guava></button></ww>
+<ww><button class="opt b3"><Lemon>Lemon</Lemon></button></ww>
+<ww><button class="opt c1"><Mango>Mango</Mango></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Mango>Mango</Mango></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-1-->
+
+<!--FRUIT-2-Banana-->
+  
+<div class="swiper-slide">       
+<div class="slide q2"><button class="corner-page-number">2</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Banana-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Cucumber>Cucumber</Cucumber></button></ww>
+<ww><button class="opt c1"><Banana>Banana</Banana></button></ww>
+  
+<ww><button class="opt b2"><Apricot>Apricot</Apricot></button></ww>
+<ww><button class="opt b3"><Grape>Grape</Grape></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Banana>Banana</Banana></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-2-->
+
+<!--FRUIT-3-Raisin-->
+  
+<div class="swiper-slide">      
+<div class="slide q3"><button class="corner-page-number">3</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Raisin-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Jujube>Jujube</Jujube></button></ww>
+<ww><button class="opt b2"><Peach>Peach</Peach></button></ww>
+<ww><button class="opt c1"><Raisin>Raisin</Raisin></button></ww>
+
+<ww><button class="opt b3"><Cherry>Cherry</Cherry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Raisin>Raisin</Raisin></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-3-->
+
+<!--FRUIT-4-Fig-->
+  
+<div class="swiper-slide">       
+<div class="slide q4"><button class="corner-page-number">4</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Fig-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Cranberry>Cranberry</Cranberry></button></ww>
+<ww><button class="opt c1"><Fig>Fig</Fig></button></ww>
+  
+<ww><button class="opt b2"><Cantaloupe>Cantaloupe</Cantaloupe></button></ww>
+<ww><button class="opt b3"><Kiwifruit>Kiwifruit</Kiwifruit></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Fig>Fig</Fig></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-4-->
+
+<!--FRUIT-5-Tamarind-->
+  
+<div class="swiper-slide">      
+<div class="slide q5"><button class="corner-page-number">5</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Tamarind-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Tamarind>Tamarind</Tamarind></button></ww>
+
+<ww><button class="opt b1"><Plum>Plum</Plum></button></ww>
+<ww><button class="opt b2"><Olive>Olive</Olive></button></ww>
+<ww><button class="opt b3"><DragonFruit>Dragon Fruit</DragonFruit></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Tamarind>Tamarind</Tamarind></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-5-->
+
+<!--FRUIT-6-Apricot-->
+  
+<div class="swiper-slide">      
+<div class="slide q6"><button class="corner-page-number">6</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Apricot-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Avocado>Avocado</Avocado></button></ww>
+<ww><button class="opt b2"><Goji>Goji</Goji></button></ww>
+<ww><button class="opt c1"><Apricot>Apricot</Apricot></button></ww>
+
+<ww><button class="opt b3"><Pomegranate>Pomegranate</Pomegranate></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Apricot>Apricot</Apricot></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-6-->
+
+<!--FRUIT-7-Grape-->
+  
+<div class="swiper-slide">
+<div class="slide q7"><button class="corner-page-number">7</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Grape-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Strawberry>Strawberry</Strawberry></button></ww>
+<ww><button class="opt b2"><Raspberry>Raspberry</Raspberry></button></ww>
+<ww><button class="opt b3"><Pear>Pear</Pear></button></ww>
+<ww><button class="opt c1"><Grape>Grape</Grape></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Grape>Grape</Grape></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-7-->
+
+<!--FRUIT-8-Apple-->
+  
+<div class="swiper-slide">      
+<div class="slide q8"><button class="corner-page-number">8</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Apple-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Apple>Apple</Apple></button></ww>
+
+<ww><button class="opt b1"><Orange>Orange</Orange></button></ww>
+<ww><button class="opt b2"><Guava>Guava</Guava></button></ww>
+<ww><button class="opt b3"><Pear>Pear</Pear></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Apple>Apple</Apple></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-8-->
+
+<!--FRUIT-9-Pear-->
+  
+<div class="swiper-slide">      
+<div class="slide q9"><button class="corner-page-number">9</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Pear-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Mango>Mango</Mango></button></ww>
+<ww><button class="opt b2"><Orange>Orange</Orange></button></ww>
+<ww><button class="opt c1"><Pear>Pear</Pear></button></ww>
+
+<ww><button class="opt b3"><Pomegranate>Pomegranate</Pomegranate></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Pear>Pear</Pear></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-9-->
+
+<!--FRUIT-10-Watermelon-->
+  
+<div class="swiper-slide">
+<div class="slide q10"><button class="corner-page-number">10</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Watermelon-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Cantaloupe>Cantaloupe</Cantaloupe></button></ww>
+<ww><button class="opt b2"><Jackfruit>Jackfruit</Jackfruit></button></ww>
+<ww><button class="opt b3"><Pineapple>Pineapple</Pineapple></button></ww>
+<ww><button class="opt c1"><Watermelon>Watermelon</Watermelon></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Watermelon>Watermelon</Watermelon></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-10-->
+
+<!--FRUIT-11-Avocado-->
+  
+<div class="swiper-slide">      
+<div class="slide q11"><button class="corner-page-number">11</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Avocado-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Avocado>Avocado</Avocado></button></ww>
+
+<ww><button class="opt b1"><Apricot>Apricot</Apricot></button></ww>
+<ww><button class="opt b2"><DragonFruit>Dragon Fruit</DragonFruit></button></ww>
+<ww><button class="opt b3"><Pear>Pear</Pear></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Avocado>Avocado</Avocado></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-11-->
+
+<!--FRUIT-12-Guava-->
+  
+<div class="swiper-slide">      
+<div class="slide q12"><button class="corner-page-number">12</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Guava-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Apple>Apple</Apple></button></ww>
+<ww><button class="opt b2"><Jujube>Jujube</Jujube></button></ww>
+<ww><button class="opt c1"><Guava>Guava</Guava></button></ww>
+
+<ww><button class="opt b3"><Mango>Mango</Mango></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Guava>Guava</Guava></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-12-->
+
+<!--FRUIT-13-Raspberry-->
+  
+<div class="swiper-slide">       
+<div class="slide q13"><button class="corner-page-number">13</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Raspberry-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Cranberry>Cranberry</Cranberry></button></ww>
+<ww><button class="opt c1"><Raspberry>Raspberry</Raspberry></button></ww>
+  
+<ww><button class="opt b2"><Blueberry>Blueberry</Blueberry></button></ww>
+<ww><button class="opt b3"><Blackberry>Blackberry</Blackberry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Raspberry>Raspberry</Raspberry></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-13-->
+
+<!--FRUIT-14-Cantaloupe-->
+  
+<div class="swiper-slide">
+<div class="slide q14"><button class="corner-page-number">14</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Cantaloupe-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Watermelon>Watermelon</Watermelon></button></ww>
+<ww><button class="opt b2"><Cucumber>Cucumber</Cucumber></button></ww>
+<ww><button class="opt b3"><DragonFruit>Dragon Fruit</DragonFruit></button></ww>
+<ww><button class="opt c1"><Cantaloupe>Cantaloupe</Cantaloupe></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Cantaloupe>Cantaloupe</Cantaloupe></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-14-->
+
+<!--FRUIT-15-Jackfruit-->
+  
+<div class="swiper-slide">       
+<div class="slide q15"><button class="corner-page-number">15</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Jackfruit-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Coconut>Coconut</Coconut></button></ww>
+<ww><button class="opt c1"><Jackfruit>Jackfruit</Jackfruit></button></ww>
+  
+<ww><button class="opt b2"><Pineapple>Pineapple</Pineapple></button></ww>
+<ww><button class="opt b3"><Papaya>Papaya</Papaya></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Jackfruit>Jackfruit</Jackfruit></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-15-->
+
+<!--FRUIT-16-Peach-->
+  
+<div class="swiper-slide">      
+<div class="slide q16"><button class="corner-page-number">16</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Peach-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Peach>Peach</Peach></button></ww>
+
+<ww><button class="opt b1"><Pomegranate>Pomegranate</Pomegranate></button></ww>
+<ww><button class="opt b2"><Apple>Apple</Apple></button></ww>
+<ww><button class="opt b3"><Fig>Fig</Fig></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Peach>Peach</Peach></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-16-->
+
+<!--FRUIT-17-Cranberry-->
+  
+<div class="swiper-slide">      
+<div class="slide q17"><button class="corner-page-number">17</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Cranberry-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Blackberry>Blackberry</Blackberry></button></ww>
+<ww><button class="opt b2"><Raspberry>Raspberry</Raspberry></button></ww>
+<ww><button class="opt c1"><Cranberry>Cranberry</Cranberry></button></ww>
+
+<ww><button class="opt b3"><Cherry>Cherry</Cherry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Cranberry>Cranberry</Cranberry></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-17-->
+
+<!--FRUIT-18-Lemon-->
+  
+<div class="swiper-slide">      
+<div class="slide q18"><button class="corner-page-number">18</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Lemon-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Lemon>Lemon</Lemon></button></ww>
+
+<ww><button class="opt b1"><Orange>Orange</Orange></button></ww>
+<ww><button class="opt b2"><Pear>Pear</Pear></button></ww>
+<ww><button class="opt b3"><Mango>Mango</Mango></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Lemon>Lemon</Lemon></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-18-->
+
+<!--FRUIT-19-Pineapple-->
+  
+<div class="swiper-slide">      
+<div class="slide q19"><button class="corner-page-number">19</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Pineapple-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><DragonFruit>Dragon Fruit</DragonFruit></button></ww>
+<ww><button class="opt b2"><Watermelon>Watermelon</Watermelon></button></ww>
+<ww><button class="opt c1"><Pineapple>Pineapple</Pineapple></button></ww>
+
+<ww><button class="opt b3"><Jackfruit>Jackfruit</Jackfruit></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Pineapple>Pineapple</Pineapple></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-19-->
+
+<!--FRUIT-20-Water-Caltrop-->
+  
+<div class="swiper-slide">
+<div class="slide q20"><button class="corner-page-number">20</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Water_Caltrop-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Plum>Plum</Plum></button></ww>
+<ww><button class="opt b2"><Jujube>Jujube</Jujube></button></ww>
+<ww><button class="opt b3"><Goji>Goji</Goji></button></ww>
+<ww><button class="opt c1"><WaterCaltrop>Water Caltrop</WaterCaltrop></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><WaterCaltrop>Water Caltrop</WaterCaltrop></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-20-->
+
+<!--FRUIT-21-Cherry-->
+  
+<div class="swiper-slide">       
+<div class="slide q21"><button class="corner-page-number">21</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Cherry-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Cranberry>Cranberry</Cranberry></button></ww>
+<ww><button class="opt c1"><Cherry>Cherry</Cherry></button></ww>
+  
+<ww><button class="opt b2"><Blueberry>Blueberry</Blueberry></button></ww>
+<ww><button class="opt b3"><Raspberry>Raspberry</Raspberry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Cherry>Cherry</Cherry></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-21-->
+
+<!--FRUIT-22-Coconut-->
+  
+<div class="swiper-slide">      
+<div class="slide q22"><button class="corner-page-number">22</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Coconut-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Coconut>Coconut</Coconut></button></ww>
+
+<ww><button class="opt b1"><Kiwifruit>Kiwifruit</Kiwifruit></button></ww>
+<ww><button class="opt b2"><Cantaloupe>Cantaloupe</Cantaloupe></button></ww>
+<ww><button class="opt b3"><Watermelon>Watermelon</Watermelon></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Coconut>Coconut</Coconut></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-22-->
+
+<!--FRUIT-23-Olive-->
+  
+<div class="swiper-slide">      
+<div class="slide q23"><button class="corner-page-number">23</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Olive-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Jujube>Jujube</Jujube></button></ww>
+<ww><button class="opt b2"><Lemon>Lemon</Lemon></button></ww>
+<ww><button class="opt c1"><Olive>Olive</Olive></button></ww>
+
+<ww><button class="opt b3"><Pear>Pear</Pear></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Olive>Olive</Olive></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-23-->
+
+<!--FRUIT-24-Wood Apple-->
+  
+<div class="swiper-slide">
+<div class="slide q24"><button class="corner-page-number">24</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Wood_Apple-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Pomegranate>Pomegranate</Pomegranate></button></ww>
+<ww><button class="opt b2"><Fig>Fig</Fig></button></ww>
+<ww><button class="opt b3"><CustardApple>Custard Apple</CustardApple></button></ww>
+<ww><button class="opt c1"><WoodApple>Wood Apple</WoodApple></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><WoodApple>Wood Apple</WoodApple></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-24-->
+
+<!--FRUIT-25-Date-->
+  
+<div class="swiper-slide">      
+<div class="slide q25"><button class="corner-page-number">25</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Date-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Date>Date</Date></button></ww>
+
+<ww><button class="opt b1"><Plum>Plum</Plum></button></ww>
+<ww><button class="opt b2"><Raisin>Raisin</Raisin></button></ww>
+<ww><button class="opt b3"><Goji>Goji</Goji></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Date>Date</Date></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-25-->
+
+<!--FRUIT-26-Cucumber-->
+  
+<div class="swiper-slide">
+<div class="slide q26"><button class="corner-page-number">26</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Cucumber-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Cantaloupe>Cantaloupe</Cantaloupe></button></ww>
+<ww><button class="opt b2"><Papaya>Papaya</Papaya></button></ww>
+<ww><button class="opt b3"><Watermelon>Watermelon</Watermelon></button></ww>
+<ww><button class="opt c1"><Cucumber>Cucumber</Cucumber></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Cucumber>Cucumber</Cucumber></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-26-->
+
+<!--FRUIT-27-Goji-->
+  
+<div class="swiper-slide">       
+<div class="slide q27"><button class="corner-page-number">27</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Goji-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Raisin>Raisin</Raisin></button></ww>
+<ww><button class="opt c1"><Goji>Goji</Goji></button></ww>
+  
+<ww><button class="opt b2"><Date>Date</Date></button></ww>
+<ww><button class="opt b3"><Cranberry>Cranberry</Cranberry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Goji>Goji</Goji></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-27-->
+
+<!--FRUIT-28-Papaya-->
+  
+<div class="swiper-slide">      
+<div class="slide q28"><button class="corner-page-number">28</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Papaya-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Cucumber>Cucumber</Cucumber></button></ww>
+<ww><button class="opt b2"><Guava>Guava</Guava></button></ww>
+<ww><button class="opt c1"><Papaya>Papaya</Papaya></button></ww>
+
+<ww><button class="opt b3"><Pineapple>Pineapple</Pineapple></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Papaya>Papaya</Papaya></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-28-->
+
+<!--FRUIT-29-Blueberry-->
+  
+<div class="swiper-slide">       
+<div class="slide q29"><button class="corner-page-number">29</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Blueberry-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Blackberry>Blackberry</Blackberry></button></ww>
+<ww><button class="opt c1"><Blueberry>Blueberry</Blueberry></button></ww>
+  
+<ww><button class="opt b2"><Cranberry>Cranberry</Cranberry></button></ww>
+<ww><button class="opt b3"><Raspberry>Raspberry</Raspberry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Blueberry>Blueberry</Blueberry></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-29-->
+
+<!--FRUIT-30-Orange-->
+  
+<div class="swiper-slide">      
+<div class="slide q30"><button class="corner-page-number">30</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Orange-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Orange>Orange</Orange></button></ww>
+
+<ww><button class="opt b1"><Lemon>Lemon</Lemon></button></ww>
+<ww><button class="opt b2"><Mango>Mango</Mango></button></ww>
+<ww><button class="opt b3"><Pomegranate>Pomegranate</Pomegranate></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Orange>Orange</Orange></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-30-->
+
+<!--FRUIT-31-Jujube-->
+  
+<div class="swiper-slide">      
+<div class="slide q31"><button class="corner-page-number">31</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Jujube-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Plum>Plum</Plum></button></ww>
+<ww><button class="opt b2"><Grape>Grape</Grape></button></ww>
+<ww><button class="opt c1"><Jujube>Jujube</Jujube></button></ww>
+
+<ww><button class="opt b3"><Olive>Olive</Olive></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Jujube>Jujube</Jujube></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-31-->
+
+<!--FRUIT-32-Pomegranate-->
+  
+<div class="swiper-slide">
+<div class="slide q32"><button class="corner-page-number">32</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Pomegranate-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Olive>Olive</Olive></button></ww>
+<ww><button class="opt b2"><CustardApple>Custard Apple</CustardApple></button></ww>
+<ww><button class="opt b3"><Orange>Orange</Orange></button></ww>
+<ww><button class="opt c1"><Pomegranate>Pomegranate</Pomegranate></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Pomegranate>Pomegranate</Pomegranate></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-32-->
+
+<!--FRUIT-33-Starfruit-->
+  
+<div class="swiper-slide">      
+<div class="slide q33"><button class="corner-page-number">33</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Starfruit-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Starfruit>Starfruit</Starfruit></button></ww>
+
+<ww><button class="opt b1"><Mango>Mango</Mango></button></ww>
+<ww><button class="opt b2"><Lemon>Lemon</Lemon></button></ww>
+<ww><button class="opt b3"><Guava>Guava</Guava></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Starfruit>Starfruit</Starfruit></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-33-->
+
+<!--FRUIT-34-Custard Apple-->
+  
+<div class="swiper-slide">      
+<div class="slide q34"><button class="corner-page-number">34</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Custard_Apple-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Pomegranate>Pomegranate</Pomegranate></button></ww>
+<ww><button class="opt b2"><Grape>Grape</Grape></button></ww>
+<ww><button class="opt c1"><CustardApple>Custard Apple</CustardApple></button></ww>
+
+<ww><button class="opt b3"><Strawberry>Strawberry</Strawberry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><CustardApple>Custard Apple</CustardApple></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-34-->
+
+<!--FRUIT-35-Dragon Fruit-->
+  
+<div class="swiper-slide">
+<div class="slide q35"><button class="corner-page-number">35</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Dragon_Fruit-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Pineapple>Pineapple</Pineapple></button></ww>
+<ww><button class="opt b2"><Apricot>Apricot</Apricot></button></ww>
+<ww><button class="opt b3"><Watermelon>Watermelon</Watermelon></button></ww>
+<ww><button class="opt c1"><DragonFruit>Dragon Fruit</DragonFruit></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><DragonFruit>Dragon Fruit</DragonFruit></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-35-->
+
+<!--FRUIT-36-Plum-->
+  
+<div class="swiper-slide">      
+<div class="slide q36"><button class="corner-page-number">36</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Plum-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt c1"><Plum>Plum</Plum></button></ww>
+
+<ww><button class="opt b1"><Peach>Peach</Peach></button></ww>
+<ww><button class="opt b2"><Grape>Grape</Grape></button></ww>
+<ww><button class="opt b3"><Cherry>Cherry</Cherry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Plum>Plum</Plum></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-36-->
+
+<!--FRUIT-37-Quince-->
+  
+<div class="swiper-slide">      
+<div class="slide q37"><button class="corner-page-number">37</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Quince-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Pear>Pear</Pear></button></ww>
+<ww><button class="opt b2"><Apple>Apple</Apple></button></ww>
+<ww><button class="opt c1"><Quince>Quince</Quince></button></ww>
+
+<ww><button class="opt b3"><Guava>Guava</Guava></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Quince>Quince</Quince></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-37-->
+
+<!--FRUIT-38-Strawberry-->
+  
+<div class="swiper-slide">       
+<div class="slide q38"><button class="corner-page-number">38</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Strawberry-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Raspberry>Raspberry</Raspberry></button></ww>
+<ww><button class="opt c1"><Strawberry>Strawberry</Strawberry></button></ww>
+  
+<ww><button class="opt b2"><Date>Date</Date></button></ww>
+<ww><button class="opt b3"><Cranberry>Cranberry</Cranberry></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Strawberry>Strawberry</Strawberry></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-38-->
+
+<!--FRUIT-39-Kiwifruit-->
+  
+<div class="swiper-slide">
+<div class="slide q39"><button class="corner-page-number">39</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Kiwifruit-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Quince>Quince</Quince></button></ww>
+<ww><button class="opt b2"><DragonFruit>Dragon Fruit</DragonFruit></button></ww>
+<ww><button class="opt b3"><Cucumber>Cucumber</Cucumber></button></ww>
+<ww><button class="opt c1"><Kiwifruit>Kiwifruit</Kiwifruit></button></ww>
+
+<ch hidden>
+<button class="opt cbt1"><Kiwifruit>Kiwifruit</Kiwifruit></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+
+</div></div></div>
+<!--FRUIT-39-->
+
+<!--FRUIT-40-Jambolan-->
+  
+<div class="swiper-slide">       
+<div class="slide q40"><button class="corner-page-number">40</button>
+<div class="image-wrapper">
+<img class="swiper-lazy" data-src="https://cdn.statically.io/gh/gkcube/fruits@1/Jambolan-1.jpg"/></div>
+
+<wm><button class="mood">-1<br/><i class="m-i">mood_bad</i></button></wm>
+<cm><button class="mood">+4<br/><i class="m-i">mood</i></button></cm>
+
+<button class="touch-option"><touchoption>Touch The Correct Option !</touchoption></button>
+
+<div class='ops'>
+
+<ww><button class="opt b1"><Peach>Peach</Peach></button></ww>
+<ww><button class="opt c1"><Jambolan>Jambolan</Jambolan></button></ww>
+  
+<ww><button class="opt b2"><Grape>Grape</Grape></button></ww>
+<ww><button class="opt b3"><Fig>Fig</Fig></button></ww>
+<ch hidden>
+<button class="opt cbt1"><Jambolan>Jambolan</Jambolan></button>
+<button class="opt cbt2"><CorrectAnswer>Correct Answer!</CorrectAnswer></button>
+</ch>
+  
+</div></div></div>
+<!--FRUIT-40-->
+
+ </div></div>
+
+<quizbtn>
+<div class="scorebg">
+<button id="score1"><score>Score</score> : </button><button id="sbox">0</button>
+<button class="sreset" onclick="showreset()"><reset>Reset</reset></button>
+</div>
+<button class="resetb" onclick="location.replace('shareme://');"><share>Share</share></button>
+</quizbtn> 
+<next-previous-buttons>
+<button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
+<button class="goshowleft change" onclick="mylanguage();"><cl></cl></button>
+<button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
+</next-previous-buttons>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+<script>
+var swiper = new Swiper('.swiper-container',{loop: true, loopPreventsSlide: false,
+preloadImages: true, lazy: true,
+navigation: {nextEl: '.next-right',prevEl: '.next-left',},       });
+
+swiper.on('transitionEnd', function() {$(".next-right").removeClass("mynext");
+
+localStorage.setItem('ns3', swiper.activeIndex);  });
+var ns3 = localStorage.getItem('ns3');
+
+function gotoslide() {if (localStorage.getItem("ns3") === null) {
+swiper.slideTo(1,0,true); }else {swiper.slideTo(ns3,0,true);}  }
+    
+    gotoslide();
+   
+
+</script>
+
+<script>
+<!-- Animal Quiz Language Change With Local Storage -->
+  
+function mylanguage() {  
+  if($('language1').html() == 'eng') {
+
+$('Apple').html('<ben>আপেল');
+$('Apricot').html('<ben>খুবানি');
+$('Avocado').html('<ben>আভাকাডো');
+$('Banana').html('<ben>কলা');
+$('Blackberry').html('<ben>ব্ল্যাকবেরি');
+$('Blueberry').html('<ben>ব্লুবেরি');
+$('Cherry').html('<ben>চেরি');
+$('Cantaloupe').html('<ben>ফুটি');
+$('Coconut').html('<ben>নারিকেল');
+$('Cranberry').html('<ben>ক্র্যানবেরি');
+$('Cucumber').html('<ben>শসা');
+$('CustardApple').html('<ben>আতা');
+$('Date').html('<ben>খেজুর');
+$('DragonFruit').html('<ben>ড্রাগন ফল');
+$('Fig').html('<ben>ডুমুর');
+$('Goji').html('<ben>গোজি');
+$('Gooseberry').html('<ben>গুজবেরি');
+$('Grape').html('<ben>আঙ্গুর');
+$('Guava').html('<ben>পেয়ারা');
+$('Jackfruit').html('<ben>কাঁঠাল');
+$('JavaPlum').html('<ben>কালোজাম');
+$('Jambolan').html('<ben>কালোজাম');
+$('Jujube').html('<ben>কুল');
+$('Kiwifruit').html('<ben>কিউই');
+$('Lemon').html('<ben>লেবু');
+$('Mango').html('<ben>আম');
+$('Olive').html('<ben>জলপাই');
+$('Orange').html('<ben>কমলালেবু');
+$('Papaya').html('<ben>পেঁপে');
+$('Pear').html('<ben>নাশপাতি');
+$('Peach').html('<ben>পীচ');
+$('Pomegranate').html('<ben>ডালিম');
+$('Pineapple').html('<ben>আনারস');
+$('Plum').html('<ben>আলুবোখারা');
+$('Quince').html('<ben>কুইন্স');
+$('Raisin').html('<ben>কিশমিশ');
+$('Raspberry').html('<ben>রাস্পবেরি');
+$('Starfruit').html('<ben>কামরাঙ্গা');
+$('Strawberry').html('<ben>স্ট্রবেরি');
+$('Tamarind').html('<ben>তেঁতুল');
+$('Watermelon').html('<ben>তরমুজ');
+$('WaterCaltrop').html('<ben>পানিফল');
+$('WoodApple').html('<ben>কয়েতবেল');
+
+$('tool1').html('<ben>ছবি দেখে উত্তর দাও<br/>');
+$('tool2').html('<ben>ফল');
+
+$('Score').html('<ben>স্কোর');
+$('Reset').html('<ben>রিসেট');
+$('Share').html('<ben>শেয়ার');
+$('cl').html('<button id="lc2">ENGLISH</button><button id="lc1"><ben>বাংলা</button>');
+$('touchoption').html('<ben>সঠিক অপশনটি টাচ করুন !');
+$('CorrectAnswer').html('<ben>সঠিক উত্তর !');
+$('language1').html('bng');sessionStorage.setItem('cl','t');
+
+} else {
+
+$('tool1').html('Guess The Picture<br/>');
+$('tool2').html('Fruits');
+
+$('Apple').html('Apple');
+$('Apricot').html('Apricot');
+$('Avocado').html('Avocado');
+$('Banana').html('Banana');
+$('Blackberry').html('Blackberry');
+$('Blueberry').html('Blueberry');
+$('Cherry').html('Cherry');
+$('Cantaloupe').html('Cantaloupe');
+$('Coconut').html('Coconut');
+$('Cranberry').html('Cranberry');
+$('Cucumber').html('Cucumber');
+$('CustardApple').html('Custard Apple');
+$('Date').html('Date');
+$('DragonFruit').html('Dragon Fruit');
+$('Fig').html('Fig');
+$('Goji').html('Goji');
+$('Gooseberry').html('Gooseberry');
+$('Grape').html('Grape');
+$('Guava').html('Guava');
+$('Jackfruit').html('Jackfruit');
+$('JavaPlum').html('Java Plum');
+$('Jambolan').html('Jambolan');
+$('Jujube').html('Jujube');
+$('Kiwifruit').html('Kiwifruit');
+$('Lemon').html('Lemon');
+$('Mango').html('Mango');
+$('Olive').html('Olive');
+$('Orange').html('Orange');
+$('Papaya').html('Papaya');
+$('Pear').html('Pear');
+$('Peach').html('Peach');
+$('Pomegranate').html('Pomegranate');
+$('Pineapple').html('Pineapple');
+$('Plum').html('Plum');
+$('Quince').html('Quince');
+$('Raisin').html('Raisin');
+$('Raspberry').html('Raspberry');
+$('Starfruit').html('Starfruit');
+$('Strawberry').html('Strawberry');
+$('Tamarind').html('Tamarind');
+$('Watermelon').html('Watermelon');
+$('WaterCaltrop').html('Water Caltrop');
+$('WoodApple').html('Wood Apple');
+
+$('Score').html('Score');
+$('Reset').html('Reset');
+$('Share').html('Share');
+$('cl').html('<button id="lc1">ENGLISH</button><button id="lc2"><ben>বাংলা</button>');
+$('touchoption').html('Touch The Correct Option !');
+$('CorrectAnswer').html('Correct Answer !');
+$('language1').html('eng');sessionStorage.removeItem('cl');
+}}
+  
+</script>
+
+<script>
+ $(document).ready(function() {
+ 
+   if(location.hash){window.history.back();}
+   $('.tooltitle').delay(500).slideDown('slow');
+   
+setTimeout(function() {if(sessionStorage.getItem('f3')){showpage();}sessionStorage.setItem('f3','t'); }, 300);
+
+}); 
+$(document).ready(function() { cont(); });
+window.onload = function() {showpage();};
+$('.loading').click(function(){hidepage();});
+</script>
+<link rel="prefetch" href="index-english.html"/>
+<link rel="prefetch" href="index-bengali.html"/>
+<link rel="prefetch" href="3-fruit.html"/>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124695825-3"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-124695825-3');
+</script>
+
+</body>
+</html>
